@@ -1,0 +1,153 @@
+{
+  "version": "0.7.7.6",
+  "feature": "Character Status Window — append-only update",
+  "status": "review build; focused automated checks pass; live gameplay/save completion gate remains pending",
+  "implementation": {
+    "original_character_screen_preserved": true,
+    "new_status_section_position": "after original Character screen markup",
+    "new_character_creation_fields": false,
+    "save_schema_changed": false,
+    "new_attributes_skills_conditions_or_slots": false
+  },
+  "rollback": {
+    "version": "0.7.7.5",
+    "file": "backups/InfiniteRealms_v0.7.7.5_accepted_baseline.html",
+    "sha256": "e9c5098afa664cb1944004032e9c16c6188b0ecb7105d893bfa5dc768846cb09",
+    "byte_for_byte_verified_against": "/mnt/data/InfiniteRealms_v0.7.7.5_accepted_baseline.html",
+    "byte_for_byte_verified": true
+  },
+  "validation": {
+    "focused_browser_checks": {
+      "passed": 15,
+      "total": 15,
+      "failed": 0,
+      "browser_errors": 0
+    },
+    "node_regression_suites": {
+      "passed": 25,
+      "total": 25,
+      "failed": 0
+    },
+    "standalone_smoke_suites": {
+      "passed": 3,
+      "total": 3,
+      "failed": 0
+    },
+    "javascript_syntax_files": {
+      "passed": 88,
+      "total": 88,
+      "build_js": "passed"
+    },
+    "standalone_build": "passed",
+    "manual_gameplay_and_existing_player_save": "not fully tested"
+  },
+  "limitations": [
+    "Browser status checks use a deterministic generated test character.",
+    "The health refresh and equipment refresh checks mutate in-memory values and call the standard renderer; actual combat/recovery/time/equip gameplay paths were not all manually exercised.",
+    "The deterministic character has no character-specific status effect records, so positive rendering of populated condition effects was not browser-tested.",
+    "No user-exported pre-existing player save was independently loaded."
+  ],
+  "artifacts": [
+    {
+      "path": "dist/infinite-realms.html",
+      "bytes": 1207181,
+      "sha256": "7aeb0cfed87e45d24532cb96d406ba7eaaf6ab39127a1e71b23a0f7ed547558d"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4089,
+      "sha256": "73fc701c395e8e0ac4d04b4283147d516e4f5e500faf74275b9cd95128f41f68"
+    },
+    {
+      "path": "js/game/48-character-status-v0.7.7.6.js",
+      "bytes": 10069,
+      "sha256": "ad905dd0f81ad715cdd51f59dabb601f70d9c8f2cb2fa8b9d003ac858a7a0ede"
+    },
+    {
+      "path": "tests/v0.7.7.6-character-status-browser-smoke.py",
+      "bytes": 9157,
+      "sha256": "08820d78554272755de120af460dba39c5aa28b7ee80f06f929ac1701ea729f2"
+    },
+    {
+      "path": "tests/v0.7.7.3-regional-map.test.js",
+      "bytes": 16793,
+      "sha256": "4238d034f4185f43032d0cd217f42deebe524c0521ef056001c750325c2e7c00"
+    },
+    {
+      "path": "tests/v0.7.7.3-world-map.test.js",
+      "bytes": 12901,
+      "sha256": "c6f726f1c677773e2d5d30e6a93ab074f7c489fa5793742eaed9af6c080f0b6a"
+    },
+    {
+      "path": "tests/v0.7.7.4-local-map.test.js",
+      "bytes": 13743,
+      "sha256": "b869369d81642115481e7d707e00589f73cc0e37bea72b3c4266bf3564a11e7d"
+    },
+    {
+      "path": "tests/v0.7.7.3-standalone-smoke.js",
+      "bytes": 2602,
+      "sha256": "eb9d07b8e061483c209959b10a1ad703447cc1199956f4c9159dded1821a2f6f"
+    },
+    {
+      "path": "backups/InfiniteRealms_v0.7.7.5_accepted_baseline.html",
+      "bytes": 1197093,
+      "sha256": "e9c5098afa664cb1944004032e9c16c6188b0ecb7105d893bfa5dc768846cb09"
+    },
+    {
+      "path": "docs/screenshots/v0.7.7.6-character-screen-preserved-desktop.png",
+      "bytes": 602395,
+      "sha256": "6a19416f284e7beb67cbec809cec7d1b007f93a49f9f27a71ae5c76806c24693"
+    },
+    {
+      "path": "docs/screenshots/v0.7.7.6-character-status-desktop.png",
+      "bytes": 288793,
+      "sha256": "4639236ed98f5ad64e3ba8ca84e3ed86609c3111a05bbf9b2c739710bb78e43b"
+    },
+    {
+      "path": "docs/screenshots/v0.7.7.6-character-status-mobile.png",
+      "bytes": 143600,
+      "sha256": "c6480b2cdff4e185bda29e0aba895edc7b4bfcbc571ba841dc380329a9c80ea6"
+    },
+    {
+      "path": "docs/v0.7.7.6-browser-test-log.json",
+      "bytes": 2704,
+      "sha256": "26d13a4b4cdd130fb8a2c184ae87016d09b7759b507be0e274150d9bbc3533a6"
+    },
+    {
+      "path": "docs/v0.7.7.6-test-report.md",
+      "bytes": 4254,
+      "sha256": "8a4012edb1bee540e32f23257dff3a08d1d6e8f7ca5af418283f8c07321692b8"
+    },
+    {
+      "path": "docs/v0.7.7.6-change-log.md",
+      "bytes": 2168,
+      "sha256": "6038c301d7c2675acb6478d7592d77759dc6f6f7dedae9407e548a13ff1b24dc"
+    },
+    {
+      "path": "docs/v0.7.7.6-rollback.md",
+      "bytes": 680,
+      "sha256": "35e07375fb0228e5806e1cfb74f6e7f5c9e81f7bef3e839bf5ff991fea85a05d"
+    },
+    {
+      "path": "docs/v0.7.7.6-node-regression-summary.txt",
+      "bytes": 37,
+      "sha256": "8f3c9814d1c7a49dce933fc9d5463bd50853487255f4ade07f6543bfdb22f5d1"
+    },
+    {
+      "path": "docs/v0.7.7.6-standalone-smoke-summary.txt",
+      "bytes": 1578,
+      "sha256": "6d9ee860601759b73876d1a26908930fefed75b1639af18f7d4e039dca73563e"
+    },
+    {
+      "path": "docs/v0.7.7.6-js-syntax-check-log.txt",
+      "bytes": 4047,
+      "sha256": "025e144ac76cf706dadec6bf4c59c614285671382051570ea6ca1991a20a47e6"
+    },
+    {
+      "path": "docs/v0.7.7.6-build-log.txt",
+      "bytes": 89,
+      "sha256": "d9f8236a793a14ded98a775fac19a45281696e8b9f0c50a4e26f8439e4280dcc"
+    }
+  ],
+  "zip_hash_policy": "The source ZIP hash is published in the adjacent .sha256 file and is not embedded in this manifest to avoid self-reference."
+}

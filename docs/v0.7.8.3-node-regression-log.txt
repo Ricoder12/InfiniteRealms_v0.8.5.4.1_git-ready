@@ -1,0 +1,1472 @@
+===== tests/v0.7.3.1-npc-memory-reliability.test.js (exit 0) =====
+PASS: NPC identity, memories, affinity, and trust survive a simulated travel round-trip
+PASS: same-day identical memory is not recorded twice
+PASS: duplicate active NPC IDs are collapsed while known memories remain
+PASS: legacy save normalization preserves relationship and registry history
+
+4 v0.7.3.1 checks passed.
+
+===== tests/v0.7.3.2-witness-reputation.test.js (exit 0) =====
+PASS: unwitnessed NPC harm is private and keeps personal consequences
+PASS: witnessed penalty is independent of witness count; murder escalation is applied once
+PASS: eligible victim report applies the incident penalty once
+PASS: unrelated NPC cannot report a secret event
+PASS: legacy crime rows remain reportable without replacing their identity
+PASS: a bystander arriving before death can witness the fatal act without retroactively exposing the assault
+PASS: generic enemy victory does not receive a public crime penalty
+PASS: save schema remains compatible and version metadata advances
+
+===== tests/v0.7.3.3-reputation-reactions.test.js (exit 0) =====
+v0.7.3.3 reputation reaction tests: 8 checks passed
+
+===== tests/v0.7.3.4-positive-reputation.test.js (exit 0) =====
+v0.7.3.4 positive reputation tests: 11 checks passed
+
+===== tests/v0.7.3.5-contextual-favors-information.test.js (exit 0) =====
+PASS: relevant help improves one favor only once
+PASS: broken promise penalizes a relevant favor without being erased by public reputation
+PASS: unrelated gift memory does not create a favor bonus
+PASS: memory on a different NPC cannot affect this NPC
+PASS: serious unresolved harm can block the affected NPC favor only
+PASS: innkeeper with a personal grievance withholds optional rumor
+PASS: guard information is detailed only when relationship context supports it
+PASS: scholar detail comes from an existing record rather than invented lore
+PASS: relevant hunting cooperation improves one target lead once
+PASS: contextual decisions do not delete or rewrite original memory records
+PASS: context-use ledger persists through save normalization without changing schema
+PASS: innkeeper still shares a rumor when context allows it
+PASS: a plain-language broken promise is recognized as a personal grievance
+PASS: relevant help permits one optional rumor at low reputation, not repeated access from the same memory
+v0.7.3.5 contextual favors/information tests: 14 checks passed
+
+===== tests/v0.7.3.6-feedback-antifarming.test.js (exit 0) =====
+PASS: repeated talk rewards stop at the per-NPC cap while time/energy still behave normally
+PASS: actual deltas are reported and the just-created memory matches capped values
+PASS: a duplicate same-action callback within the guard window does not charge twice
+PASS: a different meaningful action retains its own relationship allowance after talk reaches its cap
+PASS: each gift item type contributes only once to a given NPC
+PASS: favor trust rewards have a finite per-NPC limit while favor payments remain intact
+PASS: spending time caps relationship gains without cancelling time and energy costs
+PASS: training-together gains stop at their limit but skill practice still accumulates
+PASS: shared meals stop farming relationship points but keep charging for each real meal
+PASS: repeated romantic evenings have a finite relationship reward and preserve other action effects
+PASS: work-together relationship gains are capped without removing wages or skill practice
+PASS: capped relationship feedback still retains the completed work and wage notification
+PASS: advice relationship bonus is limited while the existing skill benefit remains
+PASS: different special activities each retain their separate finite contribution
+PASS: personal-task relationship rewards are capped while task completion pays the existing reward
+PASS: bargain discounts remain available after relationship trust reaches its cap
+PASS: sparring relationship reward is capped while combat progression remains intact
+PASS: ordinary combat still grants the original coin, inventory, skill, and victory rewards
+PASS: one persistent guard disturbance cannot pay public reputation repeatedly
+PASS: reconciliation feedback acknowledges the new attempt without implying past harm vanished
+PASS: public reputation and the affected NPC relationship are explained separately
+PASS: mapped completed event consolidates duplicate toasts and explains public reputation
+PASS: old per-NPC caps and gift claims are retained when the ledger grows
+PASS: save normalization preserves old relationship/memory records and sanitizes the new ledger
+PASS: the latest persisted save includes the anti-farming ledger immediately after an awarded interaction
+PASS: failed interactions retain the original reason and award no relationship budget
+
+26 v0.7.3.6 checks passed.
+
+===== tests/v0.7.5.1-world-data-audit.test.js (exit 0) =====
+{
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Same seed and starting circumstance produce identical worlds",
+      "status": "PASS"
+    },
+    {
+      "name": "Different seeds change generated content",
+      "status": "PASS"
+    },
+    {
+      "name": "Generator creates exactly 49 sites",
+      "status": "PASS"
+    },
+    {
+      "name": "Site IDs are unique within one generated world",
+      "status": "PASS"
+    },
+    {
+      "name": "IDs, linear indexes, rows and columns agree with the 7x7 layout",
+      "status": "PASS"
+    },
+    {
+      "name": "All 49 sites are reachable from the start for each existing circumstance (audit seed)",
+      "status": "PASS"
+    },
+    {
+      "name": "Global route edges reference valid site-array indexes",
+      "status": "PASS"
+    },
+    {
+      "name": "Global edges agree with symmetric per-site route entries",
+      "status": "PASS"
+    },
+    {
+      "name": "All four circumstances initialize current, visited, known and discovered state",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy static REGIONS IDs differ from generated loc-* IDs",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.5.2-stable-geographic-identifiers.test.js (exit 0) =====
+{
+  "total": 12,
+  "passed": 12,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "World, primary region, all sites, and all global routes receive stable IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Identifier layer does not change generated layout, biome, risk, or route properties",
+      "status": "PASS"
+    },
+    {
+      "name": "IDs are unique within their scopes",
+      "status": "PASS"
+    },
+    {
+      "name": "Renaming display names does not change geographic identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Reordering site arrays preserves IDs and stable global route resolution",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy numeric route indexes and legacy site IDs remain present for compatibility",
+      "status": "PASS"
+    },
+    {
+      "name": "Same seed reload preserves deterministic world, region, site, and route IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Different seeds receive distinct world-scoped geographic IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "JSON save/load round-trip preserves the assigned geographic identifiers",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy-shaped world receives IDs without changing location count or active location",
+      "status": "PASS"
+    },
+    {
+      "name": "Validator reports duplicate IDs and unresolved references without deleting sites",
+      "status": "PASS"
+    },
+    {
+      "name": "Save-normalization wrapper attaches identifiers to a legacy-shaped world",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.5.3-geographic-hierarchy-connections.test.js (exit 0) =====
+{
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Existing world, region, sites, and route IDs from v0.7.5.2 are reused",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated world has a versioned geography model without creating continent/country content",
+      "status": "PASS"
+    },
+    {
+      "name": "Every current site resolves to the authoritative region and has valid nullable geographic parents",
+      "status": "PASS"
+    },
+    {
+      "name": "Settlement and landmark indexes reference existing sites without copying names, biome labels, or coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "Wilderness and uninhabited sites are valid without settlement or POI parents",
+      "status": "PASS"
+    },
+    {
+      "name": "All global route endpoints and local route destinations resolve",
+      "status": "PASS"
+    },
+    {
+      "name": "A valid isolated location with no outgoing routes is permitted",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing current location, known locations, visited locations, and discoveries remain accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "Connections preserve existing travel properties and directionality metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate connection endpoints are detected without removing or altering connections",
+      "status": "PASS"
+    },
+    {
+      "name": "Dangling route endpoints and parent references are detected",
+      "status": "PASS"
+    },
+    {
+      "name": "Parent cycles are rejected by validation",
+      "status": "PASS"
+    },
+    {
+      "name": "Save/load JSON round-trip preserves current location, discovery, geography references, and stable IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Geography normalization is idempotent and does not duplicate reference indexes",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.5.3-save-normalization.integration.test.js (exit 0) =====
+{
+  "total": 1,
+  "passed": 1,
+  "failed": 0,
+  "checks": {
+    "validation": true,
+    "currentLocation": true,
+    "visitedPreserved": true,
+    "knownPreserved": true,
+    "discoveryPreserved": true,
+    "siteReferences": true,
+    "routeReferences": true
+  },
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  "original": {
+    "siteId": "loc-1-0",
+    "visited": [
+      "loc-1-0",
+      "loc-0-3"
+    ],
+    "known": [
+      "loc-1-0",
+      "loc-0-0",
+      "loc-0-1",
+      "loc-1-1",
+      "loc-2-0",
+      "loc-0-3"
+    ]
+  },
+  "reloaded": {
+    "siteId": "loc-1-0",
+    "visited": [
+      "loc-1-0",
+      "loc-0-3"
+    ],
+    "known": [
+      "loc-1-0",
+      "loc-0-0",
+      "loc-0-1",
+      "loc-1-1",
+      "loc-2-0",
+      "loc-0-3",
+      "loc-0-2",
+      "loc-0-4",
+      "loc-1-3"
+    ]
+  }
+}
+
+===== tests/v0.7.5.4-gameplay-integration.test.js (exit 0) =====
+{
+  "total": 6,
+  "passed": 6,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Full application script sequence generates a world accepted by both geographic validators",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing travel action changes location, marks the destination visited, and records discovery",
+      "status": "PASS"
+    },
+    {
+      "name": "Route-triggered encounter uses an existing event definition without corrupting geographic references",
+      "status": "PASS"
+    },
+    {
+      "name": "Gathering still reads the authoritative current site biome and awards a material",
+      "status": "PASS"
+    },
+    {
+      "name": "Location-based NPC and occupation systems reuse generated settlements without duplicate resident IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Local point-of-interest discovery remains tied to its existing site record",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.5.4-world-generation-integration.test.js (exit 0) =====
+{
+  "total": 11,
+  "passed": 11,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Several new worlds across seeds and starting circumstances have valid geographic IDs and parent references",
+      "status": "PASS"
+    },
+    {
+      "name": "New generation is gameplay-equivalent to the v0.7.5.3 generator for the same seed",
+      "status": "PASS"
+    },
+    {
+      "name": "Same seed remains deterministic for site layout, biomes, settlement placement, and connections",
+      "status": "PASS"
+    },
+    {
+      "name": "Every generated travel graph is connected and route endpoint references resolve",
+      "status": "PASS"
+    },
+    {
+      "name": "Geographic integration is idempotent and does not duplicate sites, routes, or index references",
+      "status": "PASS"
+    },
+    {
+      "name": "Valid saved v2 map is reused instead of regenerated and retains custom location and route state",
+      "status": "PASS"
+    },
+    {
+      "name": "A v2 save created before geography fields existed is enriched in place without replacing its sites or routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated save/reload cycles do not duplicate geographic records or NPC schedule records",
+      "status": "PASS"
+    },
+    {
+      "name": "Current location, visited and known state, site discovery, and journal entries survive a normalized reload",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid saved route endpoints reject reuse and fall back to a valid seeded world",
+      "status": "PASS"
+    },
+    {
+      "name": "Settlement identity and biome references remain indexes into the authoritative generated site records",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.5.5-gameplay-regression.test.js (exit 0) =====
+{
+  "total": 6,
+  "passed": 6,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Eight seed/start combinations keep generated sites unique, routes resolvable, and the travel graph connected",
+      "status": "PASS"
+    },
+    {
+      "name": "Both existing map renderers still use the same authoritative sites and route IDs after geography integration",
+      "status": "PASS"
+    },
+    {
+      "name": "NPC schedule location assignments and repeat initialization remain stable and resolvable",
+      "status": "PASS"
+    },
+    {
+      "name": "Travel with a companion keeps current location, discovery state, route references, and companion support behavior",
+      "status": "PASS"
+    },
+    {
+      "name": "Combat victory rewards update the existing character and site state without changing geographic identities",
+      "status": "PASS"
+    },
+    {
+      "name": "A work shift and gathering still change progression, inventory, and time while retaining valid geographic references",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.5.5-save-compatibility-regression.test.js (exit 0) =====
+{
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "New-world generation passes stable-ID, geographic hierarchy, biome, settlement-index, and route checks",
+      "status": "PASS"
+    },
+    {
+      "name": "A save produced by the actual v0.7.3.6 source migrates without losing valid character progression or map history",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated normalization preserves world and site IDs, custom location changes, discoveries, and route state",
+      "status": "PASS"
+    },
+    {
+      "name": "Broken current pointer recovers only to the latest saved valid visited location and records the reason",
+      "status": "PASS"
+    },
+    {
+      "name": "Unrecoverable current pointer produces an explicit notice instead of silent location substitution",
+      "status": "PASS"
+    },
+    {
+      "name": "Broken journal location is kept as an unresolved source reference, not reassigned to the current place",
+      "status": "PASS"
+    },
+    {
+      "name": "A stale local stable destination is repaired only when legacy route.to uniquely resolves",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid stable global route endpoint is not redirected to unrelated numeric-index endpoints",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate legacy location IDs are not arbitrarily merged or used to resolve a broken pointer",
+      "status": "PASS"
+    },
+    {
+      "name": "Geographic index rebuild preserves unrelated extension fields and remains idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "Integrity validator detects invalid biome IDs and mismatched settlement/POI reference indexes without mutating source",
+      "status": "PASS"
+    },
+    {
+      "name": "Production persist writes a real serialized save to the storage shim and normalized reload retains geographic and character state",
+      "status": "PASS"
+    },
+    {
+      "name": "Character creation and thirty-day time advancement retain the current map and geographic references",
+      "status": "PASS"
+    },
+    {
+      "name": "NPC relationship, trust, memory, public reputation, inventory, equipment, and job state survive geography normalization",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.6.2-biome-profile-system-regression.test.js (exit 0) =====
+{
+  "total": 21,
+  "passed": 21,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "The authoritative registry retains all nine existing biome IDs, including river and woodland",
+      "status": "PASS"
+    },
+    {
+      "name": "Biome source definition has no duplicated top-level registry keys",
+      "status": "PASS"
+    },
+    {
+      "name": "Every biome profile validates with name, description, terrain, conditions, habitats, resources, and safe modifier data",
+      "status": "PASS"
+    },
+    {
+      "name": "All profile resource references resolve to existing item definitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Profile-driven forage and scout resource weights exactly preserve the former per-biome loot arrays",
+      "status": "PASS"
+    },
+    {
+      "name": "Profile gathering pools provide biome-specific material weighting using existing item definitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Gathering availability metadata matches the existing biome/action eligibility rules",
+      "status": "PASS"
+    },
+    {
+      "name": "Gathering awards only from the current biome pool and rejects activities not available at the current site",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing forage-chance modifiers retain their previous values",
+      "status": "PASS"
+    },
+    {
+      "name": "Each profile exposes habitat categories and the existing encounter pool without duplicating enemy definitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Twenty-four generated seed/start combinations contain only resolvable biome profiles and valid geography",
+      "status": "PASS"
+    },
+    {
+      "name": "New generation is byte-for-byte JSON equivalent to v0.7.5.5 world generation for the same seeds and starts",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing or invalid saved biomeId keeps safe display fallback but never supplies fallback loot",
+      "status": "PASS"
+    },
+    {
+      "name": "Known canonical biome display name can recover a profile at runtime while preserving the invalid saved biomeId",
+      "status": "PASS"
+    },
+    {
+      "name": "World validation reports a corrupted biome reference and does not rewrite it",
+      "status": "PASS"
+    },
+    {
+      "name": "Profile resolver does not attach copied profile objects or regenerate site identities",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing normalized v2 save preserves site identities, profile assignments, route data, discovery, and current location",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual forage action consumes profile resources for every existing biome",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual advanced scouting action consumes profile scout resources for every existing biome",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing world map, natural terrain map, adventure panel, and gathering panel resolve canonical biome names",
+      "status": "PASS"
+    },
+    {
+      "name": "Travel context reads source and destination profiles without changing existing travel time or fare formulas",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.6.2-resource-safety-crafting.test.js (exit 0) =====
+{
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Resource integrity validator accepts every supported profile and generated site",
+      "status": "PASS"
+    },
+    {
+      "name": "No resource pool or profile reference points at a missing item definition",
+      "status": "PASS"
+    },
+    {
+      "name": "The profile pools are meaningfully differentiated instead of sharing one generic gathering table",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual gathering resolves the selected site biome rather than a previously visited site",
+      "status": "PASS"
+    },
+    {
+      "name": "A truly invalid biome reference cannot create gathering, forage, or scouting loot",
+      "status": "PASS"
+    },
+    {
+      "name": "A dangling current-location ID cannot fall back to the first site and award its materials",
+      "status": "PASS"
+    },
+    {
+      "name": "Unavailable gathering does not spend time or energy even when called directly",
+      "status": "PASS"
+    },
+    {
+      "name": "Gathering retains the current skill-scaled success check",
+      "status": "PASS"
+    },
+    {
+      "name": "Failed gathering still spends its established time and stamina but awards no material",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual gathering succeeds in every supported biome for every activity declared available",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing field crafting recipe still consumes gathered-compatible inputs and creates a registered output",
+      "status": "PASS"
+    },
+    {
+      "name": "No new inventory items, recipes, item weights, or equipment definitions were introduced",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing character inventories and crafted-item metadata survive save normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy cave mining compatibility resolves to the existing mountain resource profile without rewriting the site ID",
+      "status": "PASS"
+    },
+    {
+      "name": "No biome profile introduces racial-affinity fields or changes existing racial and talent modifiers",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.6.3-environmental-hazards.test.js (exit 0) =====
+PASS	Hazard registry validates and only references existing biome IDs
+PASS	Existing generated geography is unchanged apart from additive political and regional metadata
+PASS	Snow exposure activates only in risky wilderness, not low-risk sites or settlements
+PASS	Seven simulated exposed days apply one modest cold tick and advance the ledger once
+PASS	Hazard effects never reduce health below one
+PASS	Survival skill mitigates cold exposure
+PASS	Equipped existing armor mitigates cold exposure without adding gear
+PASS	Desert heat drains modest energy without adding hydration or health damage
+PASS	Mountain, swamp, forest, and coast hazards activate only at configured risk
+PASS	Rendering world/adventure and reopening views does not advance or apply hazards
+PASS	Low-risk settlement time progression has no environmental penalty
+PASS	Legacy saves without hazard fields load with safe defaults and no retroactive ticks
+PASS	Repeated save normalization preserves hazard counters without replaying effects
+PASS	Hazard warnings are available for current-site and travel-preview UI without mutation
+PASS	Invalid biome references safely receive no hazard
+PASS	Current World and Adventure views visibly warn about an active hazard
+PASS	Travel route preview warns before entering or crossing a hazardous area
+PASS	Actual travel progression can apply exposure once before leaving a hazardous site
+PASS	Rest in a hazardous area remains a reliable recovery option
+PASS	Zero-day advancement cannot trigger exposure
+SUMMARY 20/20 PASS
+
+===== tests/v0.7.6.4-racial-biome-affinity.test.js (exit 0) =====
+PASS	All eight existing races have a valid, documented affinity definition
+PASS	All 72 race-by-biome cells resolve, including neutral outcomes
+PASS	Each race-biome pair matches its intended affinity level and modifier values
+PASS	Strong affinity gives +4 percentage points and one point of recurring hazard energy reduction
+PASS	Familiar affinity is smaller and does not reduce hazard effects
+PASS	Human adaptability stays small and does not grant hazard reduction in every biome
+PASS	Dwarf legacy mining bonus is not double-counted by affinity
+PASS	Neutral race-biome combinations have no modifiers and remain valid
+PASS	Unknown race receives neutral modifiers and does not inherit human adaptability
+PASS	Strong affinity reduces only the energy component of an existing hazard
+PASS	Human affinity does not erase cold hazard health or energy effects
+PASS	Familiar affinity does not reduce recurring hazard energy loss
+PASS	Survival or existing armor mitigation still takes precedence without duplicate affinity effects
+PASS	Affinity feedback is visible on existing World and Adventure views without changing time or resources
+PASS	Every affinity remains informational and does not block any gathering method or exploration action
+PASS	Actual gathering continues through the established resource validation and action path
+PASS	Strong biome affinity changes an actual gathering outcome by the documented chance bonus
+PASS	Old characters and saves need no affinity migration or stored affinity state
+PASS	Invalid biome references safely receive no affinity modifier
+PASS	Affinity registry remains within documented modifier bounds
+SUMMARY 20/20 PASS
+
+===== tests/v0.7.6.5-monster-habitats.test.js (exit 0) =====
+PASS	All 16 established enemies and bosses have valid habitat profile entries
+PASS	Every canonical profile biome refers to a currently supported IR_BIOMES key
+PASS	All per-biome encounter-table entries match their declared habitat profiles
+PASS	Every supported biome retains at least one normal encounter and one suitable hunt target
+PASS	Desert no longer lists a mismatched slime; bandit, caravan thief and dryland boar remain
+PASS	River habitats now agree with the existing river encounter list for wolves and spiders
+PASS	All nine existing raw biome pools remain accessible through the established API
+PASS	No ordinary biome pool includes a guardian, dragon, or settlement guard
+PASS	Boss metadata retains separate dungeon and major-warning contexts
+PASS	Uncontrolled rank-3 and rank-4 threats are gated from low-risk beginner encounters
+PASS	Uncontrolled rank-3 and rank-4 threats are gated from low-combat characters even in risky areas
+PASS	Qualified character in dangerous mountain terrain can encounter compatible higher threats
+PASS	High threats still fail habitat checks outside their biomes
+PASS	Repeated random selections stay within habitat and threat constraints
+PASS	Actual random selector never returns a habitat-incompatible enemy across all nine biomes
+PASS	Actual random fallback never chooses rank-3/4 enemies for a beginner in risky mountains
+PASS	Settlement encounters retain the existing high-reputation roadside mix
+PASS	Settlement guard encounter remains tied to the existing negative-reputation safeguard
+PASS	Actual scouting encounter selection uses the filtered local habitat and beginner safeguard
+PASS	Actual hunting still finds a suitable target in each biome including desert
+PASS	Life-path trail event selects only a habitat-valid hunt target
+PASS	Explicit dungeon boss start and victory path remain unchanged
+PASS	Existing hunt victory still delivers combat rewards, hunt trophy and slime materials
+PASS	Combat templates retain existing danger and reward statistics
+PASS	Habitat profiles are runtime rules only and do not add save-schema fields
+PASS	World generation remains stable because habitat data adds no world-generation effects
+PASS	No new enemy species are defined or added by habitat integration
+PASS	Habitat registry reports no structural errors after initialization
+SUMMARY 28/28 PASS
+
+===== tests/v0.7.6.6-biome-ecology-stabilization.test.js (exit 0) =====
+PASS	All integrated biome ecology validators pass on the current source
+PASS	Authoritative registry contains exactly nine supported biome profiles with unique source keys
+PASS	All resource references resolve to existing item definitions
+PASS	Resource weights and gathering availability are valid and nonnegative
+PASS	Hazard profiles point only to supported biomes and remain within expected bounds
+PASS	All eight races resolve against all nine supported biomes
+PASS	All 72 race-biome outcomes match the defined affinity matrix
+PASS	No race has a modifier exceeding the documented cap
+PASS	Neutral affinities have zero gathering and hazard modifiers
+PASS	Dwarf mining racial modifier is not stacked with affinity
+PASS	All existing enemy profiles use supported biome IDs and all encounter pools are nonempty
+PASS	Every raw biome encounter entry agrees with its habitat profile
+PASS	Invalid biome reference no longer resolves to Woodland random encounters
+PASS	Invalid biome blocks uncontrolled combat safely without spending time or energy
+PASS	Invalid biome data is not rewritten when encounter selection is rejected
+PASS	Recognized legacy cave labels still resolve to Mountain habitats
+PASS	Settlement encounter rules still work when the saved biome label is invalid
+PASS	Explicit scripted enemy encounters remain available for dungeon/boss flow
+PASS	Controlled spar remains available even if a location biome reference is corrupt
+PASS	Hazard rendering does not advance time or apply repeated damage
+PASS	Actual day progression applies the configured hazard at its cadence
+PASS	Strong racial affinity reduces only hazard energy loss, not health damage
+PASS	Old save missing the optional hazard ledger normalizes without regenerating its world
+PASS	New-game creation and save normalization preserve all eight race identities
+PASS	New stabilization layer does not change seeded world generation output
+PASS	Combined ecology and geographic integrity pass across 24 generated seed/start combinations
+PASS	Biome ecology report validates a generated world and stable geographic references
+PASS	Corrupted biome is reported and remains unchanged by the ecology audit
+PASS	Existing item definitions and every crafting recipe input/output reference remain valid
+PASS	Repeated gathering actions award only resolved biome resources without duplicate rewards
+PASS	Monster habitat module leaves combat reward templates unchanged
+PASS	No new species or save-schema fields are added by stabilization
+SUMMARY 32/32 PASS; 0 FAIL
+
+===== tests/v0.7.7.1-shared-map-data.test.js (exit 0) =====
+{
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Shared map facade references existing world, region, site array, connection array, and biome registry",
+      "status": "PASS"
+    },
+    {
+      "name": "Every generated location resolves uniquely by stable geoId",
+      "status": "PASS"
+    },
+    {
+      "name": "Names, legacy IDs, and array positions are not accepted as stable map keys",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate stable location IDs fail closed instead of selecting an arbitrary record",
+      "status": "PASS"
+    },
+    {
+      "name": "Every global connection resolves by stable ID and endpoints reference actual locations",
+      "status": "PASS"
+    },
+    {
+      "name": "Per-location connection view contains only canonical route object references incident to that location",
+      "status": "PASS"
+    },
+    {
+      "name": "Current, known, visited, and discovered flags read existing save fields without mutating them",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown visibility references return null rather than guessing",
+      "status": "PASS"
+    },
+    {
+      "name": "Biome accessor returns the authoritative IR_BIOMES object by biomeId",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown biome IDs return null without substituting a default biome",
+      "status": "PASS"
+    },
+    {
+      "name": "Current coordinates are passed through unchanged and no world-scale coordinates are fabricated",
+      "status": "PASS"
+    },
+    {
+      "name": "JSON save/load preserves location and connection IDs consumed by the shared facade",
+      "status": "PASS"
+    },
+    {
+      "name": "Empty continent/country collections stay empty; helper does not invent hierarchy entities",
+      "status": "PASS"
+    },
+    {
+      "name": "Shared data module is included before application boot without adding a new map renderer",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.7.3-regional-map.test.js (exit 0) =====
+{
+  "suite": "v0.7.7.3 Regional Map",
+  "total": 21,
+  "passed": 21,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Regional layer uses the existing region, site records, and canonical route registry without adding geography",
+      "status": "PASS"
+    },
+    {
+      "name": "No invented river course, coast edge, ridgeline, or water-band markup is drawn",
+      "status": "PASS"
+    },
+    {
+      "name": "Every drawn line resolves to a canonical connection with a matching existing travel route",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed global edge is not shown when its local travel records are absent",
+      "status": "PASS"
+    },
+    {
+      "name": "An undirected canonical edge is not drawn when the reciprocal local route record is missing",
+      "status": "PASS"
+    },
+    {
+      "name": "Known current location is highlighted and remains selected; travel stays a separate control",
+      "status": "PASS"
+    },
+    {
+      "name": "Selecting a directly connected known destination reports the real route distance and provides travel action",
+      "status": "PASS"
+    },
+    {
+      "name": "Known but disconnected destination is inspectable without a false direct-travel button",
+      "status": "PASS"
+    },
+    {
+      "name": "Connection details list only visible neighbors and conceal unvisited proper names",
+      "status": "PASS"
+    },
+    {
+      "name": "Hidden site IDs, coordinates, and unique names never appear in the regional markup",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit intelligence may mark one reported lead but does not reveal its neighbors",
+      "status": "PASS"
+    },
+    {
+      "name": "Sites lacking coordinates remain available through a list and never default to 0,0",
+      "status": "PASS"
+    },
+    {
+      "name": "Optional continent, country, hierarchy and route arrays fail safely without invented geometry",
+      "status": "PASS"
+    },
+    {
+      "name": "Switching atlas and regional layers preserves a still-known selected geoId without save mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "Route helper/travel time function remains the original implementation",
+      "status": "PASS"
+    },
+    {
+      "name": "Local detail view uses the actual current site, saved biome, and non-spatial disclaimer",
+      "status": "PASS"
+    },
+    {
+      "name": "Local detail view does not enumerate or expose undiscovered exits",
+      "status": "PASS"
+    },
+    {
+      "name": "Switching regional to local and back preserves a valid selected geoId and does not mutate the save",
+      "status": "PASS"
+    },
+    {
+      "name": "An unvisited current site does not reveal its saved place name, type, risk, description, or services",
+      "status": "PASS"
+    },
+    {
+      "name": "A site with missing optional local route/biome details produces a safe local panel",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional layer remains loaded before local layer and v0.7.8.3 regional hierarchy; current release title is advertised",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.7.3-world-map.test.js (exit 0) =====
+{
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "World atlas model reads the actual primary region and never fabricates extra regions",
+      "status": "PASS"
+    },
+    {
+      "name": "Optional continent/country/geography fields may be absent without crashing",
+      "status": "PASS"
+    },
+    {
+      "name": "World atlas only lists the actual region and never lists undiscovered locations by name",
+      "status": "PASS"
+    },
+    {
+      "name": "Known biome summary is derived only from known/visited/discovered site records",
+      "status": "PASS"
+    },
+    {
+      "name": "Current location is always part of visible map data and is highlighted in the atlas",
+      "status": "PASS"
+    },
+    {
+      "name": "Visited settlement/landmark index excludes unvisited settlement and landmark records",
+      "status": "PASS"
+    },
+    {
+      "name": "Opening regional view changes only session UI state, not saved world geography",
+      "status": "PASS"
+    },
+    {
+      "name": "Returning to atlas is a separate UI action and does not mutate discovery progress",
+      "status": "PASS"
+    },
+    {
+      "name": "Location inspection selects an actual known geoId without triggering travel or advancing time",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional map removes undiscovered markers and turns visible markers into inspection-only buttons",
+      "status": "PASS"
+    },
+    {
+      "name": "Paid-intelligence marker remains visible without making unrelated hidden sites visible",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional location card separates inspection from route-based travel",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional renderer does not disclose hidden destination markers, names, biome identities, or coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional map positions edge markers with inset labels",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed/missing optional site hierarchy does not make map model throw",
+      "status": "PASS"
+    },
+    {
+      "name": "Map model remains consistent across different generated regional seeds",
+      "status": "PASS"
+    },
+    {
+      "name": "Atlas and regional layers remain ordered before v0.7.7.4 local layer and boot",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.7.4-local-map.test.js (exit 0) =====
+{
+  "suite": "Infinite Realms v0.7.7.4 Local Map",
+  "total": 16,
+  "passed": 16,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Local map renders inside the accepted local detail view and keeps return navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Town local scene derives clickable buildings only from saved services",
+      "status": "PASS"
+    },
+    {
+      "name": "Map actions route to existing application tabs or existing interaction handlers",
+      "status": "PASS"
+    },
+    {
+      "name": "Service aliases collapse to one existing facility and unsupported service IDs never invent a building",
+      "status": "PASS"
+    },
+    {
+      "name": "Decorative houses and terrain props cannot be clicked as services",
+      "status": "PASS"
+    },
+    {
+      "name": "Settlement type changes presentation scale and the layout remains deterministic for the same site",
+      "status": "PASS"
+    },
+    {
+      "name": "Hamlet and city service panels respect actual saved service availability",
+      "status": "PASS"
+    },
+    {
+      "name": "Town staff labels only use real, site-bound NPC records and do not generate NPCs",
+      "status": "PASS"
+    },
+    {
+      "name": "An existing guard occupation links to People but does not fabricate a new town-service building",
+      "status": "PASS"
+    },
+    {
+      "name": "Wilderness scenes show biome-appropriate scenery and no settlement services",
+      "status": "PASS"
+    },
+    {
+      "name": "Swamp/snow/coast/river biome themes map to corresponding visual profiles",
+      "status": "PASS"
+    },
+    {
+      "name": "Recorded point of interest uses the existing Adventure destination, and no fake local poi is generated",
+      "status": "PASS"
+    },
+    {
+      "name": "No interactive businesses, labels, services, or NPC names leak from an unsurveyed current site",
+      "status": "PASS"
+    },
+    {
+      "name": "Location with missing service, biome, or optional route fields fails safely without changing the save",
+      "status": "PASS"
+    },
+    {
+      "name": "Map retains existing recorded outbound travel actions and does not create a local movement grid",
+      "status": "PASS"
+    },
+    {
+      "name": "New module and title are ordered before boot and use the current v0.7.8.3 release title",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.7.5-travel-route-integration.test.js (exit 0) =====
+{
+  "suite": "Infinite Realms v0.7.7.5 Travel and Route Integration",
+  "total": 20,
+  "passed": 20,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Generated route records resolve only when canonical global edge and endpoint copies agree",
+      "status": "PASS"
+    },
+    {
+      "name": "Every travel distance stays in gameplay kilometres and the existing transport day formula",
+      "status": "PASS"
+    },
+    {
+      "name": "A global route missing from region.routes cannot be traversed just because both local copies remain",
+      "status": "PASS"
+    },
+    {
+      "name": "A conflicting endpoint distance makes the edge unavailable instead of trusting stale local data",
+      "status": "PASS"
+    },
+    {
+      "name": "Conflicting transport availability or terrain metadata fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate canonical edges are ambiguous and cannot create a direct travel option",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicitly directed edges can only be travelled in their recorded direction",
+      "status": "PASS"
+    },
+    {
+      "name": "Direct travel preview and execution use the same distance, duration, energy cost, and arrival location",
+      "status": "PASS"
+    },
+    {
+      "name": "Direct danger estimate uses the existing location risks and transport modifier only",
+      "status": "PASS"
+    },
+    {
+      "name": "Terrain labels do not silently add an unsupported travel-time modifier",
+      "status": "PASS"
+    },
+    {
+      "name": "A multi-leg destination uses a verified path with every leg backed by the same graph",
+      "status": "PASS"
+    },
+    {
+      "name": "A multi-leg journey follows its plan and consumes exactly the displayed total when uninterrupted",
+      "status": "PASS"
+    },
+    {
+      "name": "A disconnected destination cannot be reached from visibility alone and consumes no resources or time",
+      "status": "PASS"
+    },
+    {
+      "name": "A segment interrupted by insufficient energy preserves only completed legs and costs no energy for the next one",
+      "status": "PASS"
+    },
+    {
+      "name": "A triggered encounter interrupts a multi-leg journey after its completed leg without corrupting the next leg",
+      "status": "PASS"
+    },
+    {
+      "name": "A thrown direct-travel operation rolls back location, time, and resources",
+      "status": "PASS"
+    },
+    {
+      "name": "Save normalization and slot save/load preserve arrived location and authoritative graph data",
+      "status": "PASS"
+    },
+    {
+      "name": "The map-facing regional and local route lists read verified canonical connections, not corrupt local-only entries",
+      "status": "PASS"
+    },
+    {
+      "name": "Direct travel preview does not reveal a known-but-unsurveyed destination name or exact danger",
+      "status": "PASS"
+    },
+    {
+      "name": "Multi-leg travel preview masks known-but-unsurveyed intermediate names and their terrain labels",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.7.7-ui-polish.test.js (exit 0) =====
+{
+  "suite": "Infinite Realms v0.7.7.7 UI polish integration",
+  "total": 9,
+  "passed": 9,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Standalone entry point uses the v0.7.8.3 release title",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Scoped polish stylesheet loads with the map stylesheet",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Unified map UI module loads after Character status and before application boot",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All three map view actions are implemented and use existing map-scope state",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "View controls expose accessible state and native button interactions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Existing renderers are wrapped instead of replacing map geometry or travel mechanics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Focused keyboard states and disabled map controls have scoped styles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Character meters and travel estimates use tabular numeric displays",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Responsive and reduced-motion rules avoid unnecessary animation",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}
+
+===== tests/v0.7.7.8-save-compatibility.test.js (exit 0) =====
+{
+  "suite": "Infinite Realms v0.7.7.8 Save Compatibility and Integration",
+  "total": 11,
+  "passed": 11,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Pre-v0.7.7.6 save is produced by actual accepted v0.7.6.6 game code and is valid",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy save normalization preserves character progression and equipment",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy save normalization preserves stable world/site IDs, custom location records, discovery, and travel history",
+      "status": "PASS"
+    },
+    {
+      "name": "Extensive-exploration legacy save retains 49 visited sites, discovery history, per-site progress, and rumor outcomes",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated normalization is idempotent for location IDs, route IDs/counts, current location, and exploration",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing optional arrays/fields receive defaults while existing character/world values survive",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shared map accessors return the same authoritative region/site/route objects",
+      "status": "PASS"
+    },
+    {
+      "name": "World/Regional/Local map switching and selection do not mutate saved world data",
+      "status": "PASS"
+    },
+    {
+      "name": "Canonical travel updates the current location/discovery once without adding location or duplicate route records",
+      "status": "PASS"
+    },
+    {
+      "name": "Character summary still reads live health, attributes, skill, and equipment values from the saved character",
+      "status": "PASS"
+    },
+    {
+      "name": "Map UI transient selection resets to the new current location on world-state replacement",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.7.9-final-acceptance.test.js (exit 0) =====
+PASS: Current v0.7.8.3 metadata retains earlier acceptance and political layers
+PASS: Acceptance branding layer runs after compatibility/UI layers and political foundation before boot
+PASS: World, regional, local maps share the prior canonical data layer
+PASS: Map views and character status avoid adding gameplay/save migrations
+PASS: Map state replacement resets transient selection without replacing valid geography
+PASS: Travel integration delegates to existing route/travel code
+PASS: Character summary reads from existing character/equipment data
+PASS: UI polish uses existing map view controls and Character addendum
+PASS: Compatibility defaults are conservative and idempotent
+PASS: No external framework/CDN added by v0.7.7.9 acceptance
+SUMMARY 10/10 PASS; 0 FAIL
+
+===== tests/v0.7.8.2-political-entity-foundation.test.js (exit 0) =====
+[Infinite Realms] Added empty political-entity registry for compatibility.
+[Infinite Realms] Added empty political-entity registry for compatibility.
+{
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Generated world gains an empty polity registry without seeded political content",
+      "status": "PASS"
+    },
+    {
+      "name": "Stable political IDs depend on world ID and logical key, not display name or array position",
+      "status": "PASS"
+    },
+    {
+      "name": "All five sovereign/entity types are supported by the registry validator",
+      "status": "PASS"
+    },
+    {
+      "name": "Minimal valid record accepts missing optional description, capital, and governing entity",
+      "status": "PASS"
+    },
+    {
+      "name": "Valid capital references an existing settlement by stable geoId",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate political IDs are reported and records are not silently removed",
+      "status": "PASS"
+    },
+    {
+      "name": "Unsupported entity types are rejected; unclaimed territory is not a polity type",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid region references are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid, ambiguous, or non-settlement capital references are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing geographic anchors are rejected without requiring optional capital/governing fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing and invalid governing references are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Governing relationships allow mixed entity types and reject cycles/self-governance",
+      "status": "PASS"
+    },
+    {
+      "name": "World generation keeps stable geographic IDs and route records unchanged apart from additive empty registry",
+      "status": "PASS"
+    },
+    {
+      "name": "Polity registry does not duplicate physical locations, routes, or geography indexes",
+      "status": "PASS"
+    },
+    {
+      "name": "Older save missing polities loads with an empty registry and preserves geographic IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing valid polity records survive repeated save normalization unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid registry container safely defaults to empty without touching geographic IDs",
+      "status": "PASS"
+    }
+  ]
+}
+
+===== tests/v0.7.8.3-regional-hierarchy.test.js (exit 0) =====
+{
+  "total": 27,
+  "passed": 27,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Existing primary region remains the canonical geographic and route container",
+      "status": "PASS"
+    },
+    {
+      "name": "New worlds default to no subregions and no political owner/government",
+      "status": "PASS"
+    },
+    {
+      "name": "Region stable IDs depend on world ID and logical key, not names or array positions",
+      "status": "PASS"
+    },
+    {
+      "name": "Subregion creation stores one metadata record and an explicit parent reference",
+      "status": "PASS"
+    },
+    {
+      "name": "Nested subregions can have a parent below the primary region",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate region IDs are rejected without adding a second region",
+      "status": "PASS"
+    },
+    {
+      "name": "Geographic parent reference must match structural nesting",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing optional parent reference defaults to the containing parent during normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "Locations resolve to explicit child regions while remaining in the single canonical site registry",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing location regionId safely resolves to the primary region for legacy data",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit unresolved location regionId remains untouched and is reported",
+      "status": "PASS"
+    },
+    {
+      "name": "Valid nested regional assignments do not create a false save-migration change",
+      "status": "PASS"
+    },
+    {
+      "name": "Save preparation preserves only uniquely valid nested region assignments",
+      "status": "PASS"
+    },
+    {
+      "name": "Unclaimed region resolves geographically when political refs are null",
+      "status": "PASS"
+    },
+    {
+      "name": "Separate owner and governing references validate against political entity IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Unresolved political owner and governor are reported without breaking geographic resolution",
+      "status": "PASS"
+    },
+    {
+      "name": "Political foundation accepts an entity anchored to a nested geographic region",
+      "status": "PASS"
+    },
+    {
+      "name": "Region assignment rejects invalid target IDs without mutating a location",
+      "status": "PASS"
+    },
+    {
+      "name": "Location region assignment can repair an explicit unresolved region reference without changing routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Subregions cannot introduce duplicate site or route registries",
+      "status": "PASS"
+    },
+    {
+      "name": "Country and continent references are validated independently of regional parentage",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy save adds hierarchy defaults without changing valid site IDs or route records",
+      "status": "PASS"
+    },
+    {
+      "name": "Accepted-save reuse gate no longer rejects valid nested regional assignments",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated normalization preserves nested region IDs, regional assignments, and political references",
+      "status": "PASS"
+    },
+    {
+      "name": "Same-seed generation remains deterministic and creates no ungrounded political or subregion content",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed subregions container is reported rather than silently discarded",
+      "status": "PASS"
+    },
+    {
+      "name": "Old geographic validator accepts child regional assignments while preserving route validation",
+      "status": "PASS"
+    }
+  ]
+}
+

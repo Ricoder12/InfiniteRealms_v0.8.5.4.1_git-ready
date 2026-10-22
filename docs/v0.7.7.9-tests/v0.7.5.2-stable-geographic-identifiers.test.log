@@ -1,0 +1,55 @@
+{
+  "total": 12,
+  "passed": 12,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "World, primary region, all sites, and all global routes receive stable IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Identifier layer does not change generated layout, biome, risk, or route properties",
+      "status": "PASS"
+    },
+    {
+      "name": "IDs are unique within their scopes",
+      "status": "PASS"
+    },
+    {
+      "name": "Renaming display names does not change geographic identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Reordering site arrays preserves IDs and stable global route resolution",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy numeric route indexes and legacy site IDs remain present for compatibility",
+      "status": "PASS"
+    },
+    {
+      "name": "Same seed reload preserves deterministic world, region, site, and route IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Different seeds receive distinct world-scoped geographic IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "JSON save/load round-trip preserves the assigned geographic identifiers",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy-shaped world receives IDs without changing location count or active location",
+      "status": "PASS"
+    },
+    {
+      "name": "Validator reports duplicate IDs and unresolved references without deleting sites",
+      "status": "PASS"
+    },
+    {
+      "name": "Save-normalization wrapper attaches identifiers to a legacy-shaped world",
+      "status": "PASS"
+    }
+  ]
+}

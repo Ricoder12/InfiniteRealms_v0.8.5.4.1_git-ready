@@ -1,0 +1,40 @@
+{
+  "release": "Infinite Realms v0.7.8.8 — Save Compatibility and Regression",
+  "status": "Built; automated Node, JavaScript syntax, and standalone smoke checks passed. Browser and Python checks not tested.",
+  "starting_source_archive": {
+    "file": "InfiniteRealms_v0.7.8.7_source.zip",
+    "sha256": "ed32c692ceb916005d4c862cd4fc0f1cd53bf86ff45bc2799cefc34b4484c934"
+  },
+  "standalone": {
+    "file": "release/InfiniteRealms_v0.7.8.8_standalone.html",
+    "sha256": "036099a200655b1303cd424974e0a2048f5506564b8f29b5514443e6156d6e5c",
+    "size_bytes": 1333145
+  },
+  "rollback": {
+    "file": "release/InfiniteRealms_v0.7.8.7_accepted_baseline.html",
+    "sha256": "2e2c092209169aad87f336bf1bc9adc2c6c802a65758f0e71a075f38d1ebb80c",
+    "byte_for_byte_verified_against_v0_7_8_7_standalone": true
+  },
+  "comparison_baseline": {
+    "version": "v0.7.7.9",
+    "file": "backups/InfiniteRealms_v0.7.7.9_accepted_baseline.html",
+    "sha256": "62a08fa292029dd6a8442ea6a26b591f224c788c4712d70bb5d7b383cadbdd9c",
+    "matches_source_archive_checksum": true
+  },
+  "validation": {
+    "node_regression_test_files": "33/33 passed",
+    "standalone_smoke_suites": "3/3 passed; 24 explicit checks; 54 script blocks inspected",
+    "javascript_syntax": "105/105 passed including build.js",
+    "build": "passed",
+    "source_zip_integrity": "passed; 730 files extracted and rebuilt to exact standalone SHA-256",
+    "browser_suites": "not tested; local file URL blocked by browser security policy",
+    "v0_7_8_8_browser_screenshots": "not captured",
+    "python_syntax": "not tested; Python interpreter unavailable"
+  },
+  "scope": "Release title/version labels and stale regression title expectations only; no gameplay or save behavior changed.",
+  "limitations": [
+    "No user-exported player save was supplied.",
+    "Browser integration could not be run under the available browser policy.",
+    "No v0.7.8.8 browser screenshot was captured."
+  ]
+}

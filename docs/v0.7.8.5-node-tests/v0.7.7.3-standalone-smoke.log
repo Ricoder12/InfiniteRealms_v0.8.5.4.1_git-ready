@@ -1,0 +1,11 @@
+PASS	standalone has no external script/style references
+PASS	document title advertises current release v0.7.8.5
+PASS	shared map data module remains embedded
+PASS	interactive world atlas model and renderer are embedded
+PASS	v0.7.7.2 regional base and v0.7.7.3 accuracy renderer are embedded
+PASS	regional inspection, local detail, and local illustrated scene are embedded
+PASS	v0.7.7.5 travel module uses the authoritative route graph for direct and multi-leg travel
+PASS	map CSS is bundled
+PASS	accepted v0.7.7.1 content remains available as exact backup
+PASS	shared data → atlas → regional → local scene → travel integration → boot order is preserved
+CHECKS=10 PASS=10 FAIL=0

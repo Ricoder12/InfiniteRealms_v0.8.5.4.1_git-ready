@@ -1,0 +1,77 @@
+[Infinite Realms] Added empty political-entity registry for compatibility.
+[Infinite Realms] Added empty political-entity registry for compatibility.
+{
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Generated world gains an empty polity registry without seeded political content",
+      "status": "PASS"
+    },
+    {
+      "name": "Stable political IDs depend on world ID and logical key, not display name or array position",
+      "status": "PASS"
+    },
+    {
+      "name": "All five sovereign/entity types are supported by the registry validator",
+      "status": "PASS"
+    },
+    {
+      "name": "Minimal valid record accepts missing optional description, capital, and governing entity",
+      "status": "PASS"
+    },
+    {
+      "name": "Valid capital references an existing settlement by stable geoId",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate political IDs are reported and records are not silently removed",
+      "status": "PASS"
+    },
+    {
+      "name": "Unsupported entity types are rejected; unclaimed territory is not a polity type",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid region references are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid, ambiguous, or non-settlement capital references are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing geographic anchors are rejected without requiring optional capital/governing fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing and invalid governing references are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Governing relationships allow mixed entity types and reject cycles/self-governance",
+      "status": "PASS"
+    },
+    {
+      "name": "World generation keeps stable geographic IDs and route records unchanged apart from additive empty registry",
+      "status": "PASS"
+    },
+    {
+      "name": "Polity registry does not duplicate physical locations, routes, or geography indexes",
+      "status": "PASS"
+    },
+    {
+      "name": "Older save missing polities loads with an empty registry and preserves geographic IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing valid polity records survive repeated save normalization unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid registry container safely defaults to empty without touching geographic IDs",
+      "status": "PASS"
+    }
+  ]
+}

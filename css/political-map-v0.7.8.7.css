@@ -1,0 +1,49 @@
+/* Infinite Realms v0.7.8.7 — political map information panels. */
+.ir0787-political-panel{margin-top:14px;border:1px solid #53654d;background:linear-gradient(155deg,#182a27f5,#151f20f7);min-width:0}
+.ir0787-political-panel .panel-heading{gap:12px;align-items:flex-start}
+.ir0787-political-panel h2,.ir0787-political-panel h3{margin:2px 0 6px;color:#e8e1c8}
+.ir0787-political-panel .panel-heading p{max-width:760px;line-height:1.55}
+.ir0787-polity-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+.ir0787-polity-card{display:flex;gap:10px;align-items:flex-start;min-width:0;padding:12px;border:1px solid #3b5247;border-radius:11px;background:#101c1c}
+.ir0787-polity-sigil{display:grid;place-items:center;flex:none;width:32px;height:32px;border:1px solid #b49b61;border-radius:9px;color:#edcf8a;background:#322e20;font-size:16px}
+.ir0787-polity-copy{min-width:0;flex:1}
+.ir0787-polity-title{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 7px}
+.ir0787-polity-title strong{color:#f1e8cd;font-size:13px;overflow-wrap:anywhere}
+.ir0787-type-pill,.ir0787-meta-pill{display:inline-flex;align-items:center;border:1px solid #5e6b4b;border-radius:999px;padding:3px 7px;color:#d6d6ab;background:#27372e;font-size:9px;font-weight:700}
+.ir0787-polity-copy p{margin:5px 0 0;color:#bfcec2;font-size:10px;line-height:1.55;overflow-wrap:anywhere}
+.ir0787-polity-copy p b{color:#e3d8b7}
+.ir0787-polity-copy .ir0787-capital-line{color:#e4ca83;font-weight:700}
+.ir0787-muted{margin:10px 0 0;color:#adbbb1;font-size:11px;line-height:1.65}
+.ir0787-boundary-note{margin:12px 0 0;padding:9px 11px;border-left:3px solid #8d8454;border-radius:0 7px 7px 0;background:#202c29;color:#b6c4b8;font-size:10px;line-height:1.6}
+.ir0787-unclaimed-list{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:12px;padding:10px;border:1px dashed #9c8552;border-radius:9px;background:#302a1d}
+.ir0787-unclaimed-list>strong{width:100%;font-size:11px;color:#e1cb8f}
+.ir0787-status-pill{display:inline-flex;align-items:center;gap:5px;width:max-content;max-width:100%;padding:5px 8px;border:1px solid #53665b;border-radius:999px;font-size:10px;font-weight:700;overflow-wrap:anywhere}
+.ir0787-status-pill.unknown{color:#c0ccc5;background:#263332;border-color:#66756d}
+.ir0787-status-pill.unclaimed{color:#f0d594;background:#3b301d;border-color:#b29b62}
+.ir0787-location-political-panel{background:#152320}
+.ir0787-location-political-grid{display:grid;grid-template-columns:minmax(120px,.65fr) minmax(0,1.5fr);gap:12px;margin-top:8px}
+.ir0787-location-political-grid>div{min-width:0;padding:11px;border:1px solid #364a41;border-radius:9px;background:#101b1b}
+.ir0787-location-political-grid>div:first-child{display:flex;flex-direction:column;gap:7px}
+.ir0787-location-political-grid strong{color:#e5e0c9;font-size:12px;overflow-wrap:anywhere}
+.ir0787-location-political-grid small{color:#98aba0;font-size:9px;line-height:1.45}
+.ir0787-field-label{display:block;color:#aebcae;font-size:9px;text-transform:uppercase;letter-spacing:.08em;font-weight:800}
+.ir0787-location-political-grid .ir0787-polity-card{margin-top:8px}
+.ir0787-location-political-grid .ir0787-status-pill{margin-top:5px}
+.ir0787-governance-note{margin:7px 0 0;color:#c8cfbf;font-size:10px}
+.ir0787-node-political{display:flex;align-items:center;justify-content:center;gap:3px;max-width:116px;pointer-events:none}
+.ir0787-map-capital{display:grid;place-items:center;flex:none;width:15px;height:15px;border:1px solid #e0c477;border-radius:50%;background:#3b321f;color:#ffe6a0;font-size:9px;line-height:1;box-shadow:0 1px 5px #0008}
+.ir0787-map-affiliation{display:none;max-width:106px;padding:2px 4px;border:1px solid #70816a;border-radius:5px;background:#1b3028;color:#e2e4c5;font-size:8px;font-weight:800;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;box-shadow:0 2px 5px #0008}
+.ir0787-map-affiliation.unclaimed{border-style:dashed;border-color:#c0a264;color:#f1d99b;background:#382f1e}
+.world-node.current .ir0787-map-affiliation,.world-node.selected .ir0787-map-affiliation,.world-node:hover .ir0787-map-affiliation,.world-node:focus-visible .ir0787-map-affiliation{display:block}
+@media(max-width:760px){.ir0787-polity-list{grid-template-columns:minmax(0,1fr)}.ir0787-location-political-grid{grid-template-columns:minmax(0,1fr)}.ir0787-political-panel .panel-heading{flex-direction:column}.ir0787-map-affiliation{max-width:80px;font-size:7px}.ir0787-node-political{max-width:90px}}
+
+.ir0787-political-legend{display:flex;gap:7px 13px;flex-wrap:wrap;margin-top:12px;padding:8px 10px;border-top:1px solid #33463d;color:#b6c5b9;font-size:9px}
+.ir0787-political-legend span{display:inline-flex;align-items:center;gap:5px}
+.ir0787-political-legend b{font-size:12px;color:#e7cd86}
+
+.ir0787-region-status-list{margin-top:12px;padding:10px;border:1px solid #354b40;border-radius:10px;background:#111e1d}
+.ir0787-region-status-list .ir0787-subhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px;color:#dfd9c0;font-size:10px}
+.ir0787-region-status-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:8px 0;border-top:1px solid #263b34}
+.ir0787-region-status-row>strong{font-size:11px;color:#d9e0d1}
+.ir0787-status-pill.owned{color:#dce8c8;background:#20372d;border-color:#637b56}
+.ir0787-status-pill.governed{color:#d3e0d2;background:#223238;border-color:#637b7d}

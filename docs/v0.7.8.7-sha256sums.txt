@@ -1,0 +1,13 @@
+b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f  release/InfiniteRealms_v0.7.6.6_pre-v0.7.7-baseline.html
+ed6c29b10c64fccfe855f353da3b61a160c74999680dde05c74a3242e115f7e9  release/InfiniteRealms_v0.7.8.6_map-integration-rollback.html
+2e2c092209169aad87f336bf1bc9adc2c6c802a65758f0e71a075f38d1ebb80c  release/InfiniteRealms_v0.7.8.7_accepted_baseline.html
+2e2c092209169aad87f336bf1bc9adc2c6c802a65758f0e71a075f38d1ebb80c  release/InfiniteRealms_v0.7.8.7_standalone.html
+665cfb85b84dd670ee2db54c6bd4b0a2b8425bba1218385f6742bcf046d8eecc  docs/screenshots/v0.7.8.7-generated-political-world.png
+a6e77eb2197e2841b82b2ebb4c0652d4653bbfb162b96ce2ab8cf175c04c0678  docs/screenshots/v0.7.8.7-world-political-index.png
+b1582121d7c4748e9ac468e28ace4ec2111cd694515f43c80750e3f1a877e5c5  docs/screenshots/v0.7.8.7-regional-political-details.png
+b5c6ef998081fccdf6186863f38bdabf7e96ed2a3d4388e2a052f2f34e9321eb  docs/screenshots/v0.7.8.7-world-political-index-mobile.png
+940aadf3d09cad88895ad1edeafcb06e6e15f0036aa7d405bfd1aceb7a415857  docs/screenshots/v0.7.8.7-world-map-switcher-desktop.png
+4aead86a1b4f97a46970ee85e60f8ca3fa07b37a779dd5bb7f6d19ea02f6332e  docs/screenshots/v0.7.8.7-world-map-switcher-mobile.png
+d9a3bc47f55178f6c572d9e42274a262be603e125204ed2a5e538654702c9c87  docs/screenshots/v0.7.8.7-regional-hierarchy-regional-map.png
+b45ac88e775c7260959f765772b0dd19f2c04971d169f4dade8b0427e2fd1bc0  docs/screenshots/v0.7.8.7-route-direct-preview.png
+ad745a937ca10a1e547d696886eb104795ffa01debcac7b7b2e77b494518db82  docs/screenshots/v0.7.8.7-ui-polish-character-status-desktop.png

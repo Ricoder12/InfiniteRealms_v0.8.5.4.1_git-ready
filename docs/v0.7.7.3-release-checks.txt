@@ -1,0 +1,26 @@
+Infinite Realms v0.7.7.3 — release checks
+
+Build: PASS — node build.js -> dist/infinite-realms.html (about 1.1 MiB)
+JavaScript syntax: PASS — 83 files checked with node --check
+Build script syntax: PASS — node --check build.js
+Browser smoke test Python syntax: PASS — python3 -m py_compile tests/v0.7.7.3-browser-smoke.py
+Node regression suites: PASS — 23 / 23 suites, 0 failed
+Focused regional map: PASS — 21 / 21 checks
+Atlas/map model: PASS — 17 / 17 checks
+Historical v0.7.6.6 standalone smoke: PASS — 7 / 7 checks against backups/InfiniteRealms_v0.7.6.6_accepted_baseline.html
+Historical v0.7.7.1 standalone smoke: PASS — 7 / 7 checks against backups/InfiniteRealms_v0.7.7.1_accepted_baseline.html
+Current v0.7.7.3 standalone smoke: PASS — 9 / 9 checks
+Chromium browser smoke: PASS — 17 / 17 checks; 0 uncaught errors
+External script/style references in standalone: none
+Current source project contains accepted v0.7.7.2 baseline: yes
+
+Accepted v0.7.7.2 input SHA-256:
+f3c0e3b8808105a1eb6496dafd5fcc525f21d05fedd6abeb44abbce0bb90ddb3  InfiniteRealms_v0.7.7.2.html
+
+SHA-256 of accepted v0.7.7.2 baseline inside source project:
+f3c0e3b8808105a1eb6496dafd5fcc525f21d05fedd6abeb44abbce0bb90ddb3  backups/InfiniteRealms_v0.7.7.2_accepted_baseline.html
+
+SHA-256 of built v0.7.7.3 standalone:
+53046b0f3dc7d86a42139f583e2125d4f5281f6167126c2de6adf1a2e8b1f415  dist/infinite-realms.html
+
+Boundary of verification: automated tests used deterministic worlds and an in-memory browser storage shim. A user-exported save was not independently opened in this run.

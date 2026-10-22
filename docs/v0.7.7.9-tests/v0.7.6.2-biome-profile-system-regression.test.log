@@ -1,0 +1,91 @@
+{
+  "total": 21,
+  "passed": 21,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "The authoritative registry retains all nine existing biome IDs, including river and woodland",
+      "status": "PASS"
+    },
+    {
+      "name": "Biome source definition has no duplicated top-level registry keys",
+      "status": "PASS"
+    },
+    {
+      "name": "Every biome profile validates with name, description, terrain, conditions, habitats, resources, and safe modifier data",
+      "status": "PASS"
+    },
+    {
+      "name": "All profile resource references resolve to existing item definitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Profile-driven forage and scout resource weights exactly preserve the former per-biome loot arrays",
+      "status": "PASS"
+    },
+    {
+      "name": "Profile gathering pools provide biome-specific material weighting using existing item definitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Gathering availability metadata matches the existing biome/action eligibility rules",
+      "status": "PASS"
+    },
+    {
+      "name": "Gathering awards only from the current biome pool and rejects activities not available at the current site",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing forage-chance modifiers retain their previous values",
+      "status": "PASS"
+    },
+    {
+      "name": "Each profile exposes habitat categories and the existing encounter pool without duplicating enemy definitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Twenty-four generated seed/start combinations contain only resolvable biome profiles and valid geography",
+      "status": "PASS"
+    },
+    {
+      "name": "New generation is byte-for-byte JSON equivalent to v0.7.5.5 world generation for the same seeds and starts",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing or invalid saved biomeId keeps safe display fallback but never supplies fallback loot",
+      "status": "PASS"
+    },
+    {
+      "name": "Known canonical biome display name can recover a profile at runtime while preserving the invalid saved biomeId",
+      "status": "PASS"
+    },
+    {
+      "name": "World validation reports a corrupted biome reference and does not rewrite it",
+      "status": "PASS"
+    },
+    {
+      "name": "Profile resolver does not attach copied profile objects or regenerate site identities",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing normalized v2 save preserves site identities, profile assignments, route data, discovery, and current location",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual forage action consumes profile resources for every existing biome",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual advanced scouting action consumes profile scout resources for every existing biome",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing world map, natural terrain map, adventure panel, and gathering panel resolve canonical biome names",
+      "status": "PASS"
+    },
+    {
+      "name": "Travel context reads source and destination profiles without changing existing travel time or fare formulas",
+      "status": "PASS"
+    }
+  ]
+}

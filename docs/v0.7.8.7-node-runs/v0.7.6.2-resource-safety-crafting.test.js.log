@@ -1,0 +1,67 @@
+{
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Resource integrity validator accepts every supported profile and generated site",
+      "status": "PASS"
+    },
+    {
+      "name": "No resource pool or profile reference points at a missing item definition",
+      "status": "PASS"
+    },
+    {
+      "name": "The profile pools are meaningfully differentiated instead of sharing one generic gathering table",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual gathering resolves the selected site biome rather than a previously visited site",
+      "status": "PASS"
+    },
+    {
+      "name": "A truly invalid biome reference cannot create gathering, forage, or scouting loot",
+      "status": "PASS"
+    },
+    {
+      "name": "A dangling current-location ID cannot fall back to the first site and award its materials",
+      "status": "PASS"
+    },
+    {
+      "name": "Unavailable gathering does not spend time or energy even when called directly",
+      "status": "PASS"
+    },
+    {
+      "name": "Gathering retains the current skill-scaled success check",
+      "status": "PASS"
+    },
+    {
+      "name": "Failed gathering still spends its established time and stamina but awards no material",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual gathering succeeds in every supported biome for every activity declared available",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing field crafting recipe still consumes gathered-compatible inputs and creates a registered output",
+      "status": "PASS"
+    },
+    {
+      "name": "No new inventory items, recipes, item weights, or equipment definitions were introduced",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing character inventories and crafted-item metadata survive save normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy cave mining compatibility resolves to the existing mountain resource profile without rewriting the site ID",
+      "status": "PASS"
+    },
+    {
+      "name": "No biome profile introduces racial-affinity fields or changes existing racial and talent modifiers",
+      "status": "PASS"
+    }
+  ]
+}

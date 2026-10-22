@@ -1,0 +1,24 @@
+.ir0836-overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:15px 0}
+.ir0836-section{min-width:0}
+.ir0836-wide{grid-column:1/-1}
+.ir0836-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ir0836-facts>div,.ir0836-branch,.ir0836-assignment,.ir0836-member-row{padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}
+.ir0836-facts small{display:block;color:var(--muted);font-size:10px;margin-bottom:5px}
+.ir0836-facts strong{font-size:12px;line-height:1.5}
+.ir0836-section h3{font-size:14px;margin:18px 0 9px}
+.ir0836-service-list{padding-left:18px;color:var(--muted);font-size:11px;line-height:1.8}
+.ir0836-branch{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0}
+.ir0836-branch-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ir0836-branch h4{font-size:12px;margin:14px 0 6px}
+.ir0836-gate-reason{display:block;color:var(--gold);margin:8px 0}
+.ir0836-branch p,.ir0836-assignment p{color:var(--muted);font-size:11px;line-height:1.6;margin:5px 0 0}
+.ir0836-service-actions{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.ir0836-service-actions small{max-width:170px;color:var(--muted);font-size:10px}
+.ir0836-assignment{margin:9px 0}
+.ir0836-assignment h4{margin:0;font-size:14px}
+.ir0836-assignment small{display:block;color:var(--muted);margin-top:8px}
+.ir0836-history{padding-left:18px;font-size:11px;line-height:1.9;color:var(--muted)}
+.ir0836-member-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:11px}
+.ir0836-member-row span{color:var(--muted)}
+@media(max-width:850px){.ir0836-overview-grid{grid-template-columns:1fr}.ir0836-wide{grid-column:auto}}
+@media(max-width:560px){.ir0836-facts{grid-template-columns:1fr}.ir0836-branch{align-items:flex-start;flex-direction:column}.ir0836-branch-head{align-items:flex-start;flex-direction:column}.ir0836-service-actions{justify-content:flex-start}}

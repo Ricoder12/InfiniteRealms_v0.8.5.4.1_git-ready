@@ -1,0 +1,43 @@
+# Infinite Realms v0.7.8.7 — Changed Files
+
+## Runtime / presentation
+- index.html
+- css/political-map-v0.7.8.7.css (new)
+- js/game/55-world-political-generation-v0.7.8.6.js (corrected deterministic generation and legacy-save path)
+- js/game/56-political-map-integration-v0.7.8.7.js (new political map/location integration)
+- js/game/44-world-map-v0.7.7.2.js (clarifies that boundary polygons are absent without claiming political entities are absent)
+
+## Tests added or updated
+- tests/v0.7.8.6-world-political-generation.test.js (expanded generator integrity and legacy initialization checks)
+- tests/v0.7.8.7-political-map-integration.test.js (new)
+- tests/v0.7.8.7-political-map-browser.py (new)
+- tests/v0.7.8.7-political-map-ui-browser.py (new)
+- tests/v0.7.5.4-gameplay-integration.test.js (validates nested region references rather than requiring all sites to remain in the root region)
+- tests/v0.7.6.2-biome-profile-system-regression.test.js (updates full-world comparisons for additive hierarchy/political metadata only)
+- tests/v0.7.6.3-environmental-hazards.test.js (updates additive world-metadata assumptions only)
+- tests/v0.7.7.3-regional-map.test.js
+- tests/v0.7.7.3-world-map.test.js
+- tests/v0.7.7.4-local-map.test.js
+- tests/v0.7.7.7-ui-polish.test.js
+- tests/v0.7.7.9-final-acceptance.test.js
+- tests/v0.7.8.2-political-entity-foundation.test.js
+- tests/v0.7.8.3-regional-hierarchy.test.js
+- tests/v0.7.8.5-government-leadership-capitals.test.js
+- tests/v0.7.8.7-political-map-integration.test.js (new)
+- tests/v0.7.8.3-regional-hierarchy-browser.py (adjusted current-version outputs and generated-hierarchy expectations)
+- tests/v0.7.8.3-save-compatibility-browser.py (adjusted current-version outputs and legacy polity initialization expectations)
+- tests/v0.7.8.3-travel-browser.py (adjusted current-version outputs and labels)
+
+## Release documentation and evidence
+- README.md
+- docs/v0.7.8.7-* release summaries, manifests, regression logs, syntax logs, browser logs, and screenshots
+- docs/screenshots/v0.7.8.7-* actual Chromium screenshots
+- backups/InfiniteRealms_v0.7.8.6_pre-map-integration.html
+
+Note: The ZIP also retains historical project files and earlier release records so the source project remains independently inspectable.
+
+## Packaged standalone and rollback artifacts
+- release/InfiniteRealms_v0.7.8.7_standalone.html
+- release/InfiniteRealms_v0.7.8.7_accepted_baseline.html
+- release/InfiniteRealms_v0.7.8.6_map-integration-rollback.html
+- release/InfiniteRealms_v0.7.6.6_pre-v0.7.7-baseline.html

@@ -1,0 +1,119 @@
+{
+  "product": "Infinite Realms",
+  "version": "0.7.8.3",
+  "release_name": "Regional Hierarchy",
+  "starting_version": "0.7.8.2",
+  "starting_version_sha256": "233d9537b55c504ac91882ae150d16d2857eca8c621385b6b6755e68223a9737",
+  "pre_v0_7_7_comparison_baseline": "0.7.6.6",
+  "implementation_scope": "Explicit nested geographic-region metadata and separate political ownership/governance references. Existing locations and route records remain authoritative; no gameplay, route graph, or save schema changes.",
+  "formal_save_migration": false,
+  "artifacts": {
+    "standalone": {
+      "file": "InfiniteRealms_v0.7.8.3_standalone.html",
+      "bytes": 1277063,
+      "sha256": "39858b2b84d61506e3e094165b378d759f77dce4e67ed1bee53d17a1a07db43f"
+    },
+    "accepted_baseline": {
+      "file": "InfiniteRealms_v0.7.8.3_accepted_baseline.html",
+      "bytes": 1277063,
+      "sha256": "39858b2b84d61506e3e094165b378d759f77dce4e67ed1bee53d17a1a07db43f"
+    },
+    "rollback_v0.7.8.2": {
+      "file": "InfiniteRealms_v0.7.8.2_rollback.html",
+      "bytes": 1250671,
+      "sha256": "233d9537b55c504ac91882ae150d16d2857eca8c621385b6b6755e68223a9737"
+    },
+    "pre_v0.7.7_baseline_v0.7.6.6": {
+      "file": "InfiniteRealms_v0.7.6.6_pre-v0.7.7-baseline.html",
+      "bytes": 1049474,
+      "sha256": "b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f"
+    },
+    "regional_hierarchy_module": {
+      "file": "53-regional-hierarchy-v0.7.8.3.js",
+      "bytes": 26373,
+      "sha256": "19c67a14671bab0012bb12f2c2b1cd0833f1d421b693791082edf847901f0948"
+    },
+    "schema_report": {
+      "file": "v0.7.8.3-regional-schema.md",
+      "bytes": 5760,
+      "sha256": "1eb9d162fe188ddf0440bd22ba485e3b30592da13b52517523fdca814deb35ab"
+    },
+    "test_report": {
+      "file": "v0.7.8.3-test-report.md",
+      "bytes": 5146,
+      "sha256": "0d19f4e03a5046b76fb73971183a331acc2779b034f4dcf52ab455d8a515cb7e"
+    }
+  },
+  "screenshots": [
+    {
+      "file": "v0.7.8.3-legacy-save-character-desktop.png",
+      "bytes": 618586,
+      "sha256": "09c7808358b336f7f5455eef2a21f3cfb4b70baf9a4d2e10c3c36bc1abf76f6d"
+    },
+    {
+      "file": "v0.7.8.3-legacy-save-map-desktop.png",
+      "bytes": 773318,
+      "sha256": "4c8754c3d1d5ace60a1c607760bac7e410937c8c6c55557f4ef9a4cd9d6fdbef"
+    },
+    {
+      "file": "v0.7.8.3-local-map-desktop.png",
+      "bytes": 895561,
+      "sha256": "1a0ea2a69ae797b901ea04aa915216dfb45b493e8bf783f814f4247263708949"
+    },
+    {
+      "file": "v0.7.8.3-regional-hierarchy-regional-map.png",
+      "bytes": 2099159,
+      "sha256": "07533d2a499787d3b844c893f3991ee5e13b6d40764f88998bb194f75ab955f2"
+    },
+    {
+      "file": "v0.7.8.3-regional-hierarchy-world-map.png",
+      "bytes": 949216,
+      "sha256": "c6a0780f0c7027eaaf0638a7adca18cbe64b8a1eb7fe012570ca027519bb2cbf"
+    },
+    {
+      "file": "v0.7.8.3-regional-map-selected-desktop.png",
+      "bytes": 838740,
+      "sha256": "c9ab0da50dd98e0af19c0387e1cc29512706a7a67e8f35e8dce7a55b64d05aa5"
+    },
+    {
+      "file": "v0.7.8.3-route-direct-preview.png",
+      "bytes": 223835,
+      "sha256": "eb04873040366ab349945710dc48520cfb8d33d502b92023558423fb6bd134be"
+    },
+    {
+      "file": "v0.7.8.3-route-multileg-preview.png",
+      "bytes": 272941,
+      "sha256": "65719578b60949d500be4e1cd90798427c3323d9acb9d5fae40cb3299375092e"
+    },
+    {
+      "file": "v0.7.8.3-ui-polish-character-status-desktop.png",
+      "bytes": 187981,
+      "sha256": "ed609f18423d52f8c625f99bc4ac5ebb16b0856f06138195ac6e7568a84def60"
+    },
+    {
+      "file": "v0.7.8.3-world-map-switcher-desktop.png",
+      "bytes": 763964,
+      "sha256": "735369d522013b968299653c27da4da79a34ca783462d403344d6d49096c6a2d"
+    },
+    {
+      "file": "v0.7.8.3-world-map-switcher-mobile.png",
+      "bytes": 201124,
+      "sha256": "0250c51f7fb64cbd1bada3c315d5311157920e852df7943c50b2bc41533da5e5"
+    }
+  ],
+  "validation": {
+    "focused_regional_hierarchy_unit_tests": "27/27 passed",
+    "node_regression_files": "30/30 passed; 262/262 counted assertions passed",
+    "chromium_browser_assertions": "68/68 passed across regional hierarchy (15), save compatibility (21), travel (10), and UI (22)",
+    "standalone_smoke_suites": "3/3 passed; 24/24 counted checks",
+    "javascript_syntax": "99/99 passed including build.js",
+    "python_test_script_syntax": "15/15 passed",
+    "standalone_build": "passed",
+    "source_zip_integrity": "525 entries tested; no errors detected (verified separately after archive creation)"
+  },
+  "known_limitations": [
+    "No user-exported player save was supplied; compatibility tests use accepted older builds and deterministic extensive-exploration fixtures.",
+    "No political or regional content is seeded; child regions are data records only.",
+    "The current canonical physical world remains one primary world.region container with metadata-only subregions."
+  ]
+}

@@ -1,0 +1,27 @@
+Production source changed/added:
+- index.html
+- README.md
+- js/game/54-government-leadership-capitals-v0.7.8.5.js [new]
+- dist/infinite-realms.html [rebuilt]
+
+New feature tests:
+- tests/v0.7.8.5-government-leadership-capitals.test.js [new]
+- tests/v0.7.8.5-government-leadership-capitals-browser.py [new]
+
+Additional v0.7.8.5 browser regression runners/logs copied/updated for this candidate:
+- tests/v0.7.8.5-save-compatibility-browser.py
+- tests/v0.7.8.5-regional-hierarchy-browser.py
+- tests/v0.7.8.5-ui-polish-browser.py
+- tests/v0.7.8.5-travel-browser.py
+
+Historical test expectation updates:
+- tests/v0.7.7.3-regional-map.test.js
+- tests/v0.7.7.4-local-map.test.js
+- tests/v0.7.7.9-final-acceptance.test.js
+- tests/v0.7.7.3-standalone-smoke.js
+- tests/v0.7.7.3-world-map.test.js
+- tests/v0.7.7.7-ui-polish.test.js
+
+Release/audit docs and browser logs are listed in docs/v0.7.8.5-*. The candidate baseline discrepancy is recorded in docs/v0.7.8.5-baseline-qualification.md.
+docs/v0.7.8.5-manual-acceptance-checklist.md
+README.md (adds manual acceptance checklist link)

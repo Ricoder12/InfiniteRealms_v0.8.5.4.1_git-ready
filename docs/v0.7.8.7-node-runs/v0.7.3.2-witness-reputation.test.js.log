@@ -1,0 +1,8 @@
+PASS: unwitnessed NPC harm is private and keeps personal consequences
+PASS: witnessed penalty is independent of witness count; murder escalation is applied once
+PASS: eligible victim report applies the incident penalty once
+PASS: unrelated NPC cannot report a secret event
+PASS: legacy crime rows remain reportable without replacing their identity
+PASS: a bystander arriving before death can witness the fatal act without retroactively exposing the assault
+PASS: generic enemy victory does not receive a public crime penalty
+PASS: save schema remains compatible and version metadata advances

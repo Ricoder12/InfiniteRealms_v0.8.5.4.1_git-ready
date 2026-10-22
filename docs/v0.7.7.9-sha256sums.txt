@@ -1,0 +1,19 @@
+SHA-256 checksums — Infinite Realms v0.7.7.9 Final Regression and Acceptance
+These paths are relative to this source project root.
+
+62a08fa292029dd6a8442ea6a26b591f224c788c4712d70bb5d7b383cadbdd9c  dist/infinite-realms.html
+62a08fa292029dd6a8442ea6a26b591f224c788c4712d70bb5d7b383cadbdd9c  backups/InfiniteRealms_v0.7.7.9_accepted_baseline.html
+77293b2e249a309b9ca293c5ffeb0aaa3c52905bf4a661e0b673a83215f53453  backups/InfiniteRealms_v0.7.7.8_accepted_baseline.html
+b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f  backups/InfiniteRealms_v0.7.6.6_accepted_baseline.html
+d1e87c1c9913848963d06126221f710780ba8dc3021e6705b78664d6fcb7a016  docs/screenshots/v0.7.7.9-world-map-switcher-desktop.png
+111e49f11aa2ddc1d80688ad0515e07d7256547d382b7d24bae5e9b597247c7d  docs/screenshots/v0.7.7.9-world-map-switcher-mobile.png
+d0b2538427b35b1329382354cbf90322ffe4d95b71544cdc9e63d068976f3d60  docs/screenshots/v0.7.7.9-regional-map-selected-desktop.png
+430b1126cda6eb0e25ec987dbc9bf454bade9a19d802e2882e2f3d8c8d2cf4bc  docs/screenshots/v0.7.7.9-local-regression-local-settlement.png
+cb51cfdf98a08065ecab15d84df011c2ef66b3841eaa4aaa18e51e91ca08e8a0  docs/screenshots/v0.7.7.9-travel-preview-direct.png
+58836f8da32878e84f119aab6a7cf6fb42f54e0c839122fdb3c879f267429132  docs/screenshots/v0.7.7.9-character-status-desktop.png
+b09a5e26e38a5034b8719ddf1af6955295fb6e7b37d2ce36aa2114a4f752bffe  docs/screenshots/v0.7.7.9-character-status-mobile.png
+6fb4eaa50a58eb0490e3783b01bf4edfb96c69d9c245f663ebb6f983472c1e76  docs/screenshots/v0.7.7.9-legacy-save-character-desktop.png
+789ac977af70465bf18b63e591f30aff1c67cb620cb783de4594250fec5c5e65  docs/v0.7.7.9-final-test-report.md
+103e3cc55eabe832931abcd6d483c0f17cbefec694e4b43ff58af3679c6bd3e6  docs/v0.7.7.9-test-limitations.md
+c7eb9798c3e2803deb622697b18308a2210456bc0157d7700d97ce317dbeb673  docs/v0.7.7.9-baseline-comparison.md
+6c953419154ddb643293ed3e3e8922dbe71116e12bad0e362e294992cca64b7d  docs/v0.7.7.9-final-browser-test-summary.json

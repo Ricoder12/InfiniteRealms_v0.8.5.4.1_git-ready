@@ -1,0 +1,47 @@
+{
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Same seed and starting circumstance produce identical worlds",
+      "status": "PASS"
+    },
+    {
+      "name": "Different seeds change generated content",
+      "status": "PASS"
+    },
+    {
+      "name": "Generator creates exactly 49 sites",
+      "status": "PASS"
+    },
+    {
+      "name": "Site IDs are unique within one generated world",
+      "status": "PASS"
+    },
+    {
+      "name": "IDs, linear indexes, rows and columns agree with the 7x7 layout",
+      "status": "PASS"
+    },
+    {
+      "name": "All 49 sites are reachable from the start for each existing circumstance (audit seed)",
+      "status": "PASS"
+    },
+    {
+      "name": "Global route edges reference valid site-array indexes",
+      "status": "PASS"
+    },
+    {
+      "name": "Global edges agree with symmetric per-site route entries",
+      "status": "PASS"
+    },
+    {
+      "name": "All four circumstances initialize current, visited, known and discovered state",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy static REGIONS IDs differ from generated loc-* IDs",
+      "status": "PASS"
+    }
+  ]
+}

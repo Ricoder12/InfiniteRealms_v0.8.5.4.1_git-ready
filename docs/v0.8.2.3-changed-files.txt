@@ -1,0 +1,10 @@
+index.html
+js/game/64-guild-membership-v0.8.2.3.js
+tests/v0.8.2.3-guild-membership.test.js
+tests/v0.7.7.3-regional-map.test.js
+tests/v0.7.7.3-world-map.test.js
+tests/v0.7.7.3-standalone-smoke.js
+tests/v0.7.7.4-local-map.test.js
+tests/v0.7.7.7-ui-polish.test.js
+tests/v0.7.7.9-final-acceptance.test.js
+tests/v0.7.9.6-standalone-smoke.test.js

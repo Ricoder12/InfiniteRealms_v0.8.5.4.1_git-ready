@@ -1,0 +1,31 @@
+{
+  "total": 6,
+  "passed": 6,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Full application script sequence generates a world accepted by both geographic validators",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing travel action changes location, marks the destination visited, and records discovery",
+      "status": "PASS"
+    },
+    {
+      "name": "Route-triggered encounter uses an existing event definition without corrupting geographic references",
+      "status": "PASS"
+    },
+    {
+      "name": "Gathering still reads the authoritative current site biome and awards a material",
+      "status": "PASS"
+    },
+    {
+      "name": "Location-based NPC and occupation systems reuse generated settlements without duplicate resident IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Local point-of-interest discovery remains tied to its existing site record",
+      "status": "PASS"
+    }
+  ]
+}

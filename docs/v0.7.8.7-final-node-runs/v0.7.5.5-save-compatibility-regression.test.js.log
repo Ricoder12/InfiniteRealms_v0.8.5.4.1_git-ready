@@ -1,0 +1,63 @@
+{
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "New-world generation passes stable-ID, geographic hierarchy, biome, settlement-index, and route checks",
+      "status": "PASS"
+    },
+    {
+      "name": "A save produced by the actual v0.7.3.6 source migrates without losing valid character progression or map history",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated normalization preserves world and site IDs, custom location changes, discoveries, and route state",
+      "status": "PASS"
+    },
+    {
+      "name": "Broken current pointer recovers only to the latest saved valid visited location and records the reason",
+      "status": "PASS"
+    },
+    {
+      "name": "Unrecoverable current pointer produces an explicit notice instead of silent location substitution",
+      "status": "PASS"
+    },
+    {
+      "name": "Broken journal location is kept as an unresolved source reference, not reassigned to the current place",
+      "status": "PASS"
+    },
+    {
+      "name": "A stale local stable destination is repaired only when legacy route.to uniquely resolves",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid stable global route endpoint is not redirected to unrelated numeric-index endpoints",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate legacy location IDs are not arbitrarily merged or used to resolve a broken pointer",
+      "status": "PASS"
+    },
+    {
+      "name": "Geographic index rebuild preserves unrelated extension fields and remains idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "Integrity validator detects invalid biome IDs and mismatched settlement/POI reference indexes without mutating source",
+      "status": "PASS"
+    },
+    {
+      "name": "Production persist writes a real serialized save to the storage shim and normalized reload retains geographic and character state",
+      "status": "PASS"
+    },
+    {
+      "name": "Character creation and thirty-day time advancement retain the current map and geographic references",
+      "status": "PASS"
+    },
+    {
+      "name": "NPC relationship, trust, memory, public reputation, inventory, equipment, and job state survive geography normalization",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Build: PASS — node build.js
+Node regression: PASS — 41 of 41 *.test.js suites
+JavaScript syntax: PASS — 76 of 76 source files
+Standalone smoke: PASS — three scripts; 54 embedded blocks, 7 checks, and 10 checks
+Browser UI/manual interaction: NOT TESTED
+Screenshots: NOT CAPTURED
+Legacy user-exported saves: NOT TESTED (production autosave/load normalization path covered by focused test)
+Focused membership: PASS — inquiry/no relationship mutation; eligibility; join/repeated join; inspect; another-faction rejection; combat and pending-event blocks; leave confirmation/repeat; save/load; public reputation and relationship preservation

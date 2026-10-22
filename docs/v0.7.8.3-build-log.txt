@@ -1,0 +1,3 @@
+Command: node build.js
+Result: Built dist/infinite-realms.html (1244 KB)
+Exit status: 0

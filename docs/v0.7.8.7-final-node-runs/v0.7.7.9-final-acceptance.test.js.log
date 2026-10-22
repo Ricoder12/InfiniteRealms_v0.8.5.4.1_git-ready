@@ -1,0 +1,12 @@
+PASS: Current v0.7.8.7 metadata retains prior layers and political map integration
+PASS: Political map presentation loads after generated political data and before boot
+PASS: Acceptance branding layer runs after compatibility/UI layers and political foundation before boot
+PASS: World, regional, local maps share the prior canonical data layer
+PASS: Map views and character status avoid adding gameplay/save migrations
+PASS: Map state replacement resets transient selection without replacing valid geography
+PASS: Travel integration delegates to existing route/travel code
+PASS: Character summary reads from existing character/equipment data
+PASS: UI polish uses existing map view controls and Character addendum
+PASS: Compatibility defaults are conservative and idempotent
+PASS: No external framework/CDN added by v0.7.7.9 acceptance
+SUMMARY 11/11 PASS; 0 FAIL

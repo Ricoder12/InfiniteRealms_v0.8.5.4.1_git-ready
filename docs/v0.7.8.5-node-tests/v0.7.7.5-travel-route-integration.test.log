@@ -1,0 +1,88 @@
+{
+  "suite": "Infinite Realms v0.7.7.5 Travel and Route Integration",
+  "total": 20,
+  "passed": 20,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Generated route records resolve only when canonical global edge and endpoint copies agree",
+      "status": "PASS"
+    },
+    {
+      "name": "Every travel distance stays in gameplay kilometres and the existing transport day formula",
+      "status": "PASS"
+    },
+    {
+      "name": "A global route missing from region.routes cannot be traversed just because both local copies remain",
+      "status": "PASS"
+    },
+    {
+      "name": "A conflicting endpoint distance makes the edge unavailable instead of trusting stale local data",
+      "status": "PASS"
+    },
+    {
+      "name": "Conflicting transport availability or terrain metadata fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate canonical edges are ambiguous and cannot create a direct travel option",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicitly directed edges can only be travelled in their recorded direction",
+      "status": "PASS"
+    },
+    {
+      "name": "Direct travel preview and execution use the same distance, duration, energy cost, and arrival location",
+      "status": "PASS"
+    },
+    {
+      "name": "Direct danger estimate uses the existing location risks and transport modifier only",
+      "status": "PASS"
+    },
+    {
+      "name": "Terrain labels do not silently add an unsupported travel-time modifier",
+      "status": "PASS"
+    },
+    {
+      "name": "A multi-leg destination uses a verified path with every leg backed by the same graph",
+      "status": "PASS"
+    },
+    {
+      "name": "A multi-leg journey follows its plan and consumes exactly the displayed total when uninterrupted",
+      "status": "PASS"
+    },
+    {
+      "name": "A disconnected destination cannot be reached from visibility alone and consumes no resources or time",
+      "status": "PASS"
+    },
+    {
+      "name": "A segment interrupted by insufficient energy preserves only completed legs and costs no energy for the next one",
+      "status": "PASS"
+    },
+    {
+      "name": "A triggered encounter interrupts a multi-leg journey after its completed leg without corrupting the next leg",
+      "status": "PASS"
+    },
+    {
+      "name": "A thrown direct-travel operation rolls back location, time, and resources",
+      "status": "PASS"
+    },
+    {
+      "name": "Save normalization and slot save/load preserve arrived location and authoritative graph data",
+      "status": "PASS"
+    },
+    {
+      "name": "The map-facing regional and local route lists read verified canonical connections, not corrupt local-only entries",
+      "status": "PASS"
+    },
+    {
+      "name": "Direct travel preview does not reveal a known-but-unsurveyed destination name or exact danger",
+      "status": "PASS"
+    },
+    {
+      "name": "Multi-leg travel preview masks known-but-unsurveyed intermediate names and their terrain labels",
+      "status": "PASS"
+    }
+  ]
+}

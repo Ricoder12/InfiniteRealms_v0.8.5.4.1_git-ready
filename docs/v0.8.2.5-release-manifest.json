@@ -1,0 +1,19 @@
+{
+  "version": "0.8.2.5",
+  "startingSource": "Accepted v0.8.2.4",
+  "standaloneFile": "InfiniteRealms_v0.8.2.5_standalone.html",
+  "standaloneSha256": "F8F72357C00187DFF72195225C84262A2507522E8A6DB31E3E2A37A5BDC8EBB0",
+  "sourceArchive": "InfiniteRealms_v0.8.2.5_source.zip",
+  "rollbackV0_8_2_4": {
+    "standaloneSha256": "F5C335F708E0C556A40E6694FD9E84D57CA1679D0C697681D6AB2F05F6A985F9",
+    "sourceZipSha256": "7C66CC9A9D43C3A1B2AD66475C55F40CB551E023B2DAD1126298F602DEEE9063"
+  },
+  "results": {
+    "nodeRegression": "43/43 PASS",
+    "javascriptSyntax": "78/78 PASS",
+    "build": "PASS",
+    "standaloneSmoke": "3 scripts PASS (22/22 checks)",
+    "browser": "NOT TESTED",
+    "userExportedSave": "NOT TESTED"
+  }
+}

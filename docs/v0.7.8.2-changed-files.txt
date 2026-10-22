@@ -1,0 +1,46 @@
+# Infinite Realms v0.7.8.2 — Changed Files
+
+## Production files changed or added
+- index.html — current release title and load of v0.7.8.2 module before boot.
+- js/game/52-political-entity-foundation-v0.7.8.2.js — new registry/defaulting/model/factory/validator layer and release branding.
+- dist/infinite-realms.html — rebuilt standalone from the source project.
+- README.md — current release details, validation summary and historical v0.7.7.8 notes.
+
+## Tests added
+- tests/v0.7.8.2-political-entity-foundation.test.js — 17 focused Node assertions.
+- tests/v0.7.8.2-political-entity-browser.py — 24 actual Chromium browser checks.
+
+## Existing tests updated
+- tests/v0.7.6.2-biome-profile-system-regression.test.js — the generation-equivalence test now ignores only the new empty world.polities property, and explicitly checks that the registry has no seeded records.
+- tests/v0.7.6.3-environmental-hazards.test.js — the saved-world generation comparison allows only the additive empty political registry.
+- tests/v0.7.7.3-regional-map.test.js — current release title expectation updated to v0.7.8.2.
+- tests/v0.7.7.3-world-map.test.js — current release title expectation updated to v0.7.8.2.
+- tests/v0.7.7.3-standalone-smoke.js — current release title expectation updated to v0.7.8.2.
+- tests/v0.7.7.4-local-map.test.js — current release title expectation updated to v0.7.8.2.
+- tests/v0.7.7.7-ui-polish.test.js — current standalone title expectation updated to v0.7.8.2.
+- tests/v0.7.7.9-final-acceptance.test.js — validates preservation of the historical v0.7.7.9 acceptance layer and the v0.7.8.2 current module/load order.
+
+## Release documentation and evidence added
+- docs/v0.7.8.1-world-data-audit.md — prior audit reference.
+- docs/v0.7.8.1-audit-test-results.txt — prior audit test results.
+- docs/v0.7.8.1-node-regression-log.txt — prior audit regression log.
+- docs/v0.7.8.2-political-entity-schema.md — schema and reference ownership contract.
+- docs/v0.7.8.2-change-log.md — change summary.
+- docs/v0.7.8.2-test-report.md — final test report and limitations.
+- docs/v0.7.8.2-rollback.md — rollback instructions.
+- docs/v0.7.8.2-node-regression-log.txt — final 29-file Node regression log.
+- docs/v0.7.8.2-political-entity-browser-run.txt — Chromium run output.
+- docs/v0.7.8.2-save-compatibility-browser-log.json — machine-readable browser report.
+- docs/v0.7.8.2-js-syntax-check-log.txt and docs/v0.7.8.2-js-syntax-check-summary.txt.
+- docs/v0.7.8.2-python-syntax-check-log.txt and docs/v0.7.8.2-python-syntax-check-summary.txt.
+- docs/v0.7.8.2-standalone-smoke-log.txt.
+- docs/v0.7.8.2-build-log.txt.
+- docs/v0.7.8.2-release-manifest.json.
+- docs/v0.7.8.2-sha256sums.txt.
+- docs/screenshots/v0.7.8.2-legacy-save-character-desktop.png.
+- docs/screenshots/v0.7.8.2-legacy-save-map-desktop.png.
+
+## Preserved baselines
+- backups/InfiniteRealms_v0.7.7.9_accepted_baseline.html — unchanged; SHA-256 62a08fa292029dd6a8442ea6a26b591f224c788c4712d70bb5d7b383cadbdd9c.
+- backups/InfiniteRealms_v0.7.7.7_accepted_baseline.html — unchanged.
+- backups/InfiniteRealms_v0.7.6.6_accepted_baseline.html — unchanged.

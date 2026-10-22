@@ -1,0 +1,75 @@
+{
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "World atlas model reads the actual primary region and never fabricates extra regions",
+      "status": "PASS"
+    },
+    {
+      "name": "Optional continent/country/geography fields may be absent without crashing",
+      "status": "PASS"
+    },
+    {
+      "name": "World atlas only lists the actual region and never lists undiscovered locations by name",
+      "status": "PASS"
+    },
+    {
+      "name": "Known biome summary is derived only from known/visited/discovered site records",
+      "status": "PASS"
+    },
+    {
+      "name": "Current location is always part of visible map data and is highlighted in the atlas",
+      "status": "PASS"
+    },
+    {
+      "name": "Visited settlement/landmark index excludes unvisited settlement and landmark records",
+      "status": "PASS"
+    },
+    {
+      "name": "Opening regional view changes only session UI state, not saved world geography",
+      "status": "PASS"
+    },
+    {
+      "name": "Returning to atlas is a separate UI action and does not mutate discovery progress",
+      "status": "PASS"
+    },
+    {
+      "name": "Location inspection selects an actual known geoId without triggering travel or advancing time",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional map removes undiscovered markers and turns visible markers into inspection-only buttons",
+      "status": "PASS"
+    },
+    {
+      "name": "Paid-intelligence marker remains visible without making unrelated hidden sites visible",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional location card separates inspection from route-based travel",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional renderer does not disclose hidden destination markers, names, biome identities, or coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional map positions edge markers with inset labels",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed/missing optional site hierarchy does not make map model throw",
+      "status": "PASS"
+    },
+    {
+      "name": "Map model remains consistent across different generated regional seeds",
+      "status": "PASS"
+    },
+    {
+      "name": "Atlas and regional layers remain ordered before v0.7.7.4 local layer and boot",
+      "status": "PASS"
+    }
+  ]
+}

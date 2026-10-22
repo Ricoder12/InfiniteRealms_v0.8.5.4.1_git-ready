@@ -1,0 +1,19 @@
+Infinite Realms v0.7.7.4 artifact manifest
+Generated after final build and browser/regression test run.
+
+Standalone release SHA-256:
+8b391d0aac6b22d7dc7109354ff4990efd721c6a15bf31b9fedbac78cc43be8c  InfiniteRealms_v0.7.7.4.html
+
+Accepted v0.7.7.3 rollback SHA-256:
+53046b0f3dc7d86a42139f583e2125d4f5281f6167126c2de6adf1a2e8b1f415  InfiniteRealms_v0.7.7.4_backup.html
+
+Accepted source baseline SHA-256:
+53046b0f3dc7d86a42139f583e2125d4f5281f6167126c2de6adf1a2e8b1f415  backups/InfiniteRealms_v0.7.7.3_accepted_baseline.html
+
+Local map module SHA-256:
+6180e89ffafc66b3c2fc1bdfd6ae728b34efe5e22ba7a0a6d4e2dc3932cd7e9e  js/game/46-local-map-v0.7.7.4.js
+
+Build log: docs/v0.7.7.4-build-log.txt
+Node tests: docs/v0.7.7.4-test-run-log.txt (24 suites, 0 failed)
+Browser tests: docs/v0.7.7.4-browser-test-run.txt (14/14 passed)
+Syntax checks: docs/v0.7.7.4-syntax-check-log.txt (86 checked, 0 failed)

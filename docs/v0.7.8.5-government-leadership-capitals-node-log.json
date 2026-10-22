@@ -1,0 +1,99 @@
+{
+  "total": 23,
+  "passed": 23,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Government type list contains the requested descriptive options",
+      "status": "PASS"
+    },
+    {
+      "name": "Political record factory preserves government metadata and existing capital reference",
+      "status": "PASS"
+    },
+    {
+      "name": "All supported government types validate",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown government type is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Government description and leader title must be strings when supplied",
+      "status": "PASS"
+    },
+    {
+      "name": "Complete entity resolves existing NPC name without creating another NPC",
+      "status": "PASS"
+    },
+    {
+      "name": "Partial entity metadata remains valid without capital, government, or leader",
+      "status": "PASS"
+    },
+    {
+      "name": "Entity with no capital and no ruler is valid when its geographic anchor exists",
+      "status": "PASS"
+    },
+    {
+      "name": "Optional missing government fields are not inserted as fake values",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing active NPC is referenced by ID instead of copied into political data",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing location-generated NPC is resolved through the existing v06 persistence overlay",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing ruler reference is rejected when full character context is available",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate NPC IDs are ambiguous and never silently cloned",
+      "status": "PASS"
+    },
+    {
+      "name": "Capital must reference a unique existing settlement",
+      "status": "PASS"
+    },
+    {
+      "name": "Capital outside explicitly owned/governed territory is rejected when territory is known",
+      "status": "PASS"
+    },
+    {
+      "name": "Capital within an explicitly owned child region validates",
+      "status": "PASS"
+    },
+    {
+      "name": "Capital location is allowed when no territorial ownership data exists yet",
+      "status": "PASS"
+    },
+    {
+      "name": "Controlled region counts use only explicit owner/governor links and do not infer parentage",
+      "status": "PASS"
+    },
+    {
+      "name": "Controlled region count is unknown rather than falsely reporting zero without explicit territory links",
+      "status": "PASS"
+    },
+    {
+      "name": "Capital and leader summary lookup is non-mutating",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated save normalization preserves capital, government, and leader references",
+      "status": "PASS"
+    },
+    {
+      "name": "No NPC, site, route, or geographic registry is created by leadership metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "Summary returns null for missing or ambiguous political IDs",
+      "status": "PASS"
+    }
+  ]
+}

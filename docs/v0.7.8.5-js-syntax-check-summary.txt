@@ -1,0 +1,1 @@
+JavaScript syntax: 100 files under js/ and tests/ passed; build.js passed.

@@ -1,0 +1,31 @@
+===== tests/v0.7.6.6-standalone-smoke.js =====
+PASS	Standalone contains no external script or stylesheet dependencies
+PASS	Standalone title resolves to v0.7.6.6
+PASS	Integrated biome ecology registry validates
+PASS	All 72 racial affinity cells resolve
+PASS	All monster habitat profiles validate
+PASS	Standalone world generation creates a valid 49-site world
+PASS	Invalid biome blocks random encounter without rewriting the saved biome
+SCRIPT_BLOCKS=54
+===== tests/v0.7.7.1-standalone-smoke.js =====
+PASS	standalone has no external script/style links
+PASS	title is v0.7.7.1
+PASS	shared map data module is embedded
+PASS	stable geoId resolver is embedded
+PASS	connection resolver is embedded
+PASS	no new map renderer is embedded
+PASS	application boot remains after shared map data module
+CHECKS=7 PASS=7 FAIL=0
+===== tests/v0.7.7.3-standalone-smoke.js =====
+PASS	standalone has no external script/style references
+PASS	document title advertises current release v0.7.7.6
+PASS	shared map data module remains embedded
+PASS	interactive world atlas model and renderer are embedded
+PASS	v0.7.7.2 regional base and v0.7.7.3 accuracy renderer are embedded
+PASS	regional inspection, local detail, and local illustrated scene are embedded
+PASS	v0.7.7.5 travel module uses the authoritative route graph for direct and multi-leg travel
+PASS	map CSS is bundled
+PASS	accepted v0.7.7.1 content remains available as exact backup
+PASS	shared data → atlas → regional → local scene → travel integration → boot order is preserved
+CHECKS=10 PASS=10 FAIL=0
+Standalone smoke suites: 3/3 passed

@@ -1,0 +1,12 @@
+v0.7.8.6 focused tests: 11/11 passed
+PASS: generates coherent political records for populated regions
+PASS: political and region IDs are unique and valid
+PASS: capitals refer only to existing settlements in the owning region
+PASS: physical site IDs, coordinates, terrain, routes, and per-site routes remain identical
+PASS: political IDs are not written into geographic countryId fields
+PASS: same seed produces identical political records and assignments
+PASS: existing political records are retained on repeat invocation
+PASS: different seed remains valid without changing physical geography
+PASS: legacy-save initialization adds politics without repartitioning valid root assignments
+PASS: undersized worlds safely skip political generation
+PASS: invalid pre-existing regional assignment fails without partial generation

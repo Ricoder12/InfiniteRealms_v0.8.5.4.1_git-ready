@@ -1,0 +1,17 @@
+index.html
+js/game/63-guild-services-v0.8.2.2.js
+js/game/64-guild-membership-v0.8.2.3.js
+js/game/65-guild-contract-board-v0.8.2.4.js
+js/game/66-guild-reputation-integration-v0.8.2.5.js (new)
+tests/v0.7.7.3-regional-map.test.js
+tests/v0.7.7.3-world-map.test.js
+tests/v0.7.7.3-standalone-smoke.js
+tests/v0.7.7.4-local-map.test.js
+tests/v0.7.7.7-ui-polish.test.js
+tests/v0.7.7.9-final-acceptance.test.js
+tests/v0.7.9.6-standalone-smoke.test.js
+tests/v0.8.2.5-guild-reputation-integration.test.js (new)
+docs/v0.8.2.5-guild-reputation-integration-report.md (new)
+docs/v0.8.2.5-changed-files.txt (new)
+docs/v0.8.2.5-validation-log.txt (new)
+docs/v0.8.2.5-release-manifest.json (new)

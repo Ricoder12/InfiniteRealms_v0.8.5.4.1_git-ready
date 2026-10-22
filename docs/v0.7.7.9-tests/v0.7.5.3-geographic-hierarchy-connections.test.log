@@ -1,0 +1,63 @@
+{
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Existing world, region, sites, and route IDs from v0.7.5.2 are reused",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated world has a versioned geography model without creating continent/country content",
+      "status": "PASS"
+    },
+    {
+      "name": "Every current site resolves to the authoritative region and has valid nullable geographic parents",
+      "status": "PASS"
+    },
+    {
+      "name": "Settlement and landmark indexes reference existing sites without copying names, biome labels, or coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "Wilderness and uninhabited sites are valid without settlement or POI parents",
+      "status": "PASS"
+    },
+    {
+      "name": "All global route endpoints and local route destinations resolve",
+      "status": "PASS"
+    },
+    {
+      "name": "A valid isolated location with no outgoing routes is permitted",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing current location, known locations, visited locations, and discoveries remain accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "Connections preserve existing travel properties and directionality metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate connection endpoints are detected without removing or altering connections",
+      "status": "PASS"
+    },
+    {
+      "name": "Dangling route endpoints and parent references are detected",
+      "status": "PASS"
+    },
+    {
+      "name": "Parent cycles are rejected by validation",
+      "status": "PASS"
+    },
+    {
+      "name": "Save/load JSON round-trip preserves current location, discovery, geography references, and stable IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Geography normalization is idempotent and does not duplicate reference indexes",
+      "status": "PASS"
+    }
+  ]
+}

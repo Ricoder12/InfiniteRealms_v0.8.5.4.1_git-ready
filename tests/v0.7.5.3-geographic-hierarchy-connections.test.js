@@ -1,0 +1,35 @@
+'use strict';
+// v0.7.5.3 geography integrity tests. Run: node tests/v0.7.5.3-geographic-hierarchy-connections.test.js
+const fs = require('node:fs');
+const vm = require('node:vm');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..');
+const context = { console, Math, String, Array, Object, Map, Set, Number, JSON, RegExp,
+  clamp: (n, min, max) => Math.max(min, Math.min(max, n)),
+  normalizeSave: input => input, state: null };
+vm.createContext(context);
+for (const relative of ['js/data/world.js', 'js/data/backgrounds.js', 'js/game/02-worldgen-v0.2.js', 'js/game/33-stable-geographic-identifiers-v0.7.5.2.js', 'js/game/34-geographic-hierarchy-connections-v0.7.5.3.js']) {
+  vm.runInContext(fs.readFileSync(path.join(root, relative), 'utf8'), context, { filename: relative });
+}
+const results = [];
+function test(name, fn) { try { const result = fn(); results.push({ name, status: result ? 'PASS' : 'FAIL' }); } catch (e) { results.push({ name, status: 'FAIL', detail: e.message }); } }
+const generate = (seed='GEO-HIERARCHY') => context.generateProceduralWorld(seed);
+const stringify = value => JSON.stringify(value);
+
+test('Existing world, region, sites, and route IDs from v0.7.5.2 are reused', () => { const w=generate(); return w.id.startsWith('world-') && w.region.id===`region:${w.id}:primary` && w.region.sites.every(s=>s.geoId===`site:${w.id}:${s.id}`) && w.region.routes.every(r=>r.geoId && r.fromGeoId && r.toGeoId); });
+test('Generated world has a versioned geography model without creating continent/country content', () => { const w=generate(); return w.geographicHierarchyVersion===1 && w.geography.schemaVersion===1 && Array.isArray(w.continents) && w.continents.length===0 && Array.isArray(w.countries) && w.countries.length===0 && w.geography.regionIds.length===1; });
+test('Every current site resolves to the authoritative region and has valid nullable geographic parents', () => { const w=generate(); return w.region.sites.every(s=>s.regionId===w.region.id && s.continentId===null && s.countryId===null); });
+test('Settlement and landmark indexes reference existing sites without copying names, biome labels, or coordinates', () => { const w=generate(), sites=new Map(w.region.sites.map(s=>[s.geoId,s])); return w.geography.settlementRefs.every(r=>sites.get(r.siteGeoId)?.settlementId===r.id && !('name' in r) && !('biome' in r) && !('x' in r)) && w.geography.pointOfInterestRefs.every(r=>sites.get(r.siteGeoId)?.pointOfInterestId===r.id && !('name' in r) && !('biome' in r) && !('x' in r)) && w.geography.biomeIds.every(id=>w.region.sites.some(s=>s.biomeId===id)); });
+test('Wilderness and uninhabited sites are valid without settlement or POI parents', () => { const w=generate(), wild=w.region.sites.find(s=>s.type==='wilderness'); return !!wild && !wild.settlementId && !wild.pointOfInterestId && context.irValidateGeographicHierarchy(w).ok; });
+test('All global route endpoints and local route destinations resolve', () => { const w=generate(), report=context.irValidateGeographicHierarchy(w); return report.ok && w.region.routes.every(r=>w.region.sites.some(s=>s.geoId===r.fromGeoId) && w.region.sites.some(s=>s.geoId===r.toGeoId)) && w.region.sites.every(s=>s.routes.every(r=>w.region.sites.some(t=>t.id===r.to))); });
+test('A valid isolated location with no outgoing routes is permitted', () => { const w=generate(), isolated=w.region.sites.find(s=>s.id!==w.siteId); isolated.routes=[]; w.region.routes=w.region.routes.filter(r=>r.fromGeoId!==isolated.geoId&&r.toGeoId!==isolated.geoId); for (const site of w.region.sites) site.routes=site.routes.filter(r=>r.to!==isolated.id); return context.irValidateGeographicHierarchy(w).ok && isolated.routes.length===0 && !w.region.routes.some(r=>r.fromGeoId===isolated.geoId||r.toGeoId===isolated.geoId); });
+test('Existing current location, known locations, visited locations, and discoveries remain accessible', () => { const w=generate(); return w.region.sites.some(s=>s.id===w.siteId) && w.known.every(id=>w.region.sites.some(s=>s.id===id)) && w.visited.every(id=>w.region.sites.some(s=>s.id===id)) && w.journal.discoveries.every(d=>!d.siteId || w.region.sites.some(s=>s.id===d.siteId)); });
+test('Connections preserve existing travel properties and directionality metadata', () => { const base=vm.runInContext("ir0753GenerateBase('CONNECTION-COMPAT')",context), current=generate('CONNECTION-COMPAT'); const clean=w=>({edges:w.region.routes.map(({geoId,fromGeoId,toGeoId,directed,...e})=>e),local:w.region.sites.map(s=>s.routes.map(({geoId,toGeoId,directed,...r})=>r)),siteId:w.siteId,known:w.known,visited:w.visited}); return stringify(clean(base))===stringify(clean(current)) && current.region.routes.every(r=>r.directed===false); });
+test('Duplicate connection endpoints are detected without removing or altering connections', () => { const w=generate(), count=w.region.routes.length; w.region.routes.push({...w.region.routes[0],geoId:'duplicate-connection'}); const report=context.irValidateGeographicHierarchy(w); return !report.ok && report.errors.some(e=>e.includes('Duplicate connection endpoints')) && w.region.routes.length===count+1; });
+test('Dangling route endpoints and parent references are detected', () => { const w=generate(); w.region.routes[0].toGeoId='site:missing'; w.region.continentId='continent:missing'; const report=context.irValidateGeographicHierarchy(w); return !report.ok && report.errors.some(e=>e.includes('toGeoId')) && report.errors.some(e=>e.includes('continentId')); });
+test('Parent cycles are rejected by validation', () => { const w=generate(); w.continents.push({id:'continent:a',parentId:'country:b'}); w.countries.push({id:'country:b',parentId:'continent:a'}); const report=context.irValidateGeographicHierarchy(w); return !report.ok && report.errors.some(e=>e.includes('Circular geographic parent chain')); });
+test('Save/load JSON round-trip preserves current location, discovery, geography references, and stable IDs', () => { const original=generate('GEO-SAVE-LOAD'); original.visited.push(original.region.sites[0].id); original.known.push(original.region.sites[0].id); original.region.sites[0].discovered=true; const restored=JSON.parse(JSON.stringify(original)); context.irEnsureGeographicHierarchy(restored); const report=context.irValidateGeographicHierarchy(restored); return report.ok && restored.siteId===original.siteId && stringify(restored.visited)===stringify(original.visited) && restored.region.sites[0].discovered===true && restored.id===original.id && stringify(restored.region.routes.map(r=>r.geoId))===stringify(original.region.routes.map(r=>r.geoId)); });
+test('Geography normalization is idempotent and does not duplicate reference indexes', () => { const w=generate(); const first=stringify(w.geography); context.irEnsureGeographicHierarchy(w); return stringify(w.geography)===first && context.irValidateGeographicHierarchy(w).ok; });
+const failed=results.filter(x=>x.status==='FAIL');
+console.log(JSON.stringify({total:results.length,passed:results.length-failed.length,failed:failed.length,tests:results},null,2));
+if(failed.length) process.exitCode=1;

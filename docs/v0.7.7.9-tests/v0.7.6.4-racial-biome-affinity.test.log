@@ -1,0 +1,21 @@
+PASS	All eight existing races have a valid, documented affinity definition
+PASS	All 72 race-by-biome cells resolve, including neutral outcomes
+PASS	Each race-biome pair matches its intended affinity level and modifier values
+PASS	Strong affinity gives +4 percentage points and one point of recurring hazard energy reduction
+PASS	Familiar affinity is smaller and does not reduce hazard effects
+PASS	Human adaptability stays small and does not grant hazard reduction in every biome
+PASS	Dwarf legacy mining bonus is not double-counted by affinity
+PASS	Neutral race-biome combinations have no modifiers and remain valid
+PASS	Unknown race receives neutral modifiers and does not inherit human adaptability
+PASS	Strong affinity reduces only the energy component of an existing hazard
+PASS	Human affinity does not erase cold hazard health or energy effects
+PASS	Familiar affinity does not reduce recurring hazard energy loss
+PASS	Survival or existing armor mitigation still takes precedence without duplicate affinity effects
+PASS	Affinity feedback is visible on existing World and Adventure views without changing time or resources
+PASS	Every affinity remains informational and does not block any gathering method or exploration action
+PASS	Actual gathering continues through the established resource validation and action path
+PASS	Strong biome affinity changes an actual gathering outcome by the documented chance bonus
+PASS	Old characters and saves need no affinity migration or stored affinity state
+PASS	Invalid biome references safely receive no affinity modifier
+PASS	Affinity registry remains within documented modifier bounds
+SUMMARY 20/20 PASS

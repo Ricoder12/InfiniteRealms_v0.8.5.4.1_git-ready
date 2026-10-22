@@ -1,0 +1,51 @@
+{
+  "total": 11,
+  "passed": 11,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Several new worlds across seeds and starting circumstances have valid geographic IDs and parent references",
+      "status": "PASS"
+    },
+    {
+      "name": "New generation is gameplay-equivalent to the v0.7.5.3 generator for the same seed",
+      "status": "PASS"
+    },
+    {
+      "name": "Same seed remains deterministic for site layout, biomes, settlement placement, and connections",
+      "status": "PASS"
+    },
+    {
+      "name": "Every generated travel graph is connected and route endpoint references resolve",
+      "status": "PASS"
+    },
+    {
+      "name": "Geographic integration is idempotent and does not duplicate sites, routes, or index references",
+      "status": "PASS"
+    },
+    {
+      "name": "Valid saved v2 map is reused instead of regenerated and retains custom location and route state",
+      "status": "PASS"
+    },
+    {
+      "name": "A v2 save created before geography fields existed is enriched in place without replacing its sites or routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated save/reload cycles do not duplicate geographic records or NPC schedule records",
+      "status": "PASS"
+    },
+    {
+      "name": "Current location, visited and known state, site discovery, and journal entries survive a normalized reload",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid saved route endpoints reject reuse and fall back to a valid seeded world",
+      "status": "PASS"
+    },
+    {
+      "name": "Settlement identity and biome references remain indexes into the authoritative generated site records",
+      "status": "PASS"
+    }
+  ]
+}

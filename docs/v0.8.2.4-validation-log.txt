@@ -1,0 +1,8 @@
+Build: PASS — node build.js
+Node regression: PASS — 42 of 42 *.test.js suites
+JavaScript syntax: PASS — 77 of 77 source files
+Standalone smoke: PASS — three scripts; 54 embedded blocks, 7 checks, and 10 checks
+Focused contract acceptance: PASS — guild-scoped offer identity; membership gate; no-available state; objective/requirement display; repeat-click protection; combat/event rejection; stable persistence; old save without new field; no reward/time/inventory/standing/reputation changes; existing job hiring.
+Browser UI/manual interaction: NOT TESTED
+Screenshots: NOT CAPTURED
+User-exported legacy saves: NOT TESTED (production autosave/load normalization path tested)

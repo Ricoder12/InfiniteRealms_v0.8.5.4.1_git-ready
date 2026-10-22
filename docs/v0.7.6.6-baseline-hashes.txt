@@ -1,0 +1,7 @@
+Infinite Realms v0.7.6.6 baseline and output hashes
+
+Accepted v0.7.6.5 standalone: e072f3cdfb9698a52226db0411837909539afbab7a96e037c1387f2718b5d07d
+v0.7.6.5 rollback copy in this package: see final build log (must match accepted v0.7.6.5 hash)
+v0.7.6.6 standalone output: recorded after final build in InfiniteRealms_v0.7.6.6_Build_Log.txt
+
+Prior standalone builds v0.7.5.5, v0.7.6.1, v0.7.6.2, v0.7.6.3, v0.7.6.4, and v0.7.6.5 were not edited by this task. Their current SHA-256 values are listed in the final build log for verification.

@@ -1,0 +1,21 @@
+PASS	Hazard registry validates and only references existing biome IDs
+PASS	World generation output is exactly unchanged from the accepted v0.7.6.2 source
+PASS	Snow exposure activates only in risky wilderness, not low-risk sites or settlements
+PASS	Seven simulated exposed days apply one modest cold tick and advance the ledger once
+PASS	Hazard effects never reduce health below one
+PASS	Survival skill mitigates cold exposure
+PASS	Equipped existing armor mitigates cold exposure without adding gear
+PASS	Desert heat drains modest energy without adding hydration or health damage
+PASS	Mountain, swamp, forest, and coast hazards activate only at configured risk
+PASS	Rendering world/adventure and reopening views does not advance or apply hazards
+PASS	Low-risk settlement time progression has no environmental penalty
+PASS	Legacy saves without hazard fields load with safe defaults and no retroactive ticks
+PASS	Repeated save normalization preserves hazard counters without replaying effects
+PASS	Hazard warnings are available for current-site and travel-preview UI without mutation
+PASS	Invalid biome references safely receive no hazard
+PASS	Current World and Adventure views visibly warn about an active hazard
+PASS	Travel route preview warns before entering or crossing a hazardous area
+PASS	Actual travel progression can apply exposure once before leaving a hazardous site
+PASS	Rest in a hazardous area remains a reliable recovery option
+PASS	Zero-day advancement cannot trigger exposure
+SUMMARY 20/20 PASS

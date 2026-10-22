@@ -1,0 +1,28 @@
+{
+  "version": "0.8.2.3",
+  "startingSource": "Accepted v0.8.2.2",
+  "standaloneFile": "InfiniteRealms_v0.8.2.3_standalone.html",
+  "standaloneSha256": "EB0E4E4A204D2C16DC5245C85A0FF43F8D42DF7B9C90202E8F3B3C5C745B7F11",
+  "sourceArchive": "InfiniteRealms_v0.8.2.3_source.zip",
+  "sourceFiles": [
+    "index.html",
+    "build.js",
+    "README.md",
+    "AUDIT_BASELINE_MANIFEST.md",
+    "css/",
+    "js/",
+    "tests/",
+    "docs/"
+  ],
+  "results": {
+    "nodeRegression": "41/41 PASS",
+    "userExportedSave": "NOT TESTED",
+    "standaloneSmoke": "3 scripts PASS",
+    "javascriptSyntax": "76/76 PASS",
+    "browser": "NOT TESTED"
+  },
+  "rollbackVerifiedV0_8_2_2": {
+    "standaloneSha256": "26ED740A9E31BE195C892568A3AEB4CBA8BCEB73DE6BD4F49399F8A41ECD10ED",
+    "sourceZipSha256": "4EFCDED8132DCBDAEFEA6D7464CF682F524EC1E471AE0D54C5A6C549C651FE1D"
+  }
+}

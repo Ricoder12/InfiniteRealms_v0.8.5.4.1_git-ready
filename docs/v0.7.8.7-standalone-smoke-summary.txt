@@ -1,0 +1,1 @@
+Standalone smoke suites: 3/3 passed; 24/24 explicit checks passed; 0 failures; additional coverage: 54 embedded script blocks inspected.

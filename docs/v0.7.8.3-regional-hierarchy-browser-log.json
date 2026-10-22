@@ -1,0 +1,84 @@
+{
+  "suite": "v0.7.8.7 Regional Hierarchy browser integration",
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "browserErrors": [],
+  "tests": [
+    {
+      "name": "Standalone title identifies v0.7.8.7",
+      "status": "PASS",
+      "detail": "Infinite Realms \u2014 Version 0.7.8.7"
+    },
+    {
+      "name": "Fresh game has stable primary region, generated child regions and validated political data",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Full geographic hierarchy validator passes for generated world",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Subregion uses stable ID and explicit parent while political owner/governor remain separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Region index and political foundation recognize generated and added nested regions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Settlement resolves to its assigned geographic region",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Regional assignment does not duplicate or modify route records or location IDs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Unclaimed region works with null ownership and still resolves its location",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Geographic resolution remains available even when political reference is invalid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Explicit unresolved location reference is reported without guessing a replacement",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Location assignment helper can repair an unresolved region reference",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "World, regional, and local renderers keep geography and routes unchanged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "UI still renders World view after nested regional data is present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Save normalization roundtrip preserves hierarchy, regional assignments, and politics",
+      "status": "PASS",
+      "detail": "{\"subregions\":[{\"id\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:67-65-6e-65-72-61-74-65-64-2d-74-65-72-72-69-74-6f-72-79-2d-31\",\"parentRegionId\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:primary\",\"owner\":\"polity:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:67-65-6e-65-72-61-74-65-64-2d-72-65-67-69-6f-6e-3a-77-6f-72-6c-64-2d-35-32-2d-34-35-2d-34-37-2d-34-39-2d-34-66-2d-34-65-2d-34-31-2d-34-63-2d-32-64-2d-34-38-2d-34-39-2d-34-35-2d-35-32-2d-34-31-2d-35-32-2d-34-33-2d-34-38-2d-35-39-2d-32-64-2d-34-32-2d-35-32-2d-34-66-2d-35-37-2d-35-33-2d-34-35-2d-35-32-3a-73-75-62-3a-36-37-2d-36-35-2d-36-65-2d-36-35-2d-37-32-2d-36-31-2d-37-34-2d-36-35-2d-36-34-2d-32-64-2d-37-34-2d-36-35-2d-37-32-2d-37-32-2d-36-39-2d-37-34-2d-36-66-2d-37-32-2d-37-39-2d-32-64-2d-33-31\",\"governor\":\"polity:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:67-65-6e-65-72-61-74-65-64-2d-72-65-67-69-6f-6e-3a-77-6f-72-6c-64-2d-35-32-2d-34-35-2d-34-37-2d-34-39-2d-34-66-2d-34-65-2d-34-31-2d-34-63-2d-32-64-2d-34-38-2d-34-39-2d-34-35-2d-35-32-2d-34-31-2d-35-32-2d-34-33-2d-34-38-2d-35-39-2d-32-64-2d-34-32-2d-35-32-2d-34-66-2d-35-37-2d-35-33-2d-34-35-2d-35-32-3a-73-75-62-3a-36-37-2d-36-35-2d-36-65-2d-36-35-2d-37-32-2d-36-31-2d-37-34-2d-36-35-2d-36-34-2d-32-64-2d-37-34-2d-36-35-2d-37-32-2d-37-32-2d-36-39-2d-37-34-2d-36-66-2d-37-32-2d-37-39-2d-32-64-2d-33-31\"},{\"id\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:67-65-6e-65-72-61-74-65-64-2d-74-65-72-72-69-74-6f-72-79-2d-32\",\"parentRegionId\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:primary\",\"owner\":\"polity:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:67-65-6e-65-72-61-74-65-64-2d-72-65-67-69-6f-6e-3a-77-6f-72-6c-64-2d-35-32-2d-34-35-2d-34-37-2d-34-39-2d-34-66-2d-34-65-2d-34-31-2d-34-63-2d-32-64-2d-34-38-2d-34-39-2d-34-35-2d-35-32-2d-34-31-2d-35-32-2d-34-33-2d-34-38-2d-35-39-2d-32-64-2d-34-32-2d-35-32-2d-34-66-2d-35-37-2d-35-33-2d-34-35-2d-35-32-3a-73-75-62-3a-36-37-2d-36-35-2d-36-65-2d-36-35-2d-37-32-2d-36-31-2d-37-34-2d-36-35-2d-36-34-2d-32-64-2d-37-34-2d-36-35-2d-37-32-2d-37-32-2d-36-39-2d-37-34-2d-36-66-2d-37-32-2d-37-39-2d-32-64-2d-33-32\",\"governor\":\"polity:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:67-65-6e-65-72-61-74-65-64-2d-72-65-67-69-6f-6e-3a-77-6f-72-6c-64-2d-35-32-2d-34-35-2d-34-37-2d-34-39-2d-34-66-2d-34-65-2d-34-31-2d-34-63-2d-32-64-2d-34-38-2d-34-39-2d-34-35-2d-35-32-2d-34-31-2d-35-32-2d-34-33-2d-34-38-2d-35-39-2d-32-64-2d-34-32-2d-35-32-2d-34-66-2d-35-37-2d-35-33-2d-34-35-2d-35-32-3a-73-75-62-3a-36-37-2d-36-35-2d-36-65-2d-36-35-2d-37-32-2d-36-31-2d-37-34-2d-36-35-2d-36-34-2d-32-64-2d-37-34-2d-36-35-2d-37-32-2d-37-32-2d-36-39-2d-37-34-2d-36-66-2d-37-32-2d-37-39-2d-32-64-2d-33-32\"},{\"id\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:67-65-6e-65-72-61-74-65-64-2d-74-65-72-72-69-74-6f-72-79-2d-33\",\"parentRegionId\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:primary\",\"owner\":\"polity:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:67-65-6e-65-72-61-74-65-64-2d-72-65-67-69-6f-6e-3a-77-6f-72-6c-64-2d-35-32-2d-34-35-2d-34-37-2d-34-39-2d-34-66-2d-34-65-2d-34-31-2d-34-63-2d-32-64-2d-34-38-2d-34-39-2d-34-35-2d-35-32-2d-34-31-2d-35-32-2d-34-33-2d-34-38-2d-35-39-2d-32-64-2d-34-32-2d-35-32-2d-34-66-2d-35-37-2d-35-33-2d-34-35-2d-35-32-3a-73-75-62-3a-36-37-2d-36-35-2d-36-65-2d-36-35-2d-37-32-2d-36-31-2d-37-34-2d-36-35-2d-36-34-2d-32-64-2d-37-34-2d-36-35-2d-37-32-2d-37-32-2d-36-39-2d-37-34-2d-36-66-2d-37-32-2d-37-39-2d-32-64-2d-33-33\",\"governor\":\"polity:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:67-65-6e-65-72-61-74-65-64-2d-72-65-67-69-6f-6e-3a-77-6f-72-6c-64-2d-35-32-2d-34-35-2d-34-37-2d-34-39-2d-34-66-2d-34-65-2d-34-31-2d-34-63-2d-32-64-2d-34-38-2d-34-39-2d-34-35-2d-35-32-2d-34-31-2d-35-32-2d-34-33-2d-34-38-2d-35-39-2d-32-64-2d-34-32-2d-35-32-2d-34-66-2d-35-37-2d-35-33-2d-34-35-2d-35-32-3a-73-75-62-3a-36-37-2d-36-35-2d-36-65-2d-36-35-2d-37-32-2d-36-31-2d-37-34-2d-36-35-2d-36-34-2d-32-64-2d-37-34-2d-36-35-2d-37-32-2d-37-32-2d-36-39-2d-37-34-2d-36-66-2d-37-32-2d-37-39-2d-32-64-2d-33-33\"},{\"id\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:62-72-6f-77-73-65-72-2d-72-69-76-65-72-2d-76-61-6c-6c-65-79\",\"parentRegionId\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:primary\",\"owner\":\"polity:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:62-72-6f-77-73-65-72-2d-6b-69-6e-67-64-6f-6d\",\"governor\":\"polity:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:62-72-6f-77-73-65-72-2d-65-6d-70-69-72-65\"},{\"id\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:62-72-6f-77-73-65-72-2d-75-6e-63-6c-61-69-6d-65-64-2d-77-6f-6f-64\",\"parentRegionId\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:primary\",\"owner\":null,\"governor\":null}],\"siteRegion\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:62-72-6f-77-73-65-72-2d-72-69-76-65-72-2d-76-61-6c-6c-65-79\",\"expectedChild\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:62-72-6f-77-73-65-72-2d-72-69-76-65-72-2d-76-61-6c-6c-65-79\",\"unclaimedSiteRegion\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:62-72-6f-77-73-65-72-2d-75-6e-63-6c-61-69-6d-65-64-2d-77-6f-6f-64\",\"expectedUnclaimed\":\"region:world-52-45-47-49-4f-4e-41-4c-2d-48-49-45-52-41-52-43-48-59-2d-42-52-4f-57-53-45-52:sub:62-72-6f-77-73-65-72-2d-75-6e-63-6c-61-69-6d-65-64-2d-77-6f-6f-64\",\"routesSame\":true,\"regional\":{\"ok\":true,\"errors\":[],\"warnings\":[],\"counts\":{\"regions\":6,\"subregions\":5,\"sites\":49}},\"political\":{\"ok\":true,\"errors\":[],\"warnings\":[],\"counts\":{\"polities\":5,\"uniqueIds\":5,\"geographicRegions\":6,\"geographicSites\":49}}}"
+    },
+    {
+      "name": "Duplicate region IDs are rejected by the validator",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

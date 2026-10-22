@@ -1,0 +1,29 @@
+PASS	All 16 established enemies and bosses have valid habitat profile entries
+PASS	Every canonical profile biome refers to a currently supported IR_BIOMES key
+PASS	All per-biome encounter-table entries match their declared habitat profiles
+PASS	Every supported biome retains at least one normal encounter and one suitable hunt target
+PASS	Desert no longer lists a mismatched slime; bandit, caravan thief and dryland boar remain
+PASS	River habitats now agree with the existing river encounter list for wolves and spiders
+PASS	All nine existing raw biome pools remain accessible through the established API
+PASS	No ordinary biome pool includes a guardian, dragon, or settlement guard
+PASS	Boss metadata retains separate dungeon and major-warning contexts
+PASS	Uncontrolled rank-3 and rank-4 threats are gated from low-risk beginner encounters
+PASS	Uncontrolled rank-3 and rank-4 threats are gated from low-combat characters even in risky areas
+PASS	Qualified character in dangerous mountain terrain can encounter compatible higher threats
+PASS	High threats still fail habitat checks outside their biomes
+PASS	Repeated random selections stay within habitat and threat constraints
+PASS	Actual random selector never returns a habitat-incompatible enemy across all nine biomes
+PASS	Actual random fallback never chooses rank-3/4 enemies for a beginner in risky mountains
+PASS	Settlement encounters retain the existing high-reputation roadside mix
+PASS	Settlement guard encounter remains tied to the existing negative-reputation safeguard
+PASS	Actual scouting encounter selection uses the filtered local habitat and beginner safeguard
+PASS	Actual hunting still finds a suitable target in each biome including desert
+PASS	Life-path trail event selects only a habitat-valid hunt target
+PASS	Explicit dungeon boss start and victory path remain unchanged
+PASS	Existing hunt victory still delivers combat rewards, hunt trophy and slime materials
+PASS	Combat templates retain existing danger and reward statistics
+PASS	Habitat profiles are runtime rules only and do not add save-schema fields
+PASS	World generation remains stable because habitat data adds no world-generation effects
+PASS	No new enemy species are defined or added by habitat integration
+PASS	Habitat registry reports no structural errors after initialization
+SUMMARY 28/28 PASS

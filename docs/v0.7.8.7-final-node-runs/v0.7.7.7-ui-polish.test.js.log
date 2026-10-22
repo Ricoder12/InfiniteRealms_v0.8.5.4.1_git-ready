@@ -1,0 +1,53 @@
+{
+  "suite": "Infinite Realms v0.7.7.7 UI polish integration",
+  "total": 9,
+  "passed": 9,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Standalone entry point uses the v0.7.8.7 release title",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Scoped polish stylesheet loads with the map stylesheet",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Unified map UI module loads after Character status and before application boot",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All three map view actions are implemented and use existing map-scope state",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "View controls expose accessible state and native button interactions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Existing renderers are wrapped instead of replacing map geometry or travel mechanics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Focused keyboard states and disabled map controls have scoped styles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Character meters and travel estimates use tabular numeric displays",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Responsive and reduced-motion rules avoid unnecessary animation",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

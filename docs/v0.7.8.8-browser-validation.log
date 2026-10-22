@@ -1,0 +1,4 @@
+Browser integration suites: NOT TESTED.
+The available in-app browser security policy blocks local file URLs and explicitly disallows reaching the same local build through an alternate route.
+Browser screenshots for v0.7.8.8: NOT CAPTURED. Screenshots retained in the source archive are inherited v0.7.8.7 evidence and are not represented as v0.7.8.8 screenshots.
+Browser test scripts remain included in the complete source archive.

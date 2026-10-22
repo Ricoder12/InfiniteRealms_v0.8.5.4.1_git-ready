@@ -1,0 +1,15 @@
+PASS: relevant help improves one favor only once
+PASS: broken promise penalizes a relevant favor without being erased by public reputation
+PASS: unrelated gift memory does not create a favor bonus
+PASS: memory on a different NPC cannot affect this NPC
+PASS: serious unresolved harm can block the affected NPC favor only
+PASS: innkeeper with a personal grievance withholds optional rumor
+PASS: guard information is detailed only when relationship context supports it
+PASS: scholar detail comes from an existing record rather than invented lore
+PASS: relevant hunting cooperation improves one target lead once
+PASS: contextual decisions do not delete or rewrite original memory records
+PASS: context-use ledger persists through save normalization without changing schema
+PASS: innkeeper still shares a rumor when context allows it
+PASS: a plain-language broken promise is recognized as a personal grievance
+PASS: relevant help permits one optional rumor at low reputation, not repeated access from the same memory
+v0.7.3.5 contextual favors/information tests: 14 checks passed

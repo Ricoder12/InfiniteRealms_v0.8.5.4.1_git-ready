@@ -1,0 +1,16 @@
+# Final Browser Rerun Summary — v0.7.7.9
+
+Browser suites: 10
+Checks: 155/155 passed; 0 failed
+
+All ten suites below were run individually after the transient timeout from the earlier combined-run attempt.
+- World/Regional/Local map smoke: 17/17 passed; 0 failed — `docs/v0.7.7.9-world-map-browser-log.json`
+- Local map smoke: 14/14 passed; 0 failed — `docs/v0.7.7.9-local-map-browser-log.json`
+- Travel route preview: 10/10 passed; 0 failed — `docs/v0.7.7.9-travel-preview-browser-log.json`
+- Character status smoke: 15/15 passed; 0 failed — `docs/v0.7.7.9-character-smoke-browser-log.json`
+- Unified map/Character UI polish: 22/22 passed; 0 failed — `docs/v0.7.7.9-ui-polish-browser-log.json`
+- Character status regression: 15/15 passed; 0 failed — `docs/v0.7.7.9-character-browser-regression.json`
+- Regional map regression: 17/17 passed; 0 failed — `docs/v0.7.7.9-regional-browser-test-log.json`
+- Local map regression: 14/14 passed; 0 failed — `docs/v0.7.7.9-local-browser-regression.json`
+- Travel regression: 10/10 passed; 0 failed — `docs/v0.7.7.9-travel-browser-regression.json`
+- Save compatibility integration: 21/21 passed; 0 failed — `docs/v0.7.7.9-save-compatibility-browser-log.json`

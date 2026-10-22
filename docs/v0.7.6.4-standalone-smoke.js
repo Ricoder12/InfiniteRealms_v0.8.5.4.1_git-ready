@@ -1,0 +1,11 @@
+const fs=require('node:fs'),vm=require('node:vm');
+const html=fs.readFileSync(require('node:path').join(__dirname,'..','dist','infinite-realms.html'),'utf8');
+const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)].map(m=>m[1]).filter(x=>x.trim());
+const noop=()=>{};const el=()=>({textContent:'',innerHTML:'',style:{},dataset:{},appendChild:noop,remove:noop,click:noop,focus:noop,classList:{add:noop,remove:noop,toggle:noop,contains:()=>false},matches:()=>false,closest:()=>null});
+const document={title:'',head:{appendChild:noop},body:el(),addEventListener:noop,querySelector:()=>null,querySelectorAll:()=>[],getElementById:()=>null,createElement:el};
+const localStorage={getItem:()=>null,setItem:noop,removeItem:noop};const ctx={console,document,window:{addEventListener:noop,scrollTo:noop},localStorage,setTimeout:()=>0,clearTimeout:noop,requestAnimationFrame:noop,URL,Blob,FileReader:function(){},navigator:{userAgent:'standalone-smoke'},Math:Object.create(Math),Date,String,Array,Object,Map,Set,Number,JSON,RegExp,Intl,parseInt,parseFloat};vm.createContext(ctx);
+for(const [i,code] of scripts.slice(0,-1).entries())vm.runInContext(code,ctx,{filename:`inline-${i}`});
+vm.runInContext("createSeed='STANDALONE-AFFINITY';createStart='settlement';state=makeInitial('Standalone Tester','orc','village');const s=state.world.region.sites[0];s.biomeId='snow';s.biome=IR_BIOMES.snow.name;s.risk=50;s.type='wilderness';s.settlementType=null;s.services=[];state.world.siteId=s.id;state.character.skills.Survival.level=1;state.character.equipment={weapon:null,armor:null,offhand:null};state.character.health=80;state.character.energy=80;dayPass(7,'smoke');",ctx);
+const result=vm.runInContext("({affinity:ir0764AffinityForSite(state.character.race,ir0763CurrentSite()).level,hazards:Object.keys(IR_V0763_BIOME_HAZARDS).length,affinityValid:irValidateRacialBiomeAffinities().ok,days:state.character.daysLived,hp:state.character.health,energy:state.character.energy,ledger:state.world.v0763Hazards.appliedThroughDay,title:document.title})",ctx);
+console.log(JSON.stringify({scriptCount:scripts.length,...result}));
+if(scripts.length!==52||result.affinity!=='strong'||result.hazards!==6||!result.affinityValid||result.days!==7||result.hp!==79||result.energy!==80||result.ledger!==7||!result.title.includes('0.7.6.4'))process.exit(1);

@@ -1,0 +1,115 @@
+{
+  "total": 27,
+  "passed": 27,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Existing primary region remains the canonical geographic and route container",
+      "status": "PASS"
+    },
+    {
+      "name": "New worlds default to no subregions and no political owner/government",
+      "status": "PASS"
+    },
+    {
+      "name": "Region stable IDs depend on world ID and logical key, not names or array positions",
+      "status": "PASS"
+    },
+    {
+      "name": "Subregion creation stores one metadata record and an explicit parent reference",
+      "status": "PASS"
+    },
+    {
+      "name": "Nested subregions can have a parent below the primary region",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate region IDs are rejected without adding a second region",
+      "status": "PASS"
+    },
+    {
+      "name": "Geographic parent reference must match structural nesting",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing optional parent reference defaults to the containing parent during normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "Locations resolve to explicit child regions while remaining in the single canonical site registry",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing location regionId safely resolves to the primary region for legacy data",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit unresolved location regionId remains untouched and is reported",
+      "status": "PASS"
+    },
+    {
+      "name": "Valid nested regional assignments do not create a false save-migration change",
+      "status": "PASS"
+    },
+    {
+      "name": "Save preparation preserves only uniquely valid nested region assignments",
+      "status": "PASS"
+    },
+    {
+      "name": "Unclaimed region resolves geographically when political refs are null",
+      "status": "PASS"
+    },
+    {
+      "name": "Separate owner and governing references validate against political entity IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Unresolved political owner and governor are reported without breaking geographic resolution",
+      "status": "PASS"
+    },
+    {
+      "name": "Political foundation accepts an entity anchored to a nested geographic region",
+      "status": "PASS"
+    },
+    {
+      "name": "Region assignment rejects invalid target IDs without mutating a location",
+      "status": "PASS"
+    },
+    {
+      "name": "Location region assignment can repair an explicit unresolved region reference without changing routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Subregions cannot introduce duplicate site or route registries",
+      "status": "PASS"
+    },
+    {
+      "name": "Country and continent references are validated independently of regional parentage",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy save adds hierarchy defaults without changing valid site IDs or route records",
+      "status": "PASS"
+    },
+    {
+      "name": "Accepted-save reuse gate no longer rejects valid nested regional assignments",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated normalization preserves nested region IDs, regional assignments, and political references",
+      "status": "PASS"
+    },
+    {
+      "name": "Same-seed generation remains deterministic and creates no ungrounded political or subregion content",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed subregions container is reported rather than silently discarded",
+      "status": "PASS"
+    },
+    {
+      "name": "Old geographic validator accepts child regional assignments while preserving route validation",
+      "status": "PASS"
+    }
+  ]
+}

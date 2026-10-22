@@ -1,0 +1,43 @@
+{
+  "version": "0.7.8.7",
+  "total": 90,
+  "passed": 90,
+  "failed": 0,
+  "suites": [
+    {
+      "suite": "Political map integration",
+      "total": 21,
+      "passed": 21,
+      "failed": 0,
+      "file": "docs/v0.7.8.7-political-map-browser-log.json"
+    },
+    {
+      "suite": "Unified map and Character UI",
+      "total": 22,
+      "passed": 22,
+      "failed": 0,
+      "file": "docs/v0.7.8.7-ui-polish-browser-log.json"
+    },
+    {
+      "suite": "Save compatibility",
+      "total": 22,
+      "passed": 22,
+      "failed": 0,
+      "file": "docs/v0.7.8.7-save-compatibility-browser-log.json"
+    },
+    {
+      "suite": "Regional hierarchy",
+      "total": 15,
+      "passed": 15,
+      "failed": 0,
+      "file": "docs/v0.7.8.7-regional-hierarchy-browser-log.json"
+    },
+    {
+      "suite": "Travel integration",
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "file": "docs/v0.7.8.7-travel-browser-regression.json"
+    }
+  ]
+}

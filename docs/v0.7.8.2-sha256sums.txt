@@ -1,0 +1,20 @@
+# Infinite Realms v0.7.8.2 — SHA-256 checksums
+# Project-relative paths are relative to the source ZIP root; external artifact hashes are also recorded.
+233d9537b55c504ac91882ae150d16d2857eca8c621385b6b6755e68223a9737  dist/infinite-realms.html
+e3295aaabbe28cec3024cf8504fcf5c00fe69d5ad27338fbe167ab1054ed3bba  index.html
+22cab5e7e16fef3c641d928d2621c6e1a96c51751b737dcfbfa06ca8b0f87eca  README.md
+31451a6c5ab8fc40e20d5f5c82baff307b2f3709af1d0bd5525ba685db9c0ab9  js/game/52-political-entity-foundation-v0.7.8.2.js
+0a38f342114856cf0afa3c02c40d738c5bab7bdf1fb6baa33687de129467d4db  tests/v0.7.8.2-political-entity-foundation.test.js
+e8fc34fd4d71c3477f68b3fa1a592bfa3471284b1204902715f0fec9ddd7ecab  tests/v0.7.8.2-political-entity-browser.py
+a8f6ab9139c6b814a0570b299d252a4a45cbe130759cfe59ad7b86bf9a97b302  docs/v0.7.8.2-test-report.md
+fe12fd84347f8a729f04ce8cbb7aac129e57d4ab5cbc645f4c90c288eb7d3f4d  docs/v0.7.8.2-political-entity-schema.md
+50201833c8576fd32d716a6b757c798a81671ee2e151993f527f1554422f737c  docs/v0.7.8.2-release-manifest.json
+08a22d4d2cb5bbaf96be04ccd6b458dbc0e02f5eb08855ce0b1379cc02b77d2a  docs/v0.7.8.2-changed-files.txt
+2bbcd9dcabbbfee8c818a360698f194f34592309432f3068ff15424018ddaae9  docs/v0.7.8.2-node-regression-log.txt
+96fe4171d414739a04f98bcbcedf0da870ffae5192d09a36e0cacae7600501f4  docs/v0.7.8.2-save-compatibility-browser-log.json
+072e97942a3122dafb5efa082b540f6c5da4710e92b40e5a8d3d7ce8f5f37263  docs/screenshots/v0.7.8.2-legacy-save-character-desktop.png
+256fa1f018fbfec035a7822b8b15f415f054889f7faf4085a3c1ed0eddd104c0  docs/screenshots/v0.7.8.2-legacy-save-map-desktop.png
+233d9537b55c504ac91882ae150d16d2857eca8c621385b6b6755e68223a9737  /mnt/data/InfiniteRealms_v0.7.8.2_standalone.html
+233d9537b55c504ac91882ae150d16d2857eca8c621385b6b6755e68223a9737  /mnt/data/InfiniteRealms_v0.7.8.2_accepted_baseline.html
+62a08fa292029dd6a8442ea6a26b591f224c788c4712d70bb5d7b383cadbdd9c  /mnt/data/InfiniteRealms_v0.7.7.9_rollback.html
+b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f  /mnt/data/InfiniteRealms_v0.7.6.6_pre-v0.7.7-baseline.html

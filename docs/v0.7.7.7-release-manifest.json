@@ -1,0 +1,122 @@
+{
+  "product": "Infinite Realms",
+  "version": "0.7.7.7",
+  "feature": "Unified Map and Character UI Polish",
+  "release_status": "focused UI and automated regression validation passed; manual player-save playthrough not performed",
+  "standalone": {
+    "path": "/mnt/data/InfiniteRealms_v0.7.7.7_standalone.html",
+    "sha256": "139ff633482fa09231c36da2f454894f792abb79bc8c6e2b0c100c2f36877ed3",
+    "bytes": 1223586
+  },
+  "rollback": {
+    "path": "/mnt/data/InfiniteRealms_v0.7.7.6_rollback.html",
+    "sha256": "7aeb0cfed87e45d24532cb96d406ba7eaaf6ab39127a1e71b23a0f7ed547558d",
+    "bytes": 1207181
+  },
+  "source_files": {
+    "stylesheet": "css/ui-polish-v0.7.7.7.css",
+    "integration_module": "js/game/49-unified-map-character-ui-v0.7.7.7.js",
+    "entry_point": "index.html"
+  },
+  "validation": {
+    "ui_polish_browser": {
+      "passed": 22,
+      "failed": 0,
+      "total": 22
+    },
+    "character_browser_regression": {
+      "passed": 15,
+      "failed": 0,
+      "total": 15
+    },
+    "travel_browser_regression": {
+      "passed": 10,
+      "failed": 0,
+      "total": 10
+    },
+    "regional_browser_regression": {
+      "passed": 17,
+      "failed": 0,
+      "total": 17
+    },
+    "local_browser_regression": {
+      "passed": 14,
+      "failed": 0,
+      "total": 14
+    },
+    "browser_total": {
+      "passed": 78,
+      "failed": 0,
+      "total": 78
+    },
+    "node_regression_suites": {
+      "passed": 26,
+      "failed": 0,
+      "total": 26
+    },
+    "standalone_smoke_suites": {
+      "passed": 3,
+      "failed": 0,
+      "total": 3
+    },
+    "javascript_syntax_checks": {
+      "passed": 91,
+      "failed": 0,
+      "total": 91
+    },
+    "python_browser_script_syntax": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5
+    },
+    "ui_integration_subchecks": {
+      "passed": 9,
+      "failed": 0,
+      "total": 9,
+      "included_in": "node_regression_suites"
+    },
+    "desktop_and_mobile_browser_checks": true,
+    "uncaught_browser_errors": 0
+  },
+  "test_report_files": {
+    "unified_map_character_browser": "docs/v0.7.7.7-browser-test-log.json",
+    "character_browser_regression": "docs/v0.7.7.7-character-browser-regression.json",
+    "travel_browser_regression": "docs/v0.7.7.7-travel-browser-regression.json",
+    "regional_browser_regression": "docs/v0.7.7.7-regional-browser-test-log.json",
+    "local_browser_regression": "docs/v0.7.7.7-local-browser-regression.json",
+    "python_browser_script_syntax": "docs/v0.7.7.7-python-syntax-check-log.txt"
+  },
+  "screenshots": [
+    "docs/screenshots/v0.7.7.7-world-map-switcher-desktop.png",
+    "docs/screenshots/v0.7.7.7-world-map-switcher-mobile.png",
+    "docs/screenshots/v0.7.7.7-regional-map-selected-desktop.png",
+    "docs/screenshots/v0.7.7.7-local-map-desktop.png",
+    "docs/screenshots/v0.7.7.7-character-status-desktop.png",
+    "docs/screenshots/v0.7.7.7-character-status-mobile.png"
+  ],
+  "rollback_provenance": "Exact byte copy of the supplied v0.7.7.6 starting build; source-tree rollback and downloadable rollback SHA-256 match the input build.",
+  "checksums": {
+    "standalone_html": {
+      "path": "/mnt/data/InfiniteRealms_v0.7.7.7_standalone.html",
+      "sha256": "139ff633482fa09231c36da2f454894f792abb79bc8c6e2b0c100c2f36877ed3",
+      "bytes": 1223586
+    },
+    "rollback_html": {
+      "path": "/mnt/data/InfiniteRealms_v0.7.7.6_rollback.html",
+      "sha256": "7aeb0cfed87e45d24532cb96d406ba7eaaf6ab39127a1e71b23a0f7ed547558d",
+      "bytes": 1207181
+    },
+    "source_module": {
+      "path": "js/game/49-unified-map-character-ui-v0.7.7.7.js",
+      "sha256": "eac1e24144a787c4464d0a61f0be00dcd0f4c7b93cbcd867a1cb8f3416aa9867"
+    },
+    "polish_stylesheet": {
+      "path": "css/ui-polish-v0.7.7.7.css",
+      "sha256": "5401ceb58ade8087186c89248c9c3ccd91441a8ab0ca9496f8c640ac2add68de"
+    },
+    "rollback_baseline_in_source": {
+      "path": "backups/InfiniteRealms_v0.7.7.6_accepted_baseline.html",
+      "sha256": "7aeb0cfed87e45d24532cb96d406ba7eaaf6ab39127a1e71b23a0f7ed547558d"
+    }
+  }
+}

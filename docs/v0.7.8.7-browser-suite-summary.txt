@@ -1,0 +1,6 @@
+Political map integration: 21/21 passed, 0 failed
+Unified map and Character UI: 22/22 passed, 0 failed
+Save compatibility: 22/22 passed, 0 failed
+Regional hierarchy: 15/15 passed, 0 failed
+Travel integration: 10/10 passed, 0 failed
+TOTAL: 90/90 passed; 0 failed across five independently run Chromium suites.

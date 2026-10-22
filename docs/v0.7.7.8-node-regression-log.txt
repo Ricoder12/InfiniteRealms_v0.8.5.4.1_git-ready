@@ -1,0 +1,55 @@
+PASS tests/v0.7.3.1-npc-memory-reliability.test.js
+PASS: duplicate active NPC IDs are collapsed while known memories remain
+PASS: legacy save normalization preserves relationship and registry history
+4 v0.7.3.1 checks passed.
+PASS tests/v0.7.3.2-witness-reputation.test.js
+PASS: a bystander arriving before death can witness the fatal act without retroactively exposing the assault
+PASS: generic enemy victory does not receive a public crime penalty
+PASS: save schema remains compatible and version metadata advances
+PASS tests/v0.7.3.3-reputation-reactions.test.js
+v0.7.3.3 reputation reaction tests: 8 checks passed
+PASS tests/v0.7.3.4-positive-reputation.test.js
+v0.7.3.4 positive reputation tests: 11 checks passed
+PASS tests/v0.7.3.5-contextual-favors-information.test.js
+PASS: a plain-language broken promise is recognized as a personal grievance
+PASS: relevant help permits one optional rumor at low reputation, not repeated access from the same memory
+v0.7.3.5 contextual favors/information tests: 14 checks passed
+PASS tests/v0.7.3.6-feedback-antifarming.test.js
+PASS: the latest persisted save includes the anti-farming ledger immediately after an awarded interaction
+PASS: failed interactions retain the original reason and award no relationship budget
+26 v0.7.3.6 checks passed.
+PASS tests/v0.7.5.1-world-data-audit.test.js
+PASS tests/v0.7.5.2-stable-geographic-identifiers.test.js
+PASS tests/v0.7.5.3-geographic-hierarchy-connections.test.js
+PASS tests/v0.7.5.3-save-normalization.integration.test.js
+PASS tests/v0.7.5.4-gameplay-integration.test.js
+PASS tests/v0.7.5.4-world-generation-integration.test.js
+PASS tests/v0.7.5.5-gameplay-regression.test.js
+PASS tests/v0.7.5.5-save-compatibility-regression.test.js
+PASS tests/v0.7.6.2-biome-profile-system-regression.test.js
+PASS tests/v0.7.6.2-resource-safety-crafting.test.js
+PASS tests/v0.7.6.3-environmental-hazards.test.js
+PASS	Rest in a hazardous area remains a reliable recovery option
+PASS	Zero-day advancement cannot trigger exposure
+SUMMARY 20/20 PASS
+PASS tests/v0.7.6.4-racial-biome-affinity.test.js
+PASS	Invalid biome references safely receive no affinity modifier
+PASS	Affinity registry remains within documented modifier bounds
+SUMMARY 20/20 PASS
+PASS tests/v0.7.6.5-monster-habitats.test.js
+PASS	No new enemy species are defined or added by habitat integration
+PASS	Habitat registry reports no structural errors after initialization
+SUMMARY 28/28 PASS
+PASS tests/v0.7.6.6-biome-ecology-stabilization.test.js
+PASS	Monster habitat module leaves combat reward templates unchanged
+PASS	No new species or save-schema fields are added by stabilization
+SUMMARY 32/32 PASS; 0 FAIL
+PASS tests/v0.7.7.1-shared-map-data.test.js
+      "name": "Current coordinates are passed through unchanged and no world-scale coordinates are fabricated",
+PASS tests/v0.7.7.3-regional-map.test.js
+PASS tests/v0.7.7.3-world-map.test.js
+PASS tests/v0.7.7.4-local-map.test.js
+PASS tests/v0.7.7.5-travel-route-integration.test.js
+PASS tests/v0.7.7.7-ui-polish.test.js
+PASS tests/v0.7.7.8-save-compatibility.test.js
+SUMMARY: 27/27 Node regression suites passed

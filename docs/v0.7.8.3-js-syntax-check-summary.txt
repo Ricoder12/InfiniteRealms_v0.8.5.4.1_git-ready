@@ -1,0 +1,1 @@
+JavaScript syntax checks: 99 passed; 0 failed (including build.js).

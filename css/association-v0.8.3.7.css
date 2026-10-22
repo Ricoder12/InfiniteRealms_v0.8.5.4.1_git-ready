@@ -1,0 +1,24 @@
+.ir0837-branch-nav{display:flex;gap:8px;overflow-x:auto;padding:4px 1px 10px;scrollbar-width:thin}
+.ir0837-branch-nav .button{flex:0 0 auto;text-decoration:none}
+.ir0837-branch{display:block;scroll-margin-top:22px;padding:15px;margin:12px 0;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));transition:border-color .15s ease,background .15s ease}
+.ir0837-branch.is-selected{border-color:var(--gold);box-shadow:inset 3px 0 0 var(--gold),0 0 0 1px rgba(255,206,102,.12);background:linear-gradient(145deg,rgba(255,206,102,.09),rgba(255,255,255,.02))}
+.ir0837-branch-head{align-items:flex-start}
+.ir0837-branch-info{min-width:0;flex:1}
+.ir0837-branch-title{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.ir0837-branch-title>strong{font-size:15px}
+.ir0837-branch-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0 0}
+.ir0837-branch-facts>div{min-width:0;padding:9px;border:1px solid var(--line);border-radius:9px;background:rgba(0,0,0,.12)}
+.ir0837-branch-facts dt{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.ir0837-branch-facts dd{margin:4px 0 0;font-size:11px;line-height:1.5;overflow-wrap:anywhere}
+.ir0837-board{max-width:820px}
+.ir0837-board .ir0837-board-rule{border-left:3px solid var(--gold);line-height:1.6}
+.ir0837-quest-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ir0837-quest-card{display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-width:0;padding:14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}
+.ir0837-quest-card .ir072-action-copy{min-width:0}
+.ir0837-objective{padding:8px;border-left:2px solid var(--line);background:rgba(0,0,0,.12);border-radius:0 7px 7px 0}
+.ir0837-quest-card .ir072-action-copy>strong{display:flex;align-items:center;gap:7px;flex-wrap:wrap;line-height:1.5}
+.ir0837-quest-card p{line-height:1.55}
+.ir0837-quest-card small{display:block;color:var(--muted);line-height:1.5;margin-top:5px}
+.ir0837-quest-card .ir072-action-grid{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.ir0837-board h3{margin-top:20px}
+@media(max-width:700px){.ir0837-quest-list{grid-template-columns:1fr}.ir0837-branch-facts{grid-template-columns:1fr}.ir0837-branch-head{display:flex;flex-direction:column}.ir0837-service-actions{width:100%}}

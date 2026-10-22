@@ -1,0 +1,10 @@
+Source: accepted v0.8.2.4, verified from docs/v0.8.2.4-release-manifest.json.
+Node regression suites: PASS — 43/43.
+JavaScript syntax checks: PASS — 78/78.
+Build (node build.js): PASS.
+NPC/world standalone smoke: PASS — 5/5.
+Map/travel standalone smoke: PASS — 10/10.
+v0.7.7.1 accepted-baseline standalone smoke: PASS — 7/7.
+Interactive browser/manual validation: NOT TESTED.
+Screenshots: NOT CAPTURED.
+User-exported historical saves: NOT TESTED.

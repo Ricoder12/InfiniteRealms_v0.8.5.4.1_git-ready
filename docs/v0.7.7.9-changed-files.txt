@@ -1,0 +1,30 @@
+Infinite Realms v0.7.7.9 — changed files
+
+Production/source:
+- index.html (document title and acceptance-module include)
+- js/game/51-final-acceptance-v0.7.7.9.js (new, branding metadata only)
+- dist/infinite-realms.html (rebuilt standalone)
+- backups/InfiniteRealms_v0.7.7.9_accepted_baseline.html (new exact baseline copy)
+- README.md (v0.7.7.9 acceptance note)
+
+Node test files changed/added:
+- tests/v0.7.7.3-regional-map.test.js
+- tests/v0.7.7.3-world-map.test.js
+- tests/v0.7.7.4-local-map.test.js
+- tests/v0.7.7.7-ui-polish.test.js
+- tests/v0.7.7.9-final-acceptance.test.js (new)
+
+Browser/standalone harnesses changed to use v0.7.7.9 labels, current view-control selectors, and unique release artifact paths:
+- tests/v0.7.7.3-browser-smoke.py
+- tests/v0.7.7.3-standalone-smoke.js
+- tests/v0.7.7.4-browser-smoke.py
+- tests/v0.7.7.5-browser-smoke.py
+- tests/v0.7.7.6-character-status-browser-smoke.py
+- tests/v0.7.7.7-character-status-browser-regression.py
+- tests/v0.7.7.7-local-browser-regression.py
+- tests/v0.7.7.7-regional-browser-regression.py
+- tests/v0.7.7.7-travel-browser-regression.py
+- tests/v0.7.7.7-ui-polish-browser-smoke.py
+- tests/v0.7.7.8-save-compatibility-browser.py
+
+Evidence/report files added under docs/ and docs/release-tests/ are identified in the final test report and source manifest. No CSS file, travel logic, geographic data module, save-normalization module, combat rules, progression rules, or Character data system was modified for v0.7.7.9.

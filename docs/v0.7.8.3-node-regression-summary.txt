@@ -1,0 +1,4 @@
+Node regression test files: 30
+Passing files: 30
+Failing files: 0
+Counted assertions: 262/262 passed

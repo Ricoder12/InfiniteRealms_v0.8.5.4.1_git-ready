@@ -1,0 +1,8 @@
+dc155d3774d0586fd23d16f64961c1cafa9db4001fa1cae5a2ebdb99865b6f97  /mnt/data/InfiniteRealms_v0.7.6.4.html
+537a6101800d303a0e96e9c3946e2c3061bfc9a591021a75c676da91f2567c48  /mnt/data/InfiniteRealms_v0.7.6.4_backup.html
+
+Post-debug validation:
+- All 18 test suites passed; 221 checks passed, 0 failed.
+- All JavaScript syntax checks passed.
+- Standalone smoke test passed after rebuild.
+- Live interactive browser acceptance remains unverified.

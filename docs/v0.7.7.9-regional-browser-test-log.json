@@ -1,0 +1,93 @@
+{
+  "suite": "Infinite Realms v0.7.7.9-regional browser smoke",
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "tests": [
+    {
+      "test": "Standalone boot and version metadata",
+      "status": "PASS",
+      "detail": "Infinite Realms — Version 0.7.7.9"
+    },
+    {
+      "test": "Create character and game shell",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "World tab opens interactive atlas index",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Atlas hides undiscovered site names and markers",
+      "status": "PASS",
+      "detail": "{\"count\": 45, \"leaks\": [], \"markerLeaks\": []}"
+    },
+    {
+      "test": "Missing optional world hierarchy fields do not crash atlas or regional renderer",
+      "status": "PASS",
+      "detail": "{\"ok\": true, \"atlas\": true, \"regional\": true}"
+    },
+    {
+      "test": "Local view opens with current site data and no fabricated street geometry",
+      "status": "PASS",
+      "detail": "{\"panel\": true, \"title\": \"Rillstone\", \"services\": true, \"returns\": true, \"geometryDisclaimer\": true, \"hiddenLeaks\": []}"
+    },
+    {
+      "test": "World → regional → local → regional keeps a valid selection without changing the save",
+      "status": "PASS",
+      "detail": "{\"selectedGeoId\": \"site:world-49-52-2d-57-4f-52-4c-44-2d-4d-41-50-2d-37-37-32-2d-44-45-54-45-52-4d-49-4e-49-53-54-49-43:loc-3-3\", \"retainedInLocal\": true, \"afterReturn\": {\"scope\": \"regional\", \"selected\": \"site:world-49-52-2d-57-4f-52-4c-44-2d-4d-41-50-2d-37-37-32-2d-44-45-54-45-52-4d-49-4e-49-53-54-49-43:loc-3-3\"}}"
+    },
+    {
+      "test": "Regional view opens with visible markers, fog, and current-location highlight",
+      "status": "PASS",
+      "detail": "{\"panel\": true, \"markerCount\": 4, \"currentMarkers\": [\"loc-6-6\"], \"currentSite\": \"loc-6-6\", \"fog\": 9, \"hiddenNames\": [], \"hiddenCoordinates\": []}"
+    },
+    {
+      "test": "Regional map uses recorded connections and does not draw unsupported obstacle geometry",
+      "status": "PASS",
+      "detail": "{\"accuracyClass\": true, \"routeLines\": 3, \"connectionRows\": 1, \"inventedWaterMarkup\": false, \"explainsMissingGeometry\": true, \"routeLegend\": true}"
+    },
+    {
+      "test": "Selecting a known location only inspects it and does not advance time or travel",
+      "status": "PASS",
+      "detail": "{\"target\": {\"id\": \"loc-0-0\", \"addedToKnownForFixture\": true}, \"before\": {\"site\": \"loc-6-6\", \"day\": 0, \"known\": \"[\\\"loc-6-6\\\",\\\"loc-5-6\\\",\\\"loc-6-5\\\",\\\"loc-3-3\\\",\\\"loc-0-0\\\"]\", \"visited\": \"[\\\"loc-6-6\\\"]\"}, \"after\": {\"site\": \"loc-6-6\", \"day\": 0, \"known\": \"[\\\"loc-6-6\\\",\\\"loc-5-6\\\",\\\"loc-6-5\\\",\\\"loc-3-3\\\",\\\"loc-0-0\\\"]\", \"visited\": \"[\\\"loc-6-6\\\"]\", \"card\": \"🌾\\nLOCATION INSPECTION\\nOpen Plains area\\nKNOWN\\n\\nDiscovery status: known, not yet visited. Recorded terrain: Open Plains. The local name, settlement status, landmark details, description, and danger remain unconfirmed.\\n\\nDiscovery: Known, not yet visited\\n\\nNo verified direct route from current position\\nRecorded connections\\n1 known\\n🌳\\nRolling Woodlands area\\n\\nConnected to the selected location · Recorded shortcut\\n\\n46 km\\nNo direct route from your current location. Travel is unavailable here; no alternate path or new travel rule is inferred.\\nFocus current location\\nLocal view is available after arrival.\", \"travel\": false}}"
+    },
+    {
+      "test": "Travel is a separate route-gated action and opens the existing travel preview",
+      "status": "PASS",
+      "detail": "{\"direct\": \"loc-3-3\", \"modal\": true, \"before\": {\"site\": \"loc-6-6\", \"days\": 0, \"day\": 1, \"travelCount\": 0}, \"after\": {\"site\": \"loc-6-6\", \"days\": 0, \"day\": 1, \"travelCount\": 0}}"
+    },
+    {
+      "test": "Return control reopens the atlas",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Atlas remains usable at a phone viewport",
+      "status": "PASS",
+      "detail": "{\"width\": 390, \"scrollWidth\": 390, \"atlas\": true, \"open\": true}"
+    },
+    {
+      "test": "Regional chart and navigation remain usable at a phone viewport",
+      "status": "PASS",
+      "detail": "{\"width\": 390, \"scrollWidth\": 390, \"panel\": true, \"markers\": 5, \"return\": true}"
+    },
+    {
+      "test": "Local detail panel remains navigable at a phone viewport",
+      "status": "PASS",
+      "detail": "{\"width\": 390, \"scrollWidth\": 390, \"panel\": true, \"routes\": 3, \"return\": true}"
+    },
+    {
+      "test": "Atlas/map navigation keeps map scope transient and leaves the world schema unchanged",
+      "status": "PASS",
+      "detail": "{\"worldKeys\": [\"continents\", \"countries\", \"dungeon\", \"economy\", \"generationIntegrationVersion\", \"generationVersion\", \"geographicHierarchyVersion\", \"geographicIdVersion\", \"geography\", \"id\", \"journal\", \"known\", \"region\", \"seed\", \"siteId\", \"startBackground\", \"startCircumstance\", \"startRace\", \"travelCount\", \"v05\", \"v06\", \"v067\", \"v0723\", \"v073\", \"v0735\", \"v0736\", \"visited\"], \"known\": \"[\\\"loc-6-6\\\",\\\"loc-5-6\\\",\\\"loc-6-5\\\",\\\"loc-3-3\\\",\\\"loc-0-0\\\"]\", \"visited\": \"[\\\"loc-6-6\\\"]\", \"scope\": \"atlas\"}"
+    },
+    {
+      "test": "No uncaught browser errors",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

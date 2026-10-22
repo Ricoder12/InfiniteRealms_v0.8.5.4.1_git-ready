@@ -1,0 +1,73 @@
+{
+  "suite": "Infinite Realms v0.7.7.2 browser smoke",
+  "total": 13,
+  "passed": 13,
+  "failed": 0,
+  "tests": [
+    {
+      "test": "Standalone boot and version metadata",
+      "status": "PASS",
+      "detail": "Infinite Realms — Version 0.7.7.2"
+    },
+    {
+      "test": "Create character and game shell",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "World tab opens interactive atlas index",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Atlas hides undiscovered site names and markers",
+      "status": "PASS",
+      "detail": "{\"count\": 45, \"leaks\": [], \"markerLeaks\": []}"
+    },
+    {
+      "test": "Missing optional world hierarchy fields do not crash atlas or regional renderer",
+      "status": "PASS",
+      "detail": "{\"ok\": true, \"atlas\": true, \"regional\": true}"
+    },
+    {
+      "test": "Regional view opens with visible markers, fog, and current-location highlight",
+      "status": "PASS",
+      "detail": "{\"panel\": true, \"markerCount\": 4, \"currentMarkers\": [\"loc-6-6\"], \"currentSite\": \"loc-6-6\", \"fog\": 9, \"hiddenNames\": [], \"hiddenCoordinates\": []}"
+    },
+    {
+      "test": "Selecting a known location only inspects it and does not advance time or travel",
+      "status": "PASS",
+      "detail": "{\"target\": {\"id\": \"loc-0-0\", \"addedToKnownForFixture\": true}, \"before\": {\"site\": \"loc-6-6\", \"day\": 0, \"known\": \"[\\\"loc-6-6\\\",\\\"loc-5-6\\\",\\\"loc-6-5\\\",\\\"loc-3-3\\\",\\\"loc-0-0\\\"]\", \"visited\": \"[\\\"loc-6-6\\\"]\"}, \"after\": {\"site\": \"loc-6-6\", \"day\": 0, \"known\": \"[\\\"loc-6-6\\\",\\\"loc-5-6\\\",\\\"loc-6-5\\\",\\\"loc-3-3\\\",\\\"loc-0-0\\\"]\", \"visited\": \"[\\\"loc-6-6\\\"]\", \"card\": \"🌾\\nLOCATION INSPECTION\\nOpen Plains area\\n\\nKnown terrain: Open Plains. The local name, settlement status, landmark details, and danger remain unconfirmed until you visit.\\n\\nNo direct route from your current location. Travel rules are unchanged.\\nFocus current location\", \"travel\": false}}"
+    },
+    {
+      "test": "Travel is a separate route-gated action and opens the existing travel preview",
+      "status": "PASS",
+      "detail": "{\"direct\": \"loc-3-3\", \"modal\": true, \"before\": {\"site\": \"loc-6-6\", \"days\": 0, \"day\": 1, \"travelCount\": 0}, \"after\": {\"site\": \"loc-6-6\", \"days\": 0, \"day\": 1, \"travelCount\": 0}}"
+    },
+    {
+      "test": "Return control reopens the atlas",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Atlas remains usable at a phone viewport",
+      "status": "PASS",
+      "detail": "{\"width\": 390, \"scrollWidth\": 390, \"atlas\": true, \"open\": true}"
+    },
+    {
+      "test": "Regional chart and navigation remain usable at a phone viewport",
+      "status": "PASS",
+      "detail": "{\"width\": 390, \"scrollWidth\": 390, \"panel\": true, \"markers\": 5, \"return\": true}"
+    },
+    {
+      "test": "Atlas/map navigation keeps map scope transient and leaves the world schema unchanged",
+      "status": "PASS",
+      "detail": "{\"worldKeys\": [\"continents\", \"countries\", \"dungeon\", \"economy\", \"generationIntegrationVersion\", \"generationVersion\", \"geographicHierarchyVersion\", \"geographicIdVersion\", \"geography\", \"id\", \"journal\", \"known\", \"region\", \"seed\", \"siteId\", \"startBackground\", \"startCircumstance\", \"startRace\", \"travelCount\", \"v05\", \"v06\", \"v067\", \"v0723\", \"v073\", \"v0735\", \"v0736\", \"visited\"], \"known\": \"[\\\"loc-6-6\\\",\\\"loc-5-6\\\",\\\"loc-6-5\\\",\\\"loc-3-3\\\",\\\"loc-0-0\\\"]\", \"visited\": \"[\\\"loc-6-6\\\"]\", \"scope\": \"atlas\"}"
+    },
+    {
+      "test": "No uncaught browser errors",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

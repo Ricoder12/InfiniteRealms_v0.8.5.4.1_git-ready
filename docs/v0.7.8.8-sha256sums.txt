@@ -1,0 +1,5 @@
+SHA-256 checksums — Infinite Realms v0.7.8.8
+036099a200655b1303cd424974e0a2048f5506564b8f29b5514443e6156d6e5c  release/InfiniteRealms_v0.7.8.8_standalone.html
+2e2c092209169aad87f336bf1bc9adc2c6c802a65758f0e71a075f38d1ebb80c  release/InfiniteRealms_v0.7.8.7_accepted_baseline.html
+62a08fa292029dd6a8442ea6a26b591f224c788c4712d70bb5d7b383cadbdd9c  backups/InfiniteRealms_v0.7.7.9_accepted_baseline.html
+ed32c692ceb916005d4c862cd4fc0f1cd53bf86ff45bc2799cefc34b4484c934  input/InfiniteRealms_v0.7.8.7_source.zip

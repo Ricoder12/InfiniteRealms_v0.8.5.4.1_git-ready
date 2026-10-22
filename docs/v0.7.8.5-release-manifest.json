@@ -1,0 +1,55 @@
+{
+  "product": "Infinite Realms",
+  "version": "0.7.8.5",
+  "feature": "Governments, Rulers, and Capitals",
+  "status": "tested candidate; formal baseline acceptance pending",
+  "requested_starting_version": "0.7.8.4",
+  "requested_starting_version_available": false,
+  "actual_source_baseline": "0.7.8.3",
+  "baseline_qualification": "No v0.7.8.4 standalone/source artifact was present in the available workspace; candidate was built from latest verifiable accepted v0.7.8.3 source. No claims are made about missing v0.7.8.4-specific changes.",
+  "standalone": "InfiniteRealms_v0.7.8.5_standalone.html",
+  "candidate_baseline": "InfiniteRealms_v0.7.8.5_candidate-baseline.html",
+  "rollback": "InfiniteRealms_v0.7.8.3_rollback.html",
+  "pre_v0_7_7_comparison": "InfiniteRealms_v0.7.6.6_pre-v0.7.7-baseline.html",
+  "production_changes": [
+    "index.html",
+    "README.md",
+    "js/game/54-government-leadership-capitals-v0.7.8.5.js",
+    "dist/infinite-realms.html"
+  ],
+  "tests": {
+    "focused_node_assertions": {
+      "passed": 23,
+      "failed": 0
+    },
+    "node_test_files_and_smoke_suites": {
+      "passed": 34,
+      "failed": 0
+    },
+    "chromium_assertions_across_five_suites": {
+      "passed": 84,
+      "failed": 0
+    },
+    "javascript_syntax_files": {
+      "passed": 100,
+      "failed": 0
+    },
+    "build_script_syntax": "passed",
+    "python_syntax_scripts": {
+      "passed": 20,
+      "failed": 0
+    },
+    "standalone_build": "passed",
+    "source_zip_integrity": "passed"
+  },
+  "schema_migration": false,
+  "political_simulation_added": false,
+  "dedicated_political_ui_added": false,
+  "user_exported_save_tested": false,
+  "standalone_sha256": "7a2529736d1335ad8a922244102ce596d463a202650a98a68b9e800895c42ca9",
+  "candidate_baseline_sha256": "7a2529736d1335ad8a922244102ce596d463a202650a98a68b9e800895c42ca9",
+  "rollback_sha256": "39858b2b84d61506e3e094165b378d759f77dce4e67ed1bee53d17a1a07db43f",
+  "pre_v0_7_7_comparison_sha256": "b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f",
+  "source_zip_entries": 605,
+  "manual_acceptance_checklist": "docs/v0.7.8.5-manual-acceptance-checklist.md"
+}

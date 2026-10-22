@@ -1,0 +1,92 @@
+{
+  "suite": "v0.7.7.3 Regional Map",
+  "total": 21,
+  "passed": 21,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Regional layer uses the existing region, site records, and canonical route registry without adding geography",
+      "status": "PASS"
+    },
+    {
+      "name": "No invented river course, coast edge, ridgeline, or water-band markup is drawn",
+      "status": "PASS"
+    },
+    {
+      "name": "Every drawn line resolves to a canonical connection with a matching existing travel route",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed global edge is not shown when its local travel records are absent",
+      "status": "PASS"
+    },
+    {
+      "name": "An undirected canonical edge is not drawn when the reciprocal local route record is missing",
+      "status": "PASS"
+    },
+    {
+      "name": "Known current location is highlighted and remains selected; travel stays a separate control",
+      "status": "PASS"
+    },
+    {
+      "name": "Selecting a directly connected known destination reports the real route distance and provides travel action",
+      "status": "PASS"
+    },
+    {
+      "name": "Known but disconnected destination is inspectable without a false direct-travel button",
+      "status": "PASS"
+    },
+    {
+      "name": "Connection details list only visible neighbors and conceal unvisited proper names",
+      "status": "PASS"
+    },
+    {
+      "name": "Hidden site IDs, coordinates, and unique names never appear in the regional markup",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit intelligence may mark one reported lead but does not reveal its neighbors",
+      "status": "PASS"
+    },
+    {
+      "name": "Sites lacking coordinates remain available through a list and never default to 0,0",
+      "status": "PASS"
+    },
+    {
+      "name": "Optional continent, country, hierarchy and route arrays fail safely without invented geometry",
+      "status": "PASS"
+    },
+    {
+      "name": "Switching atlas and regional layers preserves a still-known selected geoId without save mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "Route helper/travel time function remains the original implementation",
+      "status": "PASS"
+    },
+    {
+      "name": "Local detail view uses the actual current site, saved biome, and non-spatial disclaimer",
+      "status": "PASS"
+    },
+    {
+      "name": "Local detail view does not enumerate or expose undiscovered exits",
+      "status": "PASS"
+    },
+    {
+      "name": "Switching regional to local and back preserves a valid selected geoId and does not mutate the save",
+      "status": "PASS"
+    },
+    {
+      "name": "An unvisited current site does not reveal its saved place name, type, risk, description, or services",
+      "status": "PASS"
+    },
+    {
+      "name": "A site with missing optional local route/biome details produces a safe local panel",
+      "status": "PASS"
+    },
+    {
+      "name": "Regional layer remains loaded before v0.7.7.4 local layer and application boot; v0.7.7.9 release title is advertised",
+      "status": "PASS"
+    }
+  ]
+}

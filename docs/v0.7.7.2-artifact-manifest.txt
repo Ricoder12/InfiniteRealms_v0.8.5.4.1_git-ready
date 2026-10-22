@@ -1,0 +1,17 @@
+Infinite Realms v0.7.7.2 artifact manifest
+
+Standalone build: dist/infinite-realms.html
+  bytes=1089979
+  sha256=f3c0e3b8808105a1eb6496dafd5fcc525f21d05fedd6abeb44abbce0bb90ddb3
+
+Accepted v0.7.7.1 baseline: backups/InfiniteRealms_v0.7.7.1_accepted_baseline.html
+  bytes=1052562
+  sha256=929f2f786e2a82186e23f8a6a5bbe205e587355406ef907595e432a9a53eda0b
+
+New map implementation: js/game/44-world-map-v0.7.7.2.js
+Styles: css/world-map.css (v0.7.7.2 additions appended)
+Entry/load order: index.html (new map layer loads before js/game/27-boot.js)
+Focused unit tests: tests/v0.7.7.2-world-map.test.js
+Standalone smoke: tests/v0.7.7.2-standalone-smoke.js
+Browser smoke: tests/v0.7.7.2-browser-smoke.py
+Screenshots: docs/screenshots/v0.7.7.2-world-atlas.png; regional-map.png; world-atlas-mobile.png; regional-map-mobile.png

@@ -1,0 +1,24 @@
+PASS: Standalone HTML title advertises v0.7.7.9: Infinite Realms — Version 0.7.7.9
+PASS: New character and deterministic test world initialize: Unified UI Tester / IR-0777-UI-POLISH-SEED
+PASS: Visible game chrome uses v0.7.7.9 branding: VERSION 0.7.7.9 · MAPS, CHARACTER & SAVE INTEGRITY
+PASS: World atlas displays the unified three-view switcher: World button marked active; all three native buttons available
+PASS: Map controls support sequential keyboard focus with a visible focus indicator: Tab from World lands on Regional and matches :focus-visible
+PASS: Regional map control opens regional view and marks it active: Regional panel and active state verified
+PASS: Location selection updates the highlighted marker and inspection details: {"target": "loc-0-0", "selected": ["loc-0-0"], "selectedEdges": 1, "details": "⛰️\nLOCATION INSPECTION\nMountain Foothills area\nKNOWN\n\nDiscovery status: known, not yet visited. Recorded terrain: Mountain Foothills. The local name, settlement status, landmark details, description, and danger remain unconfirmed.\n\nDiscovery: Known, not yet visited\n\n28 km · recorded shortcut\nRecorded connections\n1 known\n🏜️\nSunhollow\n\nCurrent location · Recorded shortcut\n\n28 km\nTravel here · 2 days\nFocus current location\nLocal view is available after arrival."}
+PASS: Selected route line is highlighted when the chosen site has a recorded direct edge: selected edge count=1; non-direct selection does not imply a route
+PASS: Local view opens with the shared switcher active: Unified nav replaces the old two-button local nav
+PASS: Local map scene and existing navigation actions remain available: interactive scene buttons=9
+PASS: World control returns to the atlas and restores the correct active state: World view transition completed
+PASS: Map controls adapt to a narrow viewport without page-level horizontal overflow: grid columns=104.656px 104.672px 104.656px; document scrollWidth=390
+PASS: Character status remains present with numeric, accessible current/max meters: {"health": 100, "max": 100, "energy": 90, "maxEnergy": 100}
+PASS: Character health status refreshes after underlying game state changes: Updated in-memory health and called standard renderer
+PASS: Skills navigation continues to open detailed progression: Existing Skills screen loaded
+PASS: Inventory navigation continues to open equipment management: Existing Inventory view loaded
+PASS: Existing Life tab still renders after scoped UI changes: view=Life; rendered text length=5216
+PASS: Existing Adventure tab still renders after scoped UI changes: view=Adventure; rendered text length=4399
+PASS: Existing People tab still renders after scoped UI changes: view=People; rendered text length=3081
+PASS: Existing Journal tab still renders after scoped UI changes: view=Journal; rendered text length=2556
+PASS: Existing Settings tab still renders after scoped UI changes: view=Settings; rendered text length=5216
+PASS: No uncaught browser or console errors: []
+
+SUMMARY 22 / 22 passed; 0 failed

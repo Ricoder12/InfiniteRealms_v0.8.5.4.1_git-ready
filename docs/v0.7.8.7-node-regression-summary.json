@@ -1,0 +1,205 @@
+{
+  "total": 33,
+  "passed": 33,
+  "failed": 0,
+  "results": [
+    {
+      "file": "v0.7.3.1-npc-memory-reliability.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "4 v0.7.3.1 checks passed."
+    },
+    {
+      "file": "v0.7.3.3-reputation-reactions.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "v0.7.3.3 reputation reaction tests: 8 checks passed"
+    },
+    {
+      "file": "v0.7.3.4-positive-reputation.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "v0.7.3.4 positive reputation tests: 11 checks passed"
+    },
+    {
+      "file": "v0.7.3.2-witness-reputation.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "exit 0"
+    },
+    {
+      "file": "v0.7.3.5-contextual-favors-information.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "v0.7.3.5 contextual favors/information tests: 14 checks passed"
+    },
+    {
+      "file": "v0.7.5.1-world-data-audit.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 10,"
+    },
+    {
+      "file": "v0.7.5.3-save-normalization.integration.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 1,"
+    },
+    {
+      "file": "v0.7.3.6-feedback-antifarming.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "26 v0.7.3.6 checks passed."
+    },
+    {
+      "file": "v0.7.5.2-stable-geographic-identifiers.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 12,"
+    },
+    {
+      "file": "v0.7.5.3-geographic-hierarchy-connections.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 14,"
+    },
+    {
+      "file": "v0.7.5.4-gameplay-integration.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 6,"
+    },
+    {
+      "file": "v0.7.5.5-gameplay-regression.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 6,"
+    },
+    {
+      "file": "v0.7.5.4-world-generation-integration.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 11,"
+    },
+    {
+      "file": "v0.7.5.5-save-compatibility-regression.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 14,"
+    },
+    {
+      "file": "v0.7.6.2-biome-profile-system-regression.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 21,"
+    },
+    {
+      "file": "v0.7.6.4-racial-biome-affinity.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "exit 0"
+    },
+    {
+      "file": "v0.7.6.2-resource-safety-crafting.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 15,"
+    },
+    {
+      "file": "v0.7.6.5-monster-habitats.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "exit 0"
+    },
+    {
+      "file": "v0.7.7.1-shared-map-data.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 14,"
+    },
+    {
+      "file": "v0.7.7.3-regional-map.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 21,"
+    },
+    {
+      "file": "v0.7.6.3-environmental-hazards.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "exit 0"
+    },
+    {
+      "file": "v0.7.7.3-world-map.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 17,"
+    },
+    {
+      "file": "v0.7.7.7-ui-polish.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 9,"
+    },
+    {
+      "file": "v0.7.7.4-local-map.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 16,"
+    },
+    {
+      "file": "v0.7.7.9-final-acceptance.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "exit 0"
+    },
+    {
+      "file": "v0.7.6.6-biome-ecology-stabilization.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "exit 0"
+    },
+    {
+      "file": "v0.7.8.2-political-entity-foundation.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 17,"
+    },
+    {
+      "file": "v0.7.8.5-government-leadership-capitals.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 23,"
+    },
+    {
+      "file": "v0.7.8.6-world-political-generation.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "v0.7.8.6 focused tests: 11/11 passed"
+    },
+    {
+      "file": "v0.7.8.7-political-map-integration.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "v0.7.8.7 political map integration tests: 18/18 passed"
+    },
+    {
+      "file": "v0.7.8.3-regional-hierarchy.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 27,"
+    },
+    {
+      "file": "v0.7.7.8-save-compatibility.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 11,"
+    },
+    {
+      "file": "v0.7.7.5-travel-route-integration.test.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": "\"passed\": 20,"
+    }
+  ]
+}

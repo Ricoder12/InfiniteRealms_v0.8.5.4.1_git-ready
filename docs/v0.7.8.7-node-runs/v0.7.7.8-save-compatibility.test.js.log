@@ -1,0 +1,52 @@
+{
+  "suite": "Infinite Realms v0.7.7.8 Save Compatibility and Integration",
+  "total": 11,
+  "passed": 11,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Pre-v0.7.7.6 save is produced by actual accepted v0.7.6.6 game code and is valid",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy save normalization preserves character progression and equipment",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy save normalization preserves stable world/site IDs, custom location records, discovery, and travel history",
+      "status": "PASS"
+    },
+    {
+      "name": "Extensive-exploration legacy save retains 49 visited sites, discovery history, per-site progress, and rumor outcomes",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated normalization is idempotent for location IDs, route IDs/counts, current location, and exploration",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing optional arrays/fields receive defaults while existing character/world values survive",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shared map accessors return the same authoritative region/site/route objects",
+      "status": "PASS"
+    },
+    {
+      "name": "World/Regional/Local map switching and selection do not mutate saved world data",
+      "status": "PASS"
+    },
+    {
+      "name": "Canonical travel updates the current location/discovery once without adding location or duplicate route records",
+      "status": "PASS"
+    },
+    {
+      "name": "Character summary still reads live health, attributes, skill, and equipment values from the saved character",
+      "status": "PASS"
+    },
+    {
+      "name": "Map UI transient selection resets to the new current location on world-state replacement",
+      "status": "PASS"
+    }
+  ]
+}

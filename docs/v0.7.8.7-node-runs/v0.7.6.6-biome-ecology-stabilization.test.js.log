@@ -1,0 +1,33 @@
+PASS	All integrated biome ecology validators pass on the current source
+PASS	Authoritative registry contains exactly nine supported biome profiles with unique source keys
+PASS	All resource references resolve to existing item definitions
+PASS	Resource weights and gathering availability are valid and nonnegative
+PASS	Hazard profiles point only to supported biomes and remain within expected bounds
+PASS	All eight races resolve against all nine supported biomes
+PASS	All 72 race-biome outcomes match the defined affinity matrix
+PASS	No race has a modifier exceeding the documented cap
+PASS	Neutral affinities have zero gathering and hazard modifiers
+PASS	Dwarf mining racial modifier is not stacked with affinity
+PASS	All existing enemy profiles use supported biome IDs and all encounter pools are nonempty
+PASS	Every raw biome encounter entry agrees with its habitat profile
+PASS	Invalid biome reference no longer resolves to Woodland random encounters
+PASS	Invalid biome blocks uncontrolled combat safely without spending time or energy
+PASS	Invalid biome data is not rewritten when encounter selection is rejected
+PASS	Recognized legacy cave labels still resolve to Mountain habitats
+PASS	Settlement encounter rules still work when the saved biome label is invalid
+PASS	Explicit scripted enemy encounters remain available for dungeon/boss flow
+PASS	Controlled spar remains available even if a location biome reference is corrupt
+PASS	Hazard rendering does not advance time or apply repeated damage
+PASS	Actual day progression applies the configured hazard at its cadence
+PASS	Strong racial affinity reduces only hazard energy loss, not health damage
+PASS	Old save missing the optional hazard ledger normalizes without regenerating its world
+PASS	New-game creation and save normalization preserve all eight race identities
+PASS	New stabilization layer does not change seeded world generation output
+PASS	Combined ecology and geographic integrity pass across 24 generated seed/start combinations
+PASS	Biome ecology report validates a generated world and stable geographic references
+PASS	Corrupted biome is reported and remains unchanged by the ecology audit
+PASS	Existing item definitions and every crafting recipe input/output reference remain valid
+PASS	Repeated gathering actions award only resolved biome resources without duplicate rewards
+PASS	Monster habitat module leaves combat reward templates unchanged
+PASS	No new species or save-schema fields are added by stabilization
+SUMMARY 32/32 PASS; 0 FAIL

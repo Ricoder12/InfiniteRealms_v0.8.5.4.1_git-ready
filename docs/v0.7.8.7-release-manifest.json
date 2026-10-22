@@ -1,0 +1,53 @@
+{
+  "release": "Infinite Realms v0.7.8.7 — Map and Location Integration",
+  "status": "Built and validated; accepted v0.7.8.7 baseline prepared for future work.",
+  "starting_artifact": {
+    "version": "v0.7.8.6",
+    "file": "InfiniteRealms_v0.7.8.6_standalone.html",
+    "sha256": "ed6c29b10c64fccfe855f353da3b61a160c74999680dde05c74a3242e115f7e9",
+    "qualification": "The prior v0.7.8.6 report marked that artifact a candidate with unresolved regression/browser checks; it is preserved as a rollback, not described as a verified accepted baseline."
+  },
+  "standalone": {
+    "file": "release/InfiniteRealms_v0.7.8.7_standalone.html",
+    "sha256": "2e2c092209169aad87f336bf1bc9adc2c6c802a65758f0e71a075f38d1ebb80c",
+    "size_bytes": 1333145
+  },
+  "accepted_baseline": {
+    "file": "release/InfiniteRealms_v0.7.8.7_accepted_baseline.html",
+    "sha256": "2e2c092209169aad87f336bf1bc9adc2c6c802a65758f0e71a075f38d1ebb80c",
+    "byte_for_byte_matches_standalone": true
+  },
+  "rollback": {
+    "file": "release/InfiniteRealms_v0.7.8.6_map-integration-rollback.html",
+    "sha256": "ed6c29b10c64fccfe855f353da3b61a160c74999680dde05c74a3242e115f7e9",
+    "byte_for_byte_verified": true
+  },
+  "pre_v077_baseline": {
+    "file": "release/InfiniteRealms_v0.7.6.6_pre-v0.7.7-baseline.html",
+    "sha256": "b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f",
+    "byte_for_byte_verified": true
+  },
+  "validation": {
+    "node_test_files": "33/33 passed",
+    "chromium_assertions": "90/90 passed across 5 independently run suites",
+    "standalone_smoke_suites": "3/3 passed; 24 explicit checks and 54 embedded script blocks inspected",
+    "javascript_syntax": "104/104 passed; build.js passed",
+    "python_syntax": "22/22 passed",
+    "build": "passed",
+    "source_zip_integrity": "passed after archive creation"
+  },
+  "feature_notes": [
+    "Political map labels and location details observe discovered-information rules.",
+    "Missing ownership is unknown; only explicit unclaimed metadata renders confirmed-unclaimed status.",
+    "No boundary polygons exist in the current data model, so political border paths are not inferred.",
+    "Five seeded worlds each generated three stable polities and metadata-only regions in the tests.",
+    "Legacy worlds without political data receive minimal initialization without repartitioning valid site assignments.",
+    "The World map fallback says boundary geometry is unavailable, without claiming no political entities exist."
+  ],
+  "limitations": [
+    "No user-exported save was supplied.",
+    "The v0.7.8.6 starting artifact was a candidate with unresolved checks in its earlier report.",
+    "Political borders are not drawn because supported boundary geometry is absent."
+  ],
+  "source_project": "ir_v0787_work"
+}

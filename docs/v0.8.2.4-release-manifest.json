@@ -1,0 +1,19 @@
+{
+  "version": "0.8.2.4",
+  "startingSource": "Accepted v0.8.2.3",
+  "audit": "InfiniteRealms_v0.8.2.1_guild_services_audit.md",
+  "standaloneFile": "InfiniteRealms_v0.8.2.4_standalone.html",
+  "standaloneSha256": "F5C335F708E0C556A40E6694FD9E84D57CA1679D0C697681D6AB2F05F6A985F9",
+  "sourceArchive": "InfiniteRealms_v0.8.2.4_source.zip",
+  "rollbackV0_8_2_3": {
+    "standaloneSha256": "EB0E4E4A204D2C16DC5245C85A0FF43F8D42DF7B9C90202E8F3B3C5C745B7F11",
+    "sourceZipSha256": "7B2E8C2BDE27674C78160C3AF5703FD923BEC1CE8959A4186FDFBC5DE01C4987"
+  },
+  "results": {
+    "standaloneSmoke": "3 scripts PASS",
+    "browser": "NOT TESTED",
+    "javascriptSyntax": "77/77 PASS",
+    "nodeRegression": "42/42 PASS",
+    "userExportedSave": "NOT TESTED"
+  }
+}

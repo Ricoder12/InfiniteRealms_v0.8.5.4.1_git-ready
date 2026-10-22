@@ -1,0 +1,119 @@
+{
+  "suite": "Infinite Realms v0.7.8.7 Unified Map and Character UI Polish browser smoke",
+  "total": 22,
+  "passed": 22,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Standalone HTML title advertises v0.7.8.7",
+      "status": "PASS",
+      "detail": "Infinite Realms — Version 0.7.8.7"
+    },
+    {
+      "test": "New character and deterministic test world initialize",
+      "status": "PASS",
+      "detail": "Unified UI Tester / IR-0777-UI-POLISH-SEED"
+    },
+    {
+      "test": "Visible game chrome uses v0.7.8.7 branding",
+      "status": "PASS",
+      "detail": "VERSION 0.7.8.7 · MAPS, CHARACTER & SAVE INTEGRITY"
+    },
+    {
+      "test": "World atlas displays the unified three-view switcher",
+      "status": "PASS",
+      "detail": "World button marked active; all three native buttons available"
+    },
+    {
+      "test": "Map controls support sequential keyboard focus with a visible focus indicator",
+      "status": "PASS",
+      "detail": "Tab from World lands on Regional and matches :focus-visible"
+    },
+    {
+      "test": "Regional map control opens regional view and marks it active",
+      "status": "PASS",
+      "detail": "Regional panel and active state verified"
+    },
+    {
+      "test": "Location selection updates the highlighted marker and inspection details",
+      "status": "PASS",
+      "detail": "{\"target\": \"loc-0-0\", \"selected\": [\"loc-0-0\"], \"selectedEdges\": 1, \"details\": \"⛰️\\nLOCATION INSPECTION\\nMountain Foothills area\\nKNOWN\\n\\nDiscovery status: known, not yet visited. Recorded terrain: Mountain Foothills. The local name, settlement status, landmark details, description, and danger remain unconfirmed.\\n\\nDiscovery: Known, not yet visited\\n\\n28 km · recorded shortcut\\nRecorded connections\\n1 known\\n🏜️\\nSunhollow\\n\\nCurrent location · Recorded shortcut\\n\\n28 km\\nTravel here · 2 days\\nFocus current location\\nLocal view is available after arrival.\"}"
+    },
+    {
+      "test": "Selected route line is highlighted when the chosen site has a recorded direct edge",
+      "status": "PASS",
+      "detail": "selected edge count=1; non-direct selection does not imply a route"
+    },
+    {
+      "test": "Local view opens with the shared switcher active",
+      "status": "PASS",
+      "detail": "Unified nav replaces the old two-button local nav"
+    },
+    {
+      "test": "Local map scene and existing navigation actions remain available",
+      "status": "PASS",
+      "detail": "interactive scene buttons=9"
+    },
+    {
+      "test": "World control returns to the atlas and restores the correct active state",
+      "status": "PASS",
+      "detail": "World view transition completed"
+    },
+    {
+      "test": "Map controls adapt to a narrow viewport without page-level horizontal overflow",
+      "status": "PASS",
+      "detail": "grid columns=104.656px 104.672px 104.656px; document scrollWidth=390"
+    },
+    {
+      "test": "Character status remains present with numeric, accessible current/max meters",
+      "status": "PASS",
+      "detail": "{\"health\": 100, \"max\": 100, \"energy\": 90, \"maxEnergy\": 100}"
+    },
+    {
+      "test": "Character health status refreshes after underlying game state changes",
+      "status": "PASS",
+      "detail": "Updated in-memory health and called standard renderer"
+    },
+    {
+      "test": "Skills navigation continues to open detailed progression",
+      "status": "PASS",
+      "detail": "Existing Skills screen loaded"
+    },
+    {
+      "test": "Inventory navigation continues to open equipment management",
+      "status": "PASS",
+      "detail": "Existing Inventory view loaded"
+    },
+    {
+      "test": "Existing Life tab still renders after scoped UI changes",
+      "status": "PASS",
+      "detail": "view=Life; rendered text length=5211"
+    },
+    {
+      "test": "Existing Adventure tab still renders after scoped UI changes",
+      "status": "PASS",
+      "detail": "view=Adventure; rendered text length=4399"
+    },
+    {
+      "test": "Existing People tab still renders after scoped UI changes",
+      "status": "PASS",
+      "detail": "view=People; rendered text length=3081"
+    },
+    {
+      "test": "Existing Journal tab still renders after scoped UI changes",
+      "status": "PASS",
+      "detail": "view=Journal; rendered text length=2546"
+    },
+    {
+      "test": "Existing Settings tab still renders after scoped UI changes",
+      "status": "PASS",
+      "detail": "view=Settings; rendered text length=5211"
+    },
+    {
+      "test": "No uncaught browser or console errors",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ],
+  "browser_errors": []
+}

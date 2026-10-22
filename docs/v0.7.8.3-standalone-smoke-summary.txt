@@ -1,0 +1,3 @@
+Standalone smoke suites: 3
+Passed: 3
+Failed: 0

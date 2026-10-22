@@ -1,0 +1,87 @@
+{
+  "release": "Infinite Realms v0.7.8.2 \u2014 Political Entity Foundation",
+  "version": "0.7.8.2",
+  "status": "Built; automated regression and Chromium compatibility checks passed",
+  "auditStartingPoint": {
+    "auditMilestone": "v0.7.8.1 (audit-only; no new playable binary)",
+    "actualAcceptedBuildUsed": "v0.7.7.9",
+    "acceptedInputStandalone": "InfiniteRealms_v0.7.7.9_accepted_baseline.html",
+    "acceptedInputSha256": "62a08fa292029dd6a8442ea6a26b591f224c788c4712d70bb5d7b383cadbdd9c"
+  },
+  "artifacts": {
+    "standalone": "InfiniteRealms_v0.7.8.2_standalone.html",
+    "acceptedBaseline": "InfiniteRealms_v0.7.8.2_accepted_baseline.html",
+    "sourceProject": "InfiniteRealms_v0.7.8.2_source.zip",
+    "rollback": "InfiniteRealms_v0.7.7.9_rollback.html",
+    "standaloneSha256": "233d9537b55c504ac91882ae150d16d2857eca8c621385b6b6755e68223a9737",
+    "acceptedBaselineSha256": "233d9537b55c504ac91882ae150d16d2857eca8c621385b6b6755e68223a9737",
+    "rollbackSha256": "62a08fa292029dd6a8442ea6a26b591f224c788c4712d70bb5d7b383cadbdd9c",
+    "preV077Baseline": "InfiniteRealms_v0.7.6.6_pre-v0.7.7-baseline.html",
+    "preV077BaselineSha256": "b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f"
+  },
+  "implementation": {
+    "politicalRegistry": "world.polities[]",
+    "defaultContent": "empty; no polity records are seeded",
+    "supportedTypes": [
+      "country",
+      "kingdom",
+      "empire",
+      "city-state",
+      "tribal-territory"
+    ],
+    "validation": [
+      "unique non-empty entity IDs",
+      "supported entity type and display name",
+      "valid existing geographic region references",
+      "capital references must resolve to an existing settlement by geoId",
+      "governingEntityId references must resolve uniquely and cannot self-reference or cycle"
+    ],
+    "saveSchemaMigration": false,
+    "geographicIDsRewritten": false,
+    "physicalGeographyDuplicated": false,
+    "regionalOwnershipImplemented": false,
+    "politicalSimulationImplemented": false
+  },
+  "validation": {
+    "focusedPoliticalEntityNodeChecks": {
+      "passed": 17,
+      "failed": 0
+    },
+    "nodeRegressionFiles": {
+      "passed": 29,
+      "failed": 0
+    },
+    "chromiumCompatibilityAndIntegration": {
+      "passed": 24,
+      "failed": 0
+    },
+    "standaloneSmokeSuites": {
+      "passed": 3,
+      "failed": 0
+    },
+    "standaloneSmokeAssertions": {
+      "passed": 24,
+      "failed": 0
+    },
+    "javascriptSyntax": {
+      "passed": 96,
+      "failed": 0,
+      "scope": "js/ and tests/ .js files"
+    },
+    "buildScriptSyntax": "passed",
+    "pythonTestScriptSyntax": {
+      "passed": 11,
+      "failed": 0
+    },
+    "build": "passed",
+    "sourceZipIntegrity": "verified after unzip -t; ZIP had no errors",
+    "checksums": "verified",
+    "uncaughtBrowserErrors": 0
+  },
+  "knownLimitations": [
+    "No user-exported save was supplied; compatibility was tested using saves generated from accepted v0.7.6.6 and v0.7.7.7 builds plus an extensive-exploration fixture.",
+    "The current live geography model has one primary world.region object; regionIds validates against that existing record and does not implement multi-region ownership.",
+    "Geographic country records in world.countries[] and political country entities in world.polities[] remain distinct; their explicit relationship is deferred.",
+    "Unclaimed is not a political entity type; territorial status and regional ownership remain future work."
+  ]
+}

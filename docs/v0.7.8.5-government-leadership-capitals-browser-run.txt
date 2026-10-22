@@ -1,0 +1,22 @@
+PASS: Runtime title identifies v0.7.8.5 — Infinite Realms — Version 0.7.8.5
+PASS: Fresh world starts with an empty political registry and existing NPC records
+PASS: Complete political record can reference an existing capital and NPC ID
+PASS: Complete entity summary returns type, government, capital name and referenced leader name
+PASS: Territory ownership and valid capital location pass political validator
+PASS: No NPC record or geography copy was created for political leadership
+PASS: Partial entity without government, ruler, title or capital remains valid
+PASS: Controlled region count is reported only from explicit owner/governor assignments
+PASS: Unsupported government type is reported
+PASS: Unresolved leader NPC ID is reported without creating an NPC
+PASS: Capital outside known political territory is rejected
+PASS: Existing location NPC can resolve through the v06 saved-person overlay
+PASS: Summary lookup is read-only for sites, routes, and geography index
+PASS: Actual save-slot round trip preserves government, capital, and leader references — {"polities":[{"id":"polity:world-47-4f-56-45-52-4e-4d-45-4e-54-2d-43-41-50-49-54-41-4c-2d-42-52-4f-57-53-45-52:62-72-6f-77-73-65-72-2d-63-72-6f-77-6e","governmentType":"monarchy","capitalSiteGeoId":"site:world-47-4f-56-45-52-4e-4d-45-4e-54-2d-43-41-50-49-54-41-4c-2d-42-52-4f-57-53-45-52:loc-0-0","leaderNpcId":"npc1"},{"id":"polity:world-47-4f-56-45-52-4e-4d-45-4e-54-2d-43-41-50-49-54-41-4c-2d-42-52-4f-57-53-45-52:62-72-6f-77-73-65-72-2d-63-6f-75-6e-63-69-6c"}],"report":{"ok":true,"errors":[],"warnings":[],"counts":{"polities":2,"uniqueIds":2,"geographicRegions":1,"geographicSites":49}}}
+PASS: Leader resolves after actual save-slot reload
+PASS: Load preserves canonical physical site/route counts without duplicates
+{
+  "total": 16,
+  "passed": 16,
+  "failed": 0,
+  "browserErrors": []
+}

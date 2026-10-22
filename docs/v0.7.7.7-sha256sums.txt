@@ -1,0 +1,15 @@
+139ff633482fa09231c36da2f454894f792abb79bc8c6e2b0c100c2f36877ed3  /mnt/data/InfiniteRealms_v0.7.7.7_standalone.html
+7aeb0cfed87e45d24532cb96d406ba7eaaf6ab39127a1e71b23a0f7ed547558d  /mnt/data/InfiniteRealms_v0.7.7.6_rollback.html
+bd7448b89d43f804d15825913cd37abda1dc5f8a33e520971898a25b4bc5647f  /mnt/data/ir_work/index.html
+5401ceb58ade8087186c89248c9c3ccd91441a8ab0ca9496f8c640ac2add68de  /mnt/data/ir_work/css/ui-polish-v0.7.7.7.css
+eac1e24144a787c4464d0a61f0be00dcd0f4c7b93cbcd867a1cb8f3416aa9867  /mnt/data/ir_work/js/game/49-unified-map-character-ui-v0.7.7.7.js
+2b2c851928acc7dd4a11f9155dce9346bf0dbe09569b1973d1f983bdab708689  /mnt/data/ir_work/docs/v0.7.7.7-release-manifest.json
+017f8435b857c86b2e16600687a09388ea5d6ccb7e31b590f128f2dfaf35b865  /mnt/data/ir_work/docs/v0.7.7.7-test-report.md
+ec64c4186c978cdbe9ad6844c7feafcd0fbcbe1e00547b770da9d56338e81aa9  /mnt/data/ir_work/docs/v0.7.7.7-change-log.md
+7aeb0cfed87e45d24532cb96d406ba7eaaf6ab39127a1e71b23a0f7ed547558d  /mnt/data/ir_work/backups/InfiniteRealms_v0.7.7.6_accepted_baseline.html
+83d244e4cc26be4086ba4910daa3ac96279705836134628f3aaef2f48b77ee54  /mnt/data/ir_work/docs/screenshots/v0.7.7.7-world-map-switcher-desktop.png
+b32a7531864b9197d04ab13596062179c12a208ed543d610cb2439080054738c  /mnt/data/ir_work/docs/screenshots/v0.7.7.7-world-map-switcher-mobile.png
+bdc7e91a34d5c96343a090139fe0e6e50bf90d74e34224b26c96ea2d49a0c914  /mnt/data/ir_work/docs/screenshots/v0.7.7.7-regional-map-selected-desktop.png
+82ca0c5b53923aac034d65e45ecbc4e6fa630dbecd996d96818381fea6fe5e1c  /mnt/data/ir_work/docs/screenshots/v0.7.7.7-local-map-desktop.png
+1a85252684c7c5f280f13ef7de36b18d89a03a30e9f3d6d8765afac1469f8164  /mnt/data/ir_work/docs/screenshots/v0.7.7.7-character-status-desktop.png
+3bf21efffcc13c79a908384bd1c25664a21919a491f58c52be063cfa41793dda  /mnt/data/ir_work/docs/screenshots/v0.7.7.7-character-status-mobile.png

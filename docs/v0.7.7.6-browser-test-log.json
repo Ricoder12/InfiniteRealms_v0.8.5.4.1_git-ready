@@ -1,0 +1,84 @@
+{
+  "suite": "Infinite Realms v0.7.7.6 append-only Character Status",
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Bundled HTML advertises v0.7.7.6 in document title",
+      "status": "PASS",
+      "detail": "Infinite Realms — Version 0.7.7.6"
+    },
+    {
+      "test": "New character creation succeeds on deterministic seed",
+      "status": "PASS",
+      "detail": "Status Window Tester / IR-0776-CHARACTER-STATUS-SEED"
+    },
+    {
+      "test": "Visible game chrome advertises v0.7.7.6",
+      "status": "PASS",
+      "detail": "VERSION 0.7.7.6 · MAPS, TRAVEL & CHARACTER STATUS"
+    },
+    {
+      "test": "Accepted Character screen is preserved (visual record, talents, attributes, learned skills, progression, history)",
+      "status": "PASS",
+      "detail": "Original Character screen markers remain present"
+    },
+    {
+      "test": "Appended status area shows health and energy current/max values",
+      "status": "PASS",
+      "detail": "expected 100 / 100; 90 / 100"
+    },
+    {
+      "test": "Current site is resolved from shared geographic state",
+      "status": "PASS",
+      "detail": "actual site='Ashcombe'"
+    },
+    {
+      "test": "Original attribute labels and values are retained",
+      "status": "PASS",
+      "detail": "7 stored attributes"
+    },
+    {
+      "test": "Original detailed skills display remains intact (not replaced with a summary)",
+      "status": "PASS",
+      "detail": "25 skill rows rendered"
+    },
+    {
+      "test": "New condition and equipment information is appended below the original screen",
+      "status": "PASS",
+      "detail": "Original Character markup precedes the v0.7.7.6 addendum"
+    },
+    {
+      "test": "Appended health meter refreshes when underlying game state changes",
+      "status": "PASS",
+      "detail": "Changed in-memory health then invoked normal render()"
+    },
+    {
+      "test": "Equipment addendum uses existing slots and provides Inventory navigation",
+      "status": "PASS",
+      "detail": "8 equipment slots; Inventory link count=1"
+    },
+    {
+      "test": "Equipped-item summary refreshes from the existing equipment slot",
+      "status": "PASS",
+      "detail": "⚔️ Weapon\nIron Sword\nDamage 9"
+    },
+    {
+      "test": "Equipment addendum adapts to a two-column mobile layout",
+      "status": "PASS",
+      "detail": "grid-template-columns=157.5px 157.5px"
+    },
+    {
+      "test": "Inventory navigation opens the existing Inventory tab",
+      "status": "PASS",
+      "detail": "view=Inventory"
+    },
+    {
+      "test": "No uncaught browser or console errors",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ],
+  "browser_errors": []
+}

@@ -1,0 +1,31 @@
+# Infinite Realms v0.7.8.8 — Changed Files
+
+## Runtime branding only
+- index.html — release title updated to v0.7.8.8.
+- js/game/56-political-map-integration-v0.7.8.7.js — visible title/version labels updated; map behavior unchanged.
+
+## Regression test expectations updated for the current release title
+- tests/v0.7.7.3-regional-map.test.js
+- tests/v0.7.7.3-world-map.test.js
+- tests/v0.7.7.3-standalone-smoke.js
+- tests/v0.7.7.4-local-map.test.js
+- tests/v0.7.7.7-ui-polish.test.js
+- tests/v0.7.7.9-final-acceptance.test.js
+- tests/v0.7.8.3-regional-hierarchy-browser.py
+- tests/v0.7.8.7-political-map-browser.py
+- tests/v0.7.8.7-political-map-ui-browser.py
+
+## Release and evidence files
+- release/InfiniteRealms_v0.7.8.8_standalone.html
+- docs/v0.7.8.8-change-log.md
+- docs/v0.7.8.8-test-report.md
+- docs/v0.7.8.8-release-manifest.json
+- docs/v0.7.8.8-sha256sums.txt
+- docs/v0.7.8.8-node-regression.log
+- docs/v0.7.8.8-standalone-smoke.log
+- docs/v0.7.8.8-syntax-check.log
+- docs/v0.7.8.8-build.log
+- docs/v0.7.8.8-browser-validation.log
+- docs/v0.7.8.8-source-archive-verification.log
+- docs/v0.7.8.8-sha256sums.txt
+- README.md

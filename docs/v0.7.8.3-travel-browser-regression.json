@@ -1,0 +1,58 @@
+{
+  "suite": "Infinite Realms v0.7.8.3 Travel Route Integration browser smoke",
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "tests": [
+    {
+      "test": "Standalone build boot and travel module loaded",
+      "status": "PASS",
+      "detail": "Infinite Realms — Version 0.7.8.7"
+    },
+    {
+      "test": "Start a deterministic game with the existing canonical connection graph",
+      "status": "PASS",
+      "detail": "{\"siteCount\": 49, \"globalEdges\": 95, \"localRecords\": 190, \"connections\": 4}"
+    },
+    {
+      "test": "Visible game chrome carries v0.7.8.3 map-and-travel metadata",
+      "status": "PASS",
+      "detail": "✧\nINFINITE REALMS\nVERSION 0.7.8.7 · MAPS, CHARACTER & SAVE INTEGRITY\nREP\n0\nUnknown\nSaved locally\nSave\nLoad\nNew Life\n↧ Backup"
+    },
+    {
+      "test": "Direct preview uses a real edge and masks unsurveyed name and danger",
+      "status": "PASS",
+      "detail": "{\"ok\": true, \"id\": \"loc-1-0\", \"name\": \"Quiet Crag Cairn\", \"days\": 1, \"energy\": 5, \"distance\": 6, \"from\": \"loc-0-0\", \"modal\": \"travel-preview\", \"hasMaskedName\": true, \"hasUnknownRisk\": true, \"hasEstimate\": true, \"hasHazardVarianceNote\": true}"
+    },
+    {
+      "test": "Confirming direct travel arrives and consumes the exact displayed time and energy",
+      "status": "PASS",
+      "detail": "{\"quote\": {\"days\": 1, \"energy\": 5, \"distance\": 6}, \"before\": {\"site\": \"loc-0-0\", \"days\": 0, \"energy\": 100}, \"after\": {\"site\": \"loc-1-0\", \"days\": 1, \"energy\": 95, \"coin\": 10000, \"visited\": [\"loc-0-0\", \"loc-1-0\"], \"travelCount\": 1}}"
+    },
+    {
+      "test": "Multi-leg preview lists only verified graph legs and hides unsurveyed waypoints",
+      "status": "PASS",
+      "detail": "{\"ok\": true, \"target\": \"loc-0-1\", \"path\": [\"loc-1-0\", \"loc-0-0\", \"loc-0-1\"], \"legs\": 2, \"totalDistance\": 26, \"totalDays\": 2, \"totalEnergy\": 10, \"modal\": \"travel-route-preview\", \"hasLegList\": true, \"hiddenNamesMasked\": true, \"hasTerrainUnknown\": true}"
+    },
+    {
+      "test": "Executing the multi-leg preview follows its exact path and totals",
+      "status": "PASS",
+      "detail": "{\"planned\": {\"target\": \"loc-0-1\", \"legs\": 2, \"totalDistance\": 26, \"totalDays\": 2, \"totalEnergy\": 10}, \"before\": {\"site\": \"loc-1-0\", \"days\": 1, \"energy\": 100, \"count\": 1}, \"after\": {\"site\": \"loc-0-1\", \"days\": 3, \"energy\": 90, \"count\": 3, \"visited\": [\"loc-1-0\", \"loc-0-0\", \"loc-0-1\"], \"modal\": null}}"
+    },
+    {
+      "test": "Save-slot round trip restores arrived location and usable canonical connections",
+      "status": "PASS",
+      "detail": "{\"saved\": true, \"id\": \"loc-0-1\", \"count\": 3, \"loadedSite\": \"loc-0-1\", \"loadedCount\": 3, \"connections\": 3}"
+    },
+    {
+      "test": "A disconnected but visible destination fails without time/resource/location mutation",
+      "status": "PASS",
+      "detail": "{\"ok\": true, \"target\": \"loc-0-3\", \"path\": null, \"direct\": null, \"modal\": null, \"unchanged\": true, \"beforeEdges\": 95, \"afterEdges\": 92}"
+    },
+    {
+      "test": "No uncaught browser or console errors",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

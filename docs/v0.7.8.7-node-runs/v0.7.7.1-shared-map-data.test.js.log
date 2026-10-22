@@ -1,0 +1,63 @@
+{
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Shared map facade references existing world, region, site array, connection array, and biome registry",
+      "status": "PASS"
+    },
+    {
+      "name": "Every generated location resolves uniquely by stable geoId",
+      "status": "PASS"
+    },
+    {
+      "name": "Names, legacy IDs, and array positions are not accepted as stable map keys",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate stable location IDs fail closed instead of selecting an arbitrary record",
+      "status": "PASS"
+    },
+    {
+      "name": "Every global connection resolves by stable ID and endpoints reference actual locations",
+      "status": "PASS"
+    },
+    {
+      "name": "Per-location connection view contains only canonical route object references incident to that location",
+      "status": "PASS"
+    },
+    {
+      "name": "Current, known, visited, and discovered flags read existing save fields without mutating them",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown visibility references return null rather than guessing",
+      "status": "PASS"
+    },
+    {
+      "name": "Biome accessor returns the authoritative IR_BIOMES object by biomeId",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown biome IDs return null without substituting a default biome",
+      "status": "PASS"
+    },
+    {
+      "name": "Current coordinates are passed through unchanged and no world-scale coordinates are fabricated",
+      "status": "PASS"
+    },
+    {
+      "name": "JSON save/load preserves location and connection IDs consumed by the shared facade",
+      "status": "PASS"
+    },
+    {
+      "name": "Empty continent/country collections stay empty; helper does not invent hierarchy entities",
+      "status": "PASS"
+    },
+    {
+      "name": "Shared data module is included before application boot without adding a new map renderer",
+      "status": "PASS"
+    }
+  ]
+}

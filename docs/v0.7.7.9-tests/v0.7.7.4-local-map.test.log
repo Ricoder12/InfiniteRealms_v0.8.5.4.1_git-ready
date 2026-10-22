@@ -1,0 +1,72 @@
+{
+  "suite": "Infinite Realms v0.7.7.4 Local Map",
+  "total": 16,
+  "passed": 16,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Local map renders inside the accepted local detail view and keeps return navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Town local scene derives clickable buildings only from saved services",
+      "status": "PASS"
+    },
+    {
+      "name": "Map actions route to existing application tabs or existing interaction handlers",
+      "status": "PASS"
+    },
+    {
+      "name": "Service aliases collapse to one existing facility and unsupported service IDs never invent a building",
+      "status": "PASS"
+    },
+    {
+      "name": "Decorative houses and terrain props cannot be clicked as services",
+      "status": "PASS"
+    },
+    {
+      "name": "Settlement type changes presentation scale and the layout remains deterministic for the same site",
+      "status": "PASS"
+    },
+    {
+      "name": "Hamlet and city service panels respect actual saved service availability",
+      "status": "PASS"
+    },
+    {
+      "name": "Town staff labels only use real, site-bound NPC records and do not generate NPCs",
+      "status": "PASS"
+    },
+    {
+      "name": "An existing guard occupation links to People but does not fabricate a new town-service building",
+      "status": "PASS"
+    },
+    {
+      "name": "Wilderness scenes show biome-appropriate scenery and no settlement services",
+      "status": "PASS"
+    },
+    {
+      "name": "Swamp/snow/coast/river biome themes map to corresponding visual profiles",
+      "status": "PASS"
+    },
+    {
+      "name": "Recorded point of interest uses the existing Adventure destination, and no fake local poi is generated",
+      "status": "PASS"
+    },
+    {
+      "name": "No interactive businesses, labels, services, or NPC names leak from an unsurveyed current site",
+      "status": "PASS"
+    },
+    {
+      "name": "Location with missing service, biome, or optional route fields fails safely without changing the save",
+      "status": "PASS"
+    },
+    {
+      "name": "Map retains existing recorded outbound travel actions and does not create a local movement grid",
+      "status": "PASS"
+    },
+    {
+      "name": "New module and title are ordered before boot and use the current v0.7.7.9 release title",
+      "status": "PASS"
+    }
+  ]
+}

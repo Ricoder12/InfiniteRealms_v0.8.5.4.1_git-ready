@@ -1,0 +1,10 @@
+PASS	standalone has no external script/style references
+PASS	document title advertises v0.7.7.2
+PASS	shared map data module remains embedded
+PASS	interactive world atlas model and renderer are embedded
+PASS	actual regional terrain renderer is embedded
+PASS	inspection action preserves the existing travel handler
+PASS	map CSS is bundled
+PASS	accepted v0.7.7.1 content remains available as exact backup
+PASS	application boot remains after the v0.7.7.2 module
+CHECKS=9 PASS=9 FAIL=0

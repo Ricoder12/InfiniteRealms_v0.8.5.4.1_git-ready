@@ -1,0 +1,7 @@
+PASS: standalone contains expected 53 inline script blocks (found 53)
+PASS: standalone title is v0.7.6.5
+PASS: standalone has no external local JS/CSS path references
+PASS: habitat registry initializes with all 16 fixed enemies
+PASS: all 9 biomes have normal encounter and hunt candidates
+PASS: real hunting function selects the Desert habitat target
+SUMMARY 53 script blocks checked; boot UI deliberately not executed in Node stub.

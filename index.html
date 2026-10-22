@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Infinite Realms — Version 0.8.5.1</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/world-map.css">
+<link rel="stylesheet" href="css/ui-polish-v0.7.7.7.css">
+<link rel="stylesheet" href="css/political-map-v0.7.8.7.css">
+<link rel="stylesheet" href="css/association-v0.8.3.6.css">
+<link rel="stylesheet" href="css/association-v0.8.3.7.css">
+</head>
+<body>
+<div id="app"></div>
+<div class="toast-stack" id="toastStack"></div>
+<script src="js/data/config.js"></script>
+<script src="js/data/world.js"></script>
+<script src="js/data/races.js"></script>
+<script src="js/data/backgrounds.js"></script>
+<script src="js/data/skills.js"></script>
+<script src="js/data/items.js"></script>
+<script src="js/data/enemies.js"></script>
+<script src="js/data/jobs.js"></script>
+<script src="js/data/npcs.js"></script>
+<script src="js/data/events.js"></script>
+<script src="js/data/ui.js"></script>
+<script src="js/game/01-core-v0.1.js"></script>
+<script src="js/game/02-worldgen-v0.2.js"></script>
+<script src="js/game/03-stability-v0.2.1.js"></script>
+<script src="js/game/04-life-paths-combat-v0.3.js"></script>
+<script src="js/game/05-progression-economy-v0.4.js"></script>
+<script src="js/game/06-talents-spells-factions-v0.5.js"></script>
+<script src="js/game/07-quality-of-life-v0.5.1.js"></script>
+<script src="js/game/08-npc-foundation-v0.6.js"></script>
+<script src="js/game/09-skills-relationships-v0.6.4.js"></script>
+<script src="js/game/10-inventory-integration-v0.6.5.js"></script>
+<script src="js/game/11-stability-qol-v0.6.6.js"></script>
+<script src="js/game/12-journal-world-history-v0.6.7.js"></script>
+<script src="js/game/13-balance-hardening-v0.6.8.js"></script>
+<script src="js/game/14-relationship-location-v0.6.8.1.js"></script>
+<script src="js/game/15-npc-schedules-v0.7.1.js"></script>
+<script src="js/game/16-npc-occupations-v0.7.2.js"></script>
+<script src="js/game/17-town-services-road-trading-v0.7.2.js"></script>
+<script src="js/game/18-facility-polish-v0.7.2.js"></script>
+<script src="js/game/19-town-guards-inn-v0.7.2.3.js"></script>
+<script src="js/game/20-occupation-depth-npc-crime-v0.7.2.5a.js"></script>
+<script src="js/game/21-combat-theft-reputation-v0.7.2.5b.js"></script>
+<script src="js/game/22-reputation-gang-boss-v0.7.2.6.js"></script>
+<script src="js/game/23-quiet-notifications-boss-reward-v0.7.2.7.js"></script>
+<script src="js/game/24-town-innkeepers-v0.7.2.8.js"></script>
+<script src="js/game/25-gang-boss-iron-sword-v0.7.2.9.js"></script>
+<script src="js/game/26-reputation-consequences-v0.7.3.js"></script>
+<script src="js/game/27-npc-memory-reliability-v0.7.3.1.js"></script>
+<script src="js/game/28-witness-based-reputation-v0.7.3.2.js"></script>
+<script src="js/game/29-reputation-based-npc-reactions-v0.7.3.3.js"></script>
+<script src="js/game/30-positive-reputation-v0.7.3.4.js"></script>
+<script src="js/game/31-contextual-favors-information-v0.7.3.5.js"></script>
+<script src="js/game/32-feedback-antifarming-regression-v0.7.3.6.js"></script>
+<script src="js/game/33-stable-geographic-identifiers-v0.7.5.2.js"></script>
+<script src="js/game/34-geographic-hierarchy-connections-v0.7.5.3.js"></script>
+<script src="js/game/35-world-generation-integration-v0.7.5.4.js"></script>
+<script src="js/game/36-save-compatibility-regression-v0.7.5.5.js"></script>
+<script src="js/game/37-biome-profile-validation-v0.7.6.1.js"></script>
+<script src="js/game/38-biome-resources-gathering-v0.7.6.2.js"></script>
+<script src="js/game/39-environmental-hazards-v0.7.6.3.js"></script>
+<script src="js/game/40-racial-biome-affinity-v0.7.6.4.js"></script>
+<script src="js/game/41-monster-habitats-v0.7.6.5.js"></script>
+<script src="js/game/42-biome-ecology-stabilization-v0.7.6.6.js"></script>
+<script src="js/game/43-shared-map-data-v0.7.7.1.js"></script>
+<script src="js/game/44-world-map-v0.7.7.2.js"></script>
+<script src="js/game/45-regional-map-v0.7.7.3.js"></script>
+<script src="js/game/46-local-map-v0.7.7.4.js"></script>
+<script src="js/game/47-travel-route-integration-v0.7.7.5.js"></script>
+<script src="js/game/48-character-status-v0.7.7.6.js"></script>
+<script src="js/game/49-unified-map-character-ui-v0.7.7.7.js"></script>
+<script src="js/game/50-save-compatibility-v0.7.7.8.js"></script>
+<script src="js/game/51-final-acceptance-v0.7.7.9.js"></script>
+<script src="js/game/52-political-entity-foundation-v0.7.8.2.js"></script>
+<script src="js/game/53-regional-hierarchy-v0.7.8.3.js"></script>
+<script src="js/game/54-government-leadership-capitals-v0.7.8.5.js"></script>
+<script src="js/game/55-world-political-generation-v0.7.8.6.js"></script>
+<script src="js/game/56-political-map-integration-v0.7.8.7.js"></script>
+<script src="js/game/57-geographic-data-integrity-v0.7.9.2.js"></script>
+<script src="js/game/58-political-geography-integrity-v0.7.9.5.js"></script>
+  <script src="js/game/59-npc-world-integrity-v0.7.9.6.js"></script>
+<script src="js/game/60-save-recovery-v0.7.9.7.js"></script>
+<script src="js/game/61-faction-foundation-v0.8.0.js"></script>
+<script src="js/game/62-organization-records-v0.8.1.js"></script>
+<script src="js/game/63-guild-services-v0.8.2.2.js"></script>
+<script src="js/game/64-guild-membership-v0.8.2.3.js"></script>
+<script src="js/game/65-guild-contract-board-v0.8.2.4.js"></script>
+<script src="js/game/66-guild-reputation-integration-v0.8.2.5.js"></script>
+<script src="js/game/67-adventurer-rank-eligibility-v0.8.3.5.js"></script>
+<script src="js/game/68-guild-duty-progression-v0.8.3.3.js"></script>
+<script src="js/game/69-guild-contract-rank-completion-v0.8.3.4.js"></script>
+<script src="js/game/70-adventurer-examination-promotion-v0.8.3.5.js"></script>
+<script src="js/game/71-association-tab-assignment-gate-v0.8.3.6.js"></script>
+<script src="js/game/72-association-branch-quest-board-redesign-v0.8.3.7.js"></script>
+<script src="js/game/73-temporary-squads-v0.8.4.1.js"></script>
+<script src="js/game/74-companion-recruitment-v0.8.4.2.js"></script>
+<script src="js/game/75-party-formation-v0.8.4.3.js"></script>
+<script src="js/game/76-companion-combat-integration-v0.8.5.1.js"></script>
+<script src="js/game/77-companion-equipment-skills-v0.8.5.4.js"></script>
+<script src="js/game/78-companion-spellcasting-v0.8.5.4.1.js"></script>
+<script src="js/game/27-boot.js"></script>
+</body>
+</html>
+

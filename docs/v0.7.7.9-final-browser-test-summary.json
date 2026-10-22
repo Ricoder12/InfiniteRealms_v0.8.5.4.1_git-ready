@@ -1,0 +1,90 @@
+{
+  "release": "Infinite Realms v0.7.7.9",
+  "title": "Final Regression and Acceptance",
+  "browser_suite_count": 10,
+  "total_assertions": 155,
+  "passed": 155,
+  "failed": 0,
+  "suites": [
+    {
+      "suite": "World/Regional/Local map smoke",
+      "report": "docs/v0.7.7.9-world-map-browser-log.json",
+      "total": 17,
+      "passed": 17,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Local map smoke",
+      "report": "docs/v0.7.7.9-local-map-browser-log.json",
+      "total": 14,
+      "passed": 14,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Travel route preview",
+      "report": "docs/v0.7.7.9-travel-preview-browser-log.json",
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Character status smoke",
+      "report": "docs/v0.7.7.9-character-smoke-browser-log.json",
+      "total": 15,
+      "passed": 15,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Unified map/Character UI polish",
+      "report": "docs/v0.7.7.9-ui-polish-browser-log.json",
+      "total": 22,
+      "passed": 22,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Character status regression",
+      "report": "docs/v0.7.7.9-character-browser-regression.json",
+      "total": 15,
+      "passed": 15,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Regional map regression",
+      "report": "docs/v0.7.7.9-regional-browser-test-log.json",
+      "total": 17,
+      "passed": 17,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Local map regression",
+      "report": "docs/v0.7.7.9-local-browser-regression.json",
+      "total": 14,
+      "passed": 14,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Travel regression",
+      "report": "docs/v0.7.7.9-travel-browser-regression.json",
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "run_status": "PASS"
+    },
+    {
+      "suite": "Save compatibility integration",
+      "report": "docs/v0.7.7.9-save-compatibility-browser-log.json",
+      "total": 21,
+      "passed": 21,
+      "failed": 0,
+      "run_status": "PASS"
+    }
+  ]
+}

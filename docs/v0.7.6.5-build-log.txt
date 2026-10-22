@@ -1,0 +1,8 @@
+Build command: node build.js
+Result: PASS
+Built output: dist/infinite-realms.html
+Standalone size: 1020K
+Accepted v0.7.6.4 standalone SHA-256: dc155d3774d0586fd23d16f64961c1cafa9db4001fa1cae5a2ebdb99865b6f97
+Accepted source-project backup SHA-256: dc155d3774d0586fd23d16f64961c1cafa9db4001fa1cae5a2ebdb99865b6f97
+New v0.7.6.5 standalone SHA-256: e072f3cdfb9698a52226db0411837909539afbab7a96e037c1387f2718b5d07d
+Verified byte equality: accepted standalone and rollback backup match exactly

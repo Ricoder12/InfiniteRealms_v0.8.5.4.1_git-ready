@@ -1,0 +1,14 @@
+b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f  /mnt/data/InfiniteRealms_v0.7.6.6.html
+e072f3cdfb9698a52226db0411837909539afbab7a96e037c1387f2718b5d07d  /mnt/data/InfiniteRealms_v0.7.6.6_backup.html
+e072f3cdfb9698a52226db0411837909539afbab7a96e037c1387f2718b5d07d  /mnt/data/InfiniteRealms_v0.7.6.5.html
+be2600a8770e5c58ec254639baee157e99a55c4bd59e11c6794b93f8b6a7fb9e  /mnt/data/InfiniteRealms_v0.7.5.5.html
+ee4d38bb6a80a525f147a39580f1579f1eedb77b6f66a69f7a52dbb672e3230e  /mnt/data/InfiniteRealms_v0.7.6.1.html
+dcaabee7cac1de6c64a2e66fdd2e0d94e55d73acab42bb5881b09f341617e37f  /mnt/data/InfiniteRealms_v0.7.6.2.html
+537a6101800d303a0e96e9c3946e2c3061bfc9a591021a75c676da91f2567c48  /mnt/data/InfiniteRealms_v0.7.6.3.html
+dc155d3774d0586fd23d16f64961c1cafa9db4001fa1cae5a2ebdb99865b6f97  /mnt/data/InfiniteRealms_v0.7.6.4.html
+dc155d3774d0586fd23d16f64961c1cafa9db4001fa1cae5a2ebdb99865b6f97  /mnt/data/InfiniteRealms_v0.7.6.5_backup.html
+
+Source/output verification:
+b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f  dist/infinite-realms.html
+e072f3cdfb9698a52226db0411837909539afbab7a96e037c1387f2718b5d07d  backups/InfiniteRealms_v0.7.6.5_accepted_baseline.html
+rollback copy byte-identical to accepted v0.7.6.5

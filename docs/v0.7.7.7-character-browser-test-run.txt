@@ -1,0 +1,19 @@
+PASS: Bundled HTML advertises v0.7.7.7 in document title: Infinite Realms — Version 0.7.7.7
+PASS: New character creation succeeds on deterministic seed: Status Window Tester / IR-0776-CHARACTER-STATUS-SEED
+PASS: Visible game chrome advertises v0.7.7.7: VERSION 0.7.7.7 · MAPS, CHARACTER & UI POLISH
+PASS: Accepted Character screen is preserved (visual record, talents, attributes, learned skills, progression, history): Original Character screen markers remain present
+PASS: Appended status area shows health and energy current/max values: expected 100 / 100; 90 / 100
+PASS: Current site is resolved from shared geographic state: actual site='Ashcombe'
+PASS: Original attribute labels and values are retained: 7 stored attributes
+PASS: Original detailed skills display remains intact (not replaced with a summary): 25 skill rows rendered
+PASS: New condition and equipment information is appended below the original screen: Original Character markup precedes the v0.7.7.7 addendum
+PASS: Appended health meter refreshes when underlying game state changes: Changed in-memory health then invoked normal render()
+PASS: Equipment addendum uses existing slots and provides Inventory navigation: 8 equipment slots; Inventory link count=1
+PASS: Equipped-item summary refreshes from the existing equipment slot: ⚔️ Weapon
+Iron Sword
+Damage 9
+PASS: Equipment addendum adapts to a two-column mobile layout: grid-template-columns=157.5px 157.5px
+PASS: Inventory navigation opens the existing Inventory tab: view=Inventory
+PASS: No uncaught browser or console errors: []
+
+SUMMARY 15 / 15 passed; 0 failed

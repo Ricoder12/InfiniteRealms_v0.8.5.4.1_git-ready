@@ -1,0 +1,8 @@
+PASS	standalone has no external script/style links
+PASS	title is v0.7.7.1
+PASS	shared map data module is embedded
+PASS	stable geoId resolver is embedded
+PASS	connection resolver is embedded
+PASS	no new map renderer is embedded
+PASS	application boot remains after shared map data module
+CHECKS=7 PASS=7 FAIL=0

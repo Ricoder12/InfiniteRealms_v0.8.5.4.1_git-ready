@@ -1,0 +1,16 @@
+index.html
+README.md
+css/association-v0.8.3.6.css
+js/game/71-association-tab-assignment-gate-v0.8.3.6.js
+docs/v0.8.3.6-association-tab-assignment-gate.md
+docs/v0.8.3.6-test-report.md
+docs/v0.8.3.6-changed-files.txt
+tests/v0.7.7.3-regional-map.test.js
+tests/v0.7.7.3-world-map.test.js
+tests/v0.7.7.4-local-map.test.js
+tests/v0.7.7.7-ui-polish.test.js
+tests/v0.7.7.9-final-acceptance.test.js
+tests/v0.7.9.6-standalone-smoke.test.js
+tests/v0.8.2.4-guild-contract-board.test.js
+tests/v0.8.3.3-production-path.test.js
+tests/v0.8.3.6-association-tab-assignment-gate.test.js

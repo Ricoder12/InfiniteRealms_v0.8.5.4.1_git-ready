@@ -1,0 +1,114 @@
+{
+  "suite": "Infinite Realms v0.7.8.7 Political Map Integration browser",
+  "total": 21,
+  "passed": 21,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Standalone candidate title identifies v0.7.8.7",
+      "status": "PASS",
+      "detail": "Infinite Realms — Version 0.7.8.7"
+    },
+    {
+      "test": "New game initializes before political map records are inspected",
+      "status": "PASS",
+      "detail": "IR-0787-POLITICAL-MAP-SEED / 49 sites"
+    },
+    {
+      "test": "Fresh world generates a small validated political set after geographic generation",
+      "status": "PASS",
+      "detail": "3 polities; political errors=[]; regional errors=[]"
+    },
+    {
+      "test": "Five seeds produce valid capitals, owners, and hierarchy without physical geography changes",
+      "status": "PASS",
+      "detail": "[{\"seed\": \"ALPHA-0787\", \"count\": 3, \"physicalUnchanged\": true, \"politicalValid\": true, \"regionalValid\": true, \"capitalOk\": true, \"uniqueIds\": true}, {\"seed\": \"BETA-0787\", \"count\": 3, \"physicalUnchanged\": true, \"politicalValid\": true, \"regionalValid\": true, \"capitalOk\": true, \"uniqueIds\": true}, {\"seed\": \"GAMMA-0787\", \"count\": 3, \"physicalUnchanged\": true, \"politicalValid\": true, \"regionalValid\": true, \"capitalOk\": true, \"uniqueIds\": true}, {\"seed\": \"IR-0787-POLITICAL-MAP-SEED\", \"count\": 3, \"physicalUnchanged\": true, \"politicalValid\": true, \"regionalValid\": true, \"capitalOk\": true, \"uniqueIds\": true}, {\"seed\": \"NORTH-MARCH-0787\", \"count\": 3, \"physicalUnchanged\": true, \"politicalValid\": true, \"regionalValid\": true, \"capitalOk\": true, \"uniqueIds\": true}]"
+    },
+    {
+      "test": "Repeating an identical seed reproduces polity records and region assignments",
+      "status": "PASS",
+      "detail": "True"
+    },
+    {
+      "test": "Save-slot reload preserves generated polity IDs and all regional assignments",
+      "status": "PASS",
+      "detail": "{\"saved\": true, \"politiesMatch\": true, \"assignmentsMatch\": true, \"currentRestored\": true, \"politicalValid\": true, \"regionalValid\": true}"
+    },
+    {
+      "test": "Temporary test fixture contains owned, site-owned, unclaimed, and unknown regions",
+      "status": "PASS",
+      "detail": "{\"ok\": true, \"sites\": {\"capital\": \"loc-0-0\", \"owned\": \"loc-0-1\", \"unclaimed\": \"loc-1-0\", \"siteOnly\": \"loc-0-6\", \"hiddenCapital\": \"loc-6-6\"}, \"geoIds\": {\"capital\": \"site:world-49-52-2d-30-37-38-37-2d-50-4f-4c-49-54-49-43-41-4c-2d-4d-41-50-2d-53-45-45-44:loc-0-0\", \"hiddenCapital\": \"site:world-49-52-2d-30-37-38-37-2d-50-4f-4c-49-54-49-43-41-4c-2d-4d-41-50-2d-53-45-45-44:loc-6-6\"}, \"directNeighborCount\": 3, \"polityCount\": 3, \"regionCount\": 4, \"routeCount\": 101}"
+    },
+    {
+      "test": "World atlas shows known political entities and their types",
+      "status": "PASS",
+      "detail": "POLITICAL GEOGRAPHY\nKnown territories and capitals\n\nPolitical information is shown only for visited or explicitly discovered places. Selecting these summaries never starts travel.\n\n3 KNOWN ENTITIES\n♛\nCrownmarch Kingdom\nKingdom\n\nGovernment: Monarchy\n\nA hereditary crown\n\n♛ Capital · Brackenford\n\n1 controlled regions\n⚑\nGlass Coast Council\nCity-state\n\n♛ Capital recorded · location not yet charted\n\n1 controlled regions\n⚑\nOld Hollow Wardens\nTribal territory\n\nNo capital recorded\n\nKnown regional status\n4 regions\nCrownmarch\n⚑ Crownmarch Kingdom · Kingdom\nGlass Coast\n⚑ Glass Coast Council · City-state\nThe Sunward Expanse\n? Ownership unknown\nUnclaimed Reach\n◇ Confirmed unclaimed\nConfirmed unclaimed areas\n◇ Unclaimed Reach\n♛\nKnown capital\n⚑\nRecorded political affiliation\n◇\nConfirmed unclaimed\n?\nOwnership unknown\n\nBoundary data: Territorial borders are drawn only when explicit boundary geometry exists. This save’s region hierarchy records relationships, not map polygons; no political lines are infe"
+    },
+    {
+      "test": "Known capital is marked while an undiscovered capital name stays hidden",
+      "status": "PASS",
+      "detail": "Known capital label present; undiscovered capital name absent"
+    },
+    {
+      "test": "Explicit unclaimed region and unknown ownership are visually distinct",
+      "status": "PASS",
+      "detail": "Unknown is not treated as unclaimed"
+    },
+    {
+      "test": "Atlas explains missing political boundary geometry instead of drawing invented borders",
+      "status": "PASS",
+      "detail": "Boundary note present; no synthetic boundary paths"
+    },
+    {
+      "test": "Political summary is informational and has no travel/action buttons",
+      "status": "PASS",
+      "detail": "interactive controls in political panel=0"
+    },
+    {
+      "test": "Regional selection shows the selected location’s political owner",
+      "status": "PASS",
+      "detail": "REGIONAL POLITICAL STATUS\nGloam White Pass Cairn\n\nGeographic region and political control are resolved separately.\n\nINFORMATION ONLY\nGEOGRAPHIC REGION\nGlass Coast\nResolved from the location’s existing regionId.\nTERRITORIAL STATUS\n⚑\nGlass Coast Council\nCity-state\n\n♛ Capital recorded · location not yet charted\n\n1 controlled regions\n♛\nKnown capital\n⚑\nPolitical affiliation\n◇\nConfirmed unclaimed\n?\nOwnership unknown\n\nPolitical affiliation does not add a physical obstacle or alter available travel connections."
+    },
+    {
+      "test": "Capital marker appears only on the discovered capital marker",
+      "status": "PASS",
+      "detail": "One visited capital badge; no hidden-capital badge"
+    },
+    {
+      "test": "Selecting a marker shows confirmed unclaimed status without starting travel",
+      "status": "PASS",
+      "detail": "{\"politicalText\": \"REGIONAL POLITICAL STATUS\\nFoxglove Basin\\n\\nGeographic region and political control are resolved separately.\\n\\nINFORMATION ONLY\\nGEOGRAPHIC REGION\\nUnclaimed Reach\\nResolved from the location’s existing regionId.\\nTERRITORIAL STATUS\\n◇ Confirmed unclaimed territory\\n♛\\nKnown capital\\n⚑\\nPolitical affiliation\\n◇\\nConfirmed unclaimed\\n?\\nOwnership unknown\\n\\nPolitical affiliation does not add a physical obstacle or alter available travel connections.\", \"before\": {\"siteId\": \"loc-0-0\", \"age\": 216, \"energy\": 90, \"travelCount\": 0, \"routeIds\": \"[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]\"}, \"after\": {\"siteId\": \"loc-0-0\", \"age\": 216, \"energy\": 90, \"travelCount\": 0, \"routeIds\": \"[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]\"}}"
+    },
+    {
+      "test": "Site-level political link does not imply regional ownership",
+      "status": "PASS",
+      "detail": "REGIONAL POLITICAL STATUS\nWindmere\n\nGeographic region and political control are resolved separately.\n\nINFORMATION ONLY\nGEOGRAPHIC REGION\nThe Sunward Expanse\nResolved from the location’s existing regionId.\nTERRITORIAL STATUS\n⚑\nOld Hollow Wardens\nTribal territory\n\nNo capital recorded\n\n♛\nKnown capital\n⚑\nPolitical affiliation\n◇\nConfirmed unclaimed\n?\nOwnership unknown\n\nPolitical affiliation does not add a physical obstacle or alter available travel connections."
+    },
+    {
+      "test": "Political information panel selection does not initiate travel or advance time",
+      "status": "PASS",
+      "detail": "{\"before\": {\"siteId\": \"loc-0-0\", \"age\": 216, \"energy\": 90, \"travelCount\": 0}, \"after\": {\"siteId\": \"loc-0-0\", \"age\": 216, \"energy\": 90, \"travelCount\": 0}}"
+    },
+    {
+      "test": "Political UI leaves site IDs, marker coordinates, and route IDs unchanged",
+      "status": "PASS",
+      "detail": "Geographic IDs, coordinates and route IDs unchanged by the UI"
+    },
+    {
+      "test": "Existing travel preview and confirmation remain functional after political inspection",
+      "status": "PASS",
+      "detail": "{\"before\": {\"siteId\": \"loc-0-0\", \"count\": 0}, \"after\": {\"siteId\": \"loc-0-1\", \"count\": 1, \"modal\": null}, \"travelButton\": true}"
+    },
+    {
+      "test": "Political information stays within mobile viewport width",
+      "status": "PASS",
+      "detail": "document scrollWidth=390"
+    },
+    {
+      "test": "No uncaught browser or console errors",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ],
+  "browser_errors": []
+}

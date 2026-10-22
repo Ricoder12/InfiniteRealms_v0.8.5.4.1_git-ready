@@ -1,0 +1,6 @@
+PASS: NPC identity, memories, affinity, and trust survive a simulated travel round-trip
+PASS: same-day identical memory is not recorded twice
+PASS: duplicate active NPC IDs are collapsed while known memories remain
+PASS: legacy save normalization preserves relationship and registry history
+
+4 v0.7.3.1 checks passed.

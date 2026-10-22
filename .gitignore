@@ -1,0 +1,19 @@
+# Old full-game copies: git history + tags replace these
+backups/
+
+# Screenshots and other binaries bloat git history permanently
+docs/screenshots/
+*.png
+*.jpg
+*.jpeg
+*.zip
+
+# Built by `node build.js` (attach to GitHub Releases instead)
+dist/
+
+# Exported player saves and local junk
+*.save.json
+*-save*.json
+node_modules/
+.DS_Store
+Thumbs.db

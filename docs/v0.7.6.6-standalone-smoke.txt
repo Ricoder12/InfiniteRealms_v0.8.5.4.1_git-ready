@@ -1,0 +1,8 @@
+PASS	Standalone contains no external script or stylesheet dependencies
+PASS	Standalone title resolves to v0.7.6.6
+PASS	Integrated biome ecology registry validates
+PASS	All 72 racial affinity cells resolve
+PASS	All monster habitat profiles validate
+PASS	Standalone world generation creates a valid 49-site world
+PASS	Invalid biome blocks random encounter without rewriting the saved biome
+SCRIPT_BLOCKS=54

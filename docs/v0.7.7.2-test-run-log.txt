@@ -1,0 +1,26 @@
+Infinite Realms v0.7.7.2 — final test run
+
+Commands run from the source project root:
+  node tests/*.test.js (each suite executed individually)
+  node tests/v0.7.7.2-world-map.test.js
+  node tests/v0.7.7.2-standalone-smoke.js
+  python tests/v0.7.7.2-browser-smoke.py
+  node --check on all .js files in js/ and tests/, plus build.js
+  node build.js
+
+Results:
+  Node regression suites: 22 passed, 0 failed
+  Focused world map assertions: 17/17 passed, 0 failed
+  Standalone smoke: 9/9 passed, 0 failed
+  Chromium browser smoke: 13/13 passed, 0 failed
+  JavaScript syntax: 81 files checked plus build.js; all passed
+  Build: PASS; standalone HTML size 1,089,979 bytes
+  Browser runtime/page errors observed: 0
+
+Artifact integrity:
+  v0.7.7.2 standalone SHA-256: f3c0e3b8808105a1eb6496dafd5fcc525f21d05fedd6abeb44abbce0bb90ddb3
+  accepted v0.7.7.1 rollback SHA-256: 929f2f786e2a82186e23f8a6a5bbe205e587355406ef907595e432a9a53eda0b
+  Accepted rollback matches /mnt/data/InfiniteRealms_v0.7.7.1.html: True
+
+Limitations:
+  Browser smoke uses a deterministic fresh game and isolated in-memory localStorage shim. A real user-exported save was not independently tested. Current model contains one populated region, no populated continent/country records, and no world-scale coordinates or boundary geometry; the world atlas deliberately does not invent any.

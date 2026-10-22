@@ -1,0 +1,89 @@
+{
+  "suite": "v0.7.8.5 Government, Leadership and Capitals Chromium integration",
+  "total": 16,
+  "passed": 16,
+  "failed": 0,
+  "browserErrors": [],
+  "tests": [
+    {
+      "test": "Runtime title identifies v0.7.8.5",
+      "status": "PASS",
+      "detail": "Infinite Realms \u2014 Version 0.7.8.5"
+    },
+    {
+      "test": "Fresh world starts with an empty political registry and existing NPC records",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Complete political record can reference an existing capital and NPC ID",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Complete entity summary returns type, government, capital name and referenced leader name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Territory ownership and valid capital location pass political validator",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "No NPC record or geography copy was created for political leadership",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Partial entity without government, ruler, title or capital remains valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Controlled region count is reported only from explicit owner/governor assignments",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Unsupported government type is reported",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Unresolved leader NPC ID is reported without creating an NPC",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Capital outside known political territory is rejected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Existing location NPC can resolve through the v06 saved-person overlay",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Summary lookup is read-only for sites, routes, and geography index",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Actual save-slot round trip preserves government, capital, and leader references",
+      "status": "PASS",
+      "detail": "{\"polities\":[{\"id\":\"polity:world-47-4f-56-45-52-4e-4d-45-4e-54-2d-43-41-50-49-54-41-4c-2d-42-52-4f-57-53-45-52:62-72-6f-77-73-65-72-2d-63-72-6f-77-6e\",\"governmentType\":\"monarchy\",\"capitalSiteGeoId\":\"site:world-47-4f-56-45-52-4e-4d-45-4e-54-2d-43-41-50-49-54-41-4c-2d-42-52-4f-57-53-45-52:loc-0-0\",\"leaderNpcId\":\"npc1\"},{\"id\":\"polity:world-47-4f-56-45-52-4e-4d-45-4e-54-2d-43-41-50-49-54-41-4c-2d-42-52-4f-57-53-45-52:62-72-6f-77-73-65-72-2d-63-6f-75-6e-63-69-6c\"}],\"report\":{\"ok\":true,\"errors\":[],\"warnings\":[],\"counts\":{\"polities\":2,\"uniqueIds\":2,\"geographicRegions\":1,\"geographicSites\":49}}}"
+    },
+    {
+      "test": "Leader resolves after actual save-slot reload",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Load preserves canonical physical site/route counts without duplicates",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

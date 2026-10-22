@@ -1,0 +1,31 @@
+{
+  "total": 6,
+  "passed": 6,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Eight seed/start combinations keep generated sites unique, routes resolvable, and the travel graph connected",
+      "status": "PASS"
+    },
+    {
+      "name": "Both existing map renderers still use the same authoritative sites and route IDs after geography integration",
+      "status": "PASS"
+    },
+    {
+      "name": "NPC schedule location assignments and repeat initialization remain stable and resolvable",
+      "status": "PASS"
+    },
+    {
+      "name": "Travel with a companion keeps current location, discovery state, route references, and companion support behavior",
+      "status": "PASS"
+    },
+    {
+      "name": "Combat victory rewards update the existing character and site state without changing geographic identities",
+      "status": "PASS"
+    },
+    {
+      "name": "A work shift and gathering still change progression, inventory, and time while retaining valid geographic references",
+      "status": "PASS"
+    }
+  ]
+}

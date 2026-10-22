@@ -1,0 +1,35 @@
+Production/source files changed or added:
+- README.md
+- index.html
+- js/game/53-regional-hierarchy-v0.7.8.3.js (new)
+- dist/infinite-realms.html (rebuilt standalone)
+- tests/v0.7.7.3-standalone-smoke.js (current title expectation updated to v0.7.8.3)
+- tests/v0.7.8.3-regional-hierarchy.test.js (new/focused tests)
+- tests/v0.7.8.3-regional-hierarchy-browser.py (new Chromium test)
+- tests/v0.7.8.3-save-compatibility-browser.py (current-release browser regression)
+- tests/v0.7.8.3-travel-browser.py (current-release browser regression)
+- tests/v0.7.8.3-ui-polish-browser.py (current-release browser regression)
+
+Release reports and logs:
+- docs/v0.7.8.3-regional-schema.md
+- docs/v0.7.8.3-change-log.md
+- docs/v0.7.8.3-test-report.md
+- docs/v0.7.8.3-rollback.md
+- docs/v0.7.8.3-node-regression-log.txt
+- docs/v0.7.8.3-node-regression-summary.txt
+- docs/v0.7.8.3-js-syntax-check-log.txt / summary
+- docs/v0.7.8.3-python-syntax-check-log.txt / summary
+- docs/v0.7.8.3-standalone-smoke-log.txt / summary
+- docs/v0.7.8.3-regional-hierarchy-browser-log.json
+- docs/v0.7.8.3-save-compatibility-browser-log.json
+- docs/v0.7.8.3-travel-browser-regression.json
+- docs/v0.7.8.3-ui-polish-browser-log.json
+- docs/screenshots/v0.7.8.3-regional-hierarchy-world-map.png
+- docs/screenshots/v0.7.8.3-regional-hierarchy-regional-map.png
+- docs/screenshots/v0.7.8.3-world-map-switcher-desktop.png
+- docs/screenshots/v0.7.8.3-world-map-switcher-mobile.png
+- docs/screenshots/v0.7.8.3-regional-map-selected-desktop.png
+- docs/screenshots/v0.7.8.3-local-map-desktop.png
+- docs/screenshots/v0.7.8.3-ui-polish-character-status-desktop.png
+- docs/screenshots/v0.7.8.3-route-direct-preview.png
+- docs/screenshots/v0.7.8.3-route-multileg-preview.png

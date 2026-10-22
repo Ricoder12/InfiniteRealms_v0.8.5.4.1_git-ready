@@ -1,0 +1,16 @@
+5fd23f1642f540fdff7d8e3eb6768829efd6cfd3da3642a38495959a07b2c316  index.html
+50d76f05d6d9c07a19cd52ed5966b30734dc2a0a2d3f35bafc876c03f256269b  css/base.css
+29d2b65dff560d808b60b609e549f911193fd21d126b857b6b21caf893a6932c  css/world-map.css
+5401ceb58ade8087186c89248c9c3ccd91441a8ab0ca9496f8c640ac2add68de  css/ui-polish-v0.7.7.7.css
+fed2da4532be9407bf083f1bbb5fa4e123ad8f0928348fcda98877e80e5a787d  js/game/50-save-compatibility-v0.7.7.8.js
+4d2b0d1b531f0e7c0a210a036a9dbfbb9dc4362cc905cf6308f7d95b7329060c  tests/v0.7.7.8-save-compatibility.test.js
+c960f72862e8dca0b8d0dbfdb8b42073f18f7901f6711b8d9a0d3743ffb198c5  tests/v0.7.7.8-save-compatibility-browser.py
+77293b2e249a309b9ca293c5ffeb0aaa3c52905bf4a661e0b673a83215f53453  dist/infinite-realms.html
+139ff633482fa09231c36da2f454894f792abb79bc8c6e2b0c100c2f36877ed3  backups/InfiniteRealms_v0.7.7.7_accepted_baseline.html
+b402784776fd677420912110e19f1a62db0a1eaddb863e5d52de72357e577e4f  backups/InfiniteRealms_v0.7.6.6_accepted_baseline.html
+661fe7df342657daf24065ca07ee209cb72273c573b83f2392f07dcd805a3300  docs/screenshots/v0.7.7.8-legacy-save-character-desktop.png
+d9f5e9407b17ac1af9e489e2c1cead9c450a89c3fbbd607e2b49163a238826e1  docs/screenshots/v0.7.7.8-legacy-save-map-desktop.png
+be2ee2e8ed51713eee3335ff73c8e4812264e03278ba3717112c68f67fdb9662  docs/v0.7.7.8-test-report.md
+2c55ce1bdcac9d69c61c92ec9bcd18434f54200db6608e8753c8076341981022  docs/v0.7.7.8-migration-details.md
+7932a3eec48e17e78934057318c5ad56886a00a638a40178b64b5fdc181ce0cb  docs/v0.7.7.8-save-audit.md
+2907ca1bcf7e7280aa3977c67faeeff339195f6cb90464f9e20c2c667763c8c2  docs/v0.7.7.8-release-manifest.json

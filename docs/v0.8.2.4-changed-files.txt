@@ -1,0 +1,16 @@
+index.html
+js/game/64-guild-membership-v0.8.2.3.js
+js/game/65-guild-contract-board-v0.8.2.4.js
+tests/v0.8.2.4-guild-contract-board.test.js
+tests/v0.7.7.3-regional-map.test.js
+tests/v0.7.7.3-world-map.test.js
+tests/v0.7.7.3-standalone-smoke.js
+tests/v0.7.7.4-local-map.test.js
+tests/v0.7.7.7-ui-polish.test.js
+tests/v0.7.7.9-final-acceptance.test.js
+tests/v0.7.9.6-standalone-smoke.test.js
+docs/v0.8.2.1-guild-services-audit.md
+docs/v0.8.2.4-test-report.md
+docs/v0.8.2.4-changed-files.txt
+docs/v0.8.2.4-validation-log.txt
+docs/v0.8.2.4-release-manifest.json

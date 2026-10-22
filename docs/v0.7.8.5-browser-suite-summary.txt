@@ -1,0 +1,13 @@
+Infinite Realms v0.7.8.5 Chromium browser suite summary
+
+Government, leadership and capitals: 16/16 passed.
+Save compatibility and integration: 21/21 passed.
+Regional hierarchy: 15/15 passed.
+Unified map and Character UI: 22/22 passed.
+Travel integration: 10/10 passed.
+Total: 84/84 assertions passed across five separately run suites.
+The recorded suites reported zero uncaught browser/console errors.
+
+The government/capital suite exercised an actual save-slot round trip preserving government type, description, capital site ID, leader NPC ID and title. Cross-system suites used legacy saves generated from accepted v0.7.6.6 and v0.7.7.7 code and an extensive-exploration fixture.
+
+The requested v0.7.8.4 start build was not available; these checks validate this candidate against the v0.7.8.3-based source plus tested legacy save fixtures only.

@@ -1,0 +1,8 @@
+Infinite Realms v0.7.8.5 Node regression summary
+
+Focused government/leadership/capital checks: 23/23 passed.
+Node regression test files plus standalone smoke suites: 34/34 passed, 0 failed.
+JavaScript syntax checks: 100 JS files passed; build.js passed.
+Python browser-test syntax checks: 20/20 passed.
+
+See v0.7.8.5-node-regression-log.txt and v0.7.8.5-node-tests/ for per-suite output.

@@ -1,0 +1,28 @@
+PASS: repeated talk rewards stop at the per-NPC cap while time/energy still behave normally
+PASS: actual deltas are reported and the just-created memory matches capped values
+PASS: a duplicate same-action callback within the guard window does not charge twice
+PASS: a different meaningful action retains its own relationship allowance after talk reaches its cap
+PASS: each gift item type contributes only once to a given NPC
+PASS: favor trust rewards have a finite per-NPC limit while favor payments remain intact
+PASS: spending time caps relationship gains without cancelling time and energy costs
+PASS: training-together gains stop at their limit but skill practice still accumulates
+PASS: shared meals stop farming relationship points but keep charging for each real meal
+PASS: repeated romantic evenings have a finite relationship reward and preserve other action effects
+PASS: work-together relationship gains are capped without removing wages or skill practice
+PASS: capped relationship feedback still retains the completed work and wage notification
+PASS: advice relationship bonus is limited while the existing skill benefit remains
+PASS: different special activities each retain their separate finite contribution
+PASS: personal-task relationship rewards are capped while task completion pays the existing reward
+PASS: bargain discounts remain available after relationship trust reaches its cap
+PASS: sparring relationship reward is capped while combat progression remains intact
+PASS: ordinary combat still grants the original coin, inventory, skill, and victory rewards
+PASS: one persistent guard disturbance cannot pay public reputation repeatedly
+PASS: reconciliation feedback acknowledges the new attempt without implying past harm vanished
+PASS: public reputation and the affected NPC relationship are explained separately
+PASS: mapped completed event consolidates duplicate toasts and explains public reputation
+PASS: old per-NPC caps and gift claims are retained when the ledger grows
+PASS: save normalization preserves old relationship/memory records and sanitizes the new ledger
+PASS: the latest persisted save includes the anti-farming ledger immediately after an awarded interaction
+PASS: failed interactions retain the original reason and award no relationship budget
+
+26 v0.7.3.6 checks passed.

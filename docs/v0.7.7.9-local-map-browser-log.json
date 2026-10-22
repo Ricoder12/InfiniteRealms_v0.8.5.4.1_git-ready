@@ -1,0 +1,78 @@
+{
+  "suite": "Infinite Realms v0.7.7.9 Local Map browser smoke",
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "tests": [
+    {
+      "test": "Standalone boot and v0.7.7.9 metadata",
+      "status": "PASS",
+      "detail": "Infinite Realms — Version 0.7.7.9"
+    },
+    {
+      "test": "Create deterministic game and render world data",
+      "status": "PASS",
+      "detail": "{'site': 'loc-0-6', 'count': 49}"
+    },
+    {
+      "test": "World atlas and region navigation remain available",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Local view replaces the text-only detail with an illustrated settlement of the actual current type",
+      "status": "PASS",
+      "detail": "{\"panel\": true, \"scene\": true, \"settlementClass\": \"settlement-village\", \"buildings\": 6, \"serviceRows\": 7, \"routeRows\": 3, \"travelButtons\": 3, \"return\": true, \"disclaimer\": true}"
+    },
+    {
+      "test": "Clickable facilities map only recorded services to existing controls; scenery stays inert",
+      "status": "PASS",
+      "detail": "{\"buildings\": [{\"tab\": \"\", \"action\": \"local-rest\", \"name\": \"Inn\"}, {\"tab\": \"Inventory\", \"action\": \"\", \"name\": \"Market\"}, {\"tab\": \"\", \"action\": \"jobs-modal\", \"name\": \"Work board\"}, {\"tab\": \"\", \"action\": \"local-healer\", \"name\": \"Healer\"}, {\"tab\": \"Inventory\", \"action\": \"\", \"name\": \"Forge\"}, {\"tab\": \"Inventory\", \"action\": \"\", \"name\": \"Hunter\"}], \"allHaveExistingAction\": true, \"decorCount\": 10, \"decorInert\": true, \"savedServices\": [\"inn\", \"market\", \"work-board\", \"healer\", \"smithy\", \"hunter\", \"forge\"], \"worldKeys\": [\"continents\", \"countries\", \"dungeon\", \"economy\", \"generationIntegrationVersion\", \"generationVersion\", \"geographicHierarchyVersion\", \"geographicIdVersion\", \"geography\", \"id\", \"journal\", \"known\", \"region\", \"seed\", \"siteId\", \"startBackground\", \"startCircumstance\", \"startRace\", \"travelCount\", \"v05\", \"v06\", \"v067\", \"v0723\", \"v073\", \"v0735\", \"v0736\", \"visited\"]}"
+    },
+    {
+      "test": "Rendering the local map does not mutate saved world data",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Hamlet, village, town, and city layouts vary according to actual settlement types",
+      "status": "PASS",
+      "detail": "[{\"site\": \"loc-0-0\", \"expected\": \"settlement-hamlet\", \"biome\": \"desert\", \"class\": \"ir0774-local-scene terrain-desert settlement-hamlet \", \"backgroundPreservesSnowBiome\": true, \"computedBackground\": \"\", \"serviceBuildings\": 5, \"pass\": true}, {\"site\": \"loc-0-6\", \"expected\": \"settlement-village\", \"biome\": \"coast\", \"class\": \"ir0774-local-scene terrain-coast settlement-village \", \"backgroundPreservesSnowBiome\": true, \"computedBackground\": \"\", \"serviceBuildings\": 6, \"pass\": true}, {\"site\": \"loc-3-3\", \"expected\": \"settlement-town\", \"biome\": \"coast\", \"class\": \"ir0774-local-scene terrain-coast settlement-town \", \"backgroundPreservesSnowBiome\": true, \"computedBackground\": \"\", \"serviceBuildings\": 9, \"pass\": true}, {\"site\": \"loc-6-6\", \"expected\": \"settlement-city\", \"biome\": \"snow\", \"class\": \"ir0774-local-scene terrain-snow settlement-city \", \"backgroundPreservesSnowBiome\": true, \"computedBackground\": \"radial-gradient(at 20% 22%, rgb(243, 244, 232) 0px, rgba(0, 0, 0, 0) 30%), radial-gradient(at 78% 70%, rgb(156, 180, 188) 0px, rgba(0, 0, 0, 0) 34%), linear-gradient(140deg, rgb(223, 229, 223), rgb(198, 213, 213) 50%, rgb(174, 191, 193))\", \"serviceBuildings\": 11, \"pass\": true}]"
+    },
+    {
+      "test": "Forest, desert, swamp, and snow scenes reflect saved biome IDs without settlement services",
+      "status": "PASS",
+      "detail": "[{\"site\": \"loc-1-0\", \"type\": \"wilderness\", \"biome\": \"woodland\", \"expected\": \"terrain-woodland\", \"class\": \"ir0774-local-scene terrain-woodland wilderness-scene \", \"serviceBuildings\": 0, \"pass\": true}, {\"site\": \"loc-0-3\", \"type\": \"wilderness\", \"biome\": \"desert\", \"expected\": \"terrain-desert\", \"class\": \"ir0774-local-scene terrain-desert wilderness-scene \", \"serviceBuildings\": 0, \"pass\": true}, {\"site\": \"loc-1-1\", \"type\": \"wilderness\", \"biome\": \"swamp\", \"expected\": \"terrain-swamp\", \"class\": \"ir0774-local-scene terrain-swamp wilderness-scene \", \"serviceBuildings\": 0, \"pass\": true}, {\"site\": \"loc-1-6\", \"type\": \"wilderness\", \"biome\": \"snow\", \"expected\": \"terrain-snow\", \"class\": \"ir0774-local-scene terrain-snow wilderness-scene \", \"serviceBuildings\": 0, \"pass\": true}]"
+    },
+    {
+      "test": "Clicking an interactive market building opens its existing inventory destination",
+      "status": "PASS",
+      "detail": "Inventory"
+    },
+    {
+      "test": "Unsurveyed current location hides identifying labels, biome, and service buildings",
+      "status": "PASS",
+      "detail": "{\"nameHidden\": true, \"descHidden\": true, \"biomeHidden\": true, \"noBuildings\": true, \"genericSeal\": true, \"sceneUnsurveyed\": true}"
+    },
+    {
+      "test": "Missing optional service/biome/route fields render safely",
+      "status": "PASS",
+      "detail": "{\"ok\": true, \"scene\": true}"
+    },
+    {
+      "test": "Regional/local/world view switching remains connected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Local map remains readable and navigable on a 390px phone viewport",
+      "status": "PASS",
+      "detail": "{\"width\": 390, \"scrollWidth\": 390, \"scene\": true, \"buildings\": 9, \"back\": true}"
+    },
+    {
+      "test": "No uncaught browser errors",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

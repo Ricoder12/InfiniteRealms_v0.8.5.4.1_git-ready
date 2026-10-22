@@ -1,0 +1,126 @@
+/* Infinite Realms v0.7.7.7 — scoped map + Character polish.
+   Deliberately avoids broad element rules so Life, People, Inventory, Skills and other tabs keep their accepted styling. */
+.ir0777-map-view-switcher{
+  --ir-polish-ink:#e8f1e8;
+  --ir-polish-muted:#afc4b6;
+  --ir-polish-gold:#e9c77e;
+  --ir-polish-gold-ink:#302619;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:10px 18px;
+  align-items:center;
+  padding:12px 15px;
+  margin:0 0 14px;
+  border:1px solid #657752;
+  border-radius:13px;
+  background:linear-gradient(115deg,#1b302a 0%,#172429 62%,#242c2a 100%);
+  color:var(--ir-polish-ink);
+  box-shadow:inset 0 1px 0 #f5e9c51a,0 7px 18px #07100c20;
+}
+.ir0777-map-switcher-title{min-width:0;display:grid;gap:3px}
+.ir0777-map-switcher-title strong{font-family:Georgia,'Times New Roman',serif;font-size:14px;letter-spacing:.015em;color:#f2e3bd}
+.ir0777-map-switcher-title small{font-size:10px;color:var(--ir-polish-muted);line-height:1.45}
+.ir0777-map-switcher-buttons{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding:4px;border:1px solid #64725b;border-radius:11px;background:#0e1918}
+.ir0777-map-switcher-buttons button{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:35px;
+  border:1px solid transparent;border-radius:7px;padding:7px 11px;
+  background:transparent;color:#bfd0c3;font:inherit;font-size:11px;font-weight:750;white-space:nowrap;cursor:pointer;
+  transition:background-color .12s ease,border-color .12s ease,color .12s ease;
+}
+.ir0777-map-switcher-buttons button:hover:not(:disabled){border-color:#526d5b;background:#20362d;color:#fff2c9}
+.ir0777-map-switcher-buttons button[aria-current="page"]{
+  border-color:#f1d99b;background:linear-gradient(145deg,#f4e2ad,#dfc27c);color:var(--ir-polish-gold-ink);
+  box-shadow:inset 0 1px 0 #fff7db,0 2px 6px #050a0752;
+}
+.ir0777-map-switcher-buttons button:disabled{opacity:.43;cursor:not-allowed;filter:saturate(.45)}
+.ir0777-map-switcher-buttons button:focus-visible{outline:3px solid #fff1b9;outline-offset:3px;position:relative;z-index:5}
+.ir0777-map-switcher-hint{grid-column:1/-1;margin:0;padding-top:8px;border-top:1px solid #c8d5bc20;color:#b7c8b8;font-size:9px;line-height:1.55}
+.ir0777-map-switcher-hint strong{color:#f0d99c;font-weight:750}
+
+/* Harmonized fantasy-map framing: retain parchment atlas, dark regional chart and illustrated local scene. */
+.ir0772-atlas-frame,.ir0773-regional-panel,.ir0773-local-panel,.ir0774-local-scene-section{
+  border-radius:15px;
+}
+.ir0772-atlas-frame,.ir0773-regional-panel,.ir0773-local-panel{
+  box-shadow:0 10px 24px #050b0926,inset 0 1px 0 #fff2d40a;
+}
+.ir0772-map-viewbar{margin-top:0;border-radius:11px}
+.ir0773-regional-panel .panel-heading p,.ir0773-local-panel .ir0773-local-hero p{line-height:1.65}
+.ir0773-regional-canvas{border:1px solid #607d6540;border-radius:13px;box-shadow:inset 0 0 0 2px #07130c15,0 6px 15px #050b0926}
+.ir0773-map-node{border-radius:10px}
+.ir0773-map-node.selected,.world-node.selected{
+  outline:3px solid #f1d18a;outline-offset:3px;z-index:6;
+  filter:drop-shadow(0 0 5px #f0cf8ba0);
+}
+.ir0773-map-node.current,.world-node.current{border-color:#f4de9c;box-shadow:0 0 0 3px #e7c27b48,0 0 0 7px #e7c27b1c,0 5px 16px #050b0990}
+.ir0773-map-node.selected.current,.world-node.selected.current{outline-color:#fff2c2;outline-offset:4px}
+.ir0773-route-line{stroke-linecap:round;stroke-linejoin:round}
+.ir0773-route-line.active{filter:drop-shadow(0 0 2px #e9c97f80)}
+.ir0773-route-line.selected-edge{stroke:#ffe8a3;stroke-width:5;filter:drop-shadow(0 0 4px #ffdf8e8c)}
+.ir0773-map-legend,.ir0774-local-map-legend{gap:8px 14px;line-height:1.55}
+.ir0773-map-legend span,.ir0774-local-map-legend span{align-items:center}
+.ir0773-trip-details{gap:7px;margin-top:10px}
+.ir0773-trip-details span{min-height:27px;align-items:center;border:1px solid #c3ac7e;border-radius:7px;background:#f4e8c9;color:#4c3c26;font-variant-numeric:tabular-nums;line-height:1.4}
+.ir0775-route-modal .ir051-trip-summary{gap:8px}
+.ir0775-route-modal .ir051-trip-summary>div{min-width:0;border:1px solid #475c4f;border-radius:10px;padding:10px;background:linear-gradient(145deg,#172824,#111b1d)}
+.ir0775-route-modal .ir051-trip-summary span{display:block;color:#bdcbbd;font-size:10px;line-height:1.45}
+.ir0775-route-modal .ir051-trip-summary strong{display:block;margin-top:4px;color:#f1d797;font-size:15px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.ir0773-local-nav{gap:7px}
+.ir0774-local-scene{border:1px solid #66765a;border-radius:14px;box-shadow:inset 0 0 0 2px #f1e0b01a,0 7px 18px #03090727}
+.ir0774-local-scene-heading h3{font-family:Georgia,'Times New Roman',serif;letter-spacing:.01em}
+.ir0774-service-building{border-radius:9px}
+.ir0774-service-building:disabled{opacity:.45;filter:grayscale(.35);cursor:not-allowed}
+.ir0774-local-scene .ir0774-service-building:focus-visible,.ir0774-local-scene .ir0774-explore-site:focus-visible,.ir0774-local-scene .ir0774-landmark-site:focus-visible,.ir0774-local-scene .ir0774-camp-site:focus-visible{outline:3px solid #fff0b5;outline-offset:3px;z-index:10}
+
+/* The Character addendum shares the map's engraved gold/forest accent without changing other tabs. */
+.ir0776-addendum{
+  border-color:#465d4c;
+  background:linear-gradient(155deg,#162422 0%,#111b1e 64%,#171e1c 100%);
+  box-shadow:inset 0 1px 0 #efe1b810,0 8px 20px #050b0920;
+}
+.ir0776-addendum>.panel-heading:first-child{padding-bottom:12px;border-bottom:1px solid #c5d7ba1c}
+.ir0776-addendum .panel-heading h3,.ir0776-addendum .ir0776-inner-panel h4{font-family:Georgia,'Times New Roman',serif;letter-spacing:.01em}
+.ir0776-meter{margin:13px 0}
+.ir0776-meter-label{font-size:12px;align-items:baseline;color:#c3d3c5}
+.ir0776-meter-label b{color:#f1e4c0;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ir0776-meter>i{height:10px;border:1px solid #3c5146;background:#0b1515;box-shadow:inset 0 1px 2px #0009}
+.ir0776-meter em{box-shadow:inset 0 1px 0 #ffffff36}
+.ir0776-meter .health{background:linear-gradient(90deg,#a9434c,#e67870)}
+.ir0776-meter .energy{background:linear-gradient(90deg,#337e8b,#76c2d1)}
+.ir0776-condition-facts>div,.ir0776-gear,.ir0776-inner-panel{border-color:#344a40;background:#101c1b}
+.ir0776-condition-facts b,.ir0776-gear b{font-variant-numeric:tabular-nums}
+.ir0776-gear>span{font-size:11px;letter-spacing:.025em;color:#e0cf9d}
+.ir0776-gear small{line-height:1.55}
+.ir0776-inventory-link{min-height:38px}
+.ir0776-addendum [data-tab="Inventory"]:focus-visible{outline:3px solid #fff0b5;outline-offset:3px}
+
+/* Explicit, high-contrast focus for the map's existing native buttons and map destinations only. */
+.ir0777-map-view-switcher button:focus-visible,
+.ir0772-atlas-frame button:focus-visible,
+.ir0773-regional-panel button:focus-visible,
+.ir0773-local-panel button:focus-visible,
+.ir0774-local-scene-section button:focus-visible,
+.ir0775-route-modal button:focus-visible{
+  outline:3px solid #fff0b5;outline-offset:3px;position:relative;z-index:7;
+}
+.ir0772-atlas-frame button:disabled,.ir0773-regional-panel button:disabled,.ir0773-local-panel button:disabled,.ir0774-local-scene-section button:disabled,.ir0775-route-modal button:disabled{
+  opacity:.48;cursor:not-allowed;filter:saturate(.5);box-shadow:none;transform:none;
+}
+@media(max-width:760px){
+  .ir0777-map-view-switcher{grid-template-columns:minmax(0,1fr);gap:9px;padding:11px}
+  .ir0777-map-switcher-title strong{font-size:13px}
+  .ir0777-map-switcher-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+  .ir0777-map-switcher-buttons button{padding:8px 5px;min-width:0;font-size:10px;white-space:normal}
+  .ir0777-map-switcher-hint{font-size:9px}
+  .ir0775-route-modal .ir051-trip-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:380px){
+  .ir0777-map-switcher-buttons button{font-size:9px;gap:3px;padding:7px 3px}
+  .ir0776-condition-facts{grid-template-columns:minmax(0,1fr)}
+  .ir0776-meter-label{gap:7px;font-size:11px}
+  .ir0776-meter-label b{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+  .ir0777-map-switcher-buttons button{transition:none}
+  .ir0774-service-building{transition:none}
+}
