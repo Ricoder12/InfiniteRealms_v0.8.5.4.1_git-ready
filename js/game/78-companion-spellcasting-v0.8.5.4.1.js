@@ -273,7 +273,7 @@ irEnemyTurn = function () {
 };
 
 if (typeof document !== 'undefined') {
-  document.title = 'Infinite Realms — Version 0.8.5.4.1';
+  document.title = 'Infinite Realms — Version 0.8.5.5';
   const css = document.createElement('style');
   css.textContent = `.ir08541-spell-info{flex-basis:100%;display:flex;flex-direction:column;gap:5px;margin-top:8px;padding:9px;border:1px solid var(--line);border-radius:8px;background:var(--panel2)}.ir08541-spell-info small,.ir08541-spell-info li{font-size:10px;color:var(--muted);line-height:1.5}.ir08541-spell-info ul{margin:0;padding-left:17px}.ir08541-spell-status{margin:12px 0;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)}.ir08541-spell-status .ir08541-spell-info{margin:6px 0 0}.ir08541-spell-status .ir08541-spell-info li{list-style:disc}`;
   document.head?.appendChild(css);

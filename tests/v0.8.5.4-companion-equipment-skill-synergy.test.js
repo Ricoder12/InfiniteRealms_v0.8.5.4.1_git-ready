@@ -51,6 +51,15 @@ vm.runInContext(`state.character.npcs.find(n=>n.id==='${ids[0]}').skills={'Sword
 assert.deepEqual(JSON.parse(JSON.stringify(vm.runInContext(`ir0854CompanionSkillEntries('${ids[0]}').map(x=>[x.skill,x.level])`,ctx))),[['Swordsmanship',11]]);
 assert.equal(vm.runInContext(`ir0854CompanionWeaponBonus('${ids[0]}')`,ctx),12,'sword base damage and configured Swordsmanship level use existing weapon formula');
 assert.equal(vm.runInContext(`ir0854CompanionWeaponBonus('${ids[1]}')`,ctx),0,'companion without configured weapon skill receives no skill-derived bonus');
+vm.runInContext(`state.character.npcs.find(n=>n.id==='${ids[0]}').skills.Swordsmanship.level=100`,ctx);
+assert.equal(vm.runInContext(`ir0854CompanionWeaponBonus('${ids[0]}')`,ctx),74,'maximum existing skill level applies the existing synergy formula');
+for (const invalid of ['11.5', '101', true]) {
+  ctx.invalidSkillLevel = invalid;
+  vm.runInContext(`state.character.npcs.find(n=>n.id==='${ids[0]}').skills.Swordsmanship.level=invalidSkillLevel`,ctx);
+  assert.equal(vm.runInContext(`ir0854CompanionSkillEntries('${ids[0]}').length`,ctx),0,'fractional, over-cap, and non-numeric skill values do not activate synergy');
+  assert.equal(vm.runInContext(`ir0854CompanionWeaponBonus('${ids[0]}')`,ctx),5,'invalid skill data leaves only the existing weapon base contribution');
+}
+vm.runInContext(`state.character.npcs.find(n=>n.id==='${ids[0]}').skills.Swordsmanship.level=11`,ctx);
 assert.equal(vm.runInContext(`ir0843AssignPartyRole('${ids[0]}','damage dealer').ok`,ctx),true);
 assert.equal(vm.runInContext(`ir0852EffectiveCompanionAttack('${ids[0]}',ir0851Profile('${ids[0]}'))`,ctx),48,'damage dealer multiplier applies once to profile plus supported weapon contribution');
 assert.equal(vm.runInContext(`ir0843AssignPartyRole('${ids[0]}','tank').ok`,ctx),true);

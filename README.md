@@ -4,7 +4,7 @@ A browser-based fantasy life simulation. Create a character, work, train, explor
 generated frontier, join the adventurer association, and form a party. No server,
 no dependencies: it is plain HTML, CSS and JavaScript, and saves live in your browser.
 
-Current source version: **0.8.5.4.1** (companion spellcasting).
+Current source version: **0.8.5.5** (companion equipment and skill synergy stabilization).
 
 ## Play
 
@@ -39,6 +39,9 @@ Node tests (example):
 
 ```
 node tests/v0.8.5.4.1-companion-spellcasting.test.js
+node tests/v0.8.5.4-companion-equipment-skill-synergy.test.js
+node tests/v0.8.5.2-role-combat.test.js
+node tests/v0.8.5.3-healer-support.test.js
 ```
 
 Browser tests under `tests/*.py` need Python with Playwright and Chromium.
@@ -48,7 +51,7 @@ Browser tests under `tests/*.py` need Python with Playwright and Chromium.
 Commit once per version and tag it, for example:
 
 ```
-git tag v0.8.5.4.1
+git tag v0.8.5.5
 ```
 
 Use tags to go back to an older build instead of keeping copies of the game folder.
@@ -56,3 +59,4 @@ Use tags to go back to an older build instead of keeping copies of the game fold
 ## History
 
 Detailed release notes from earlier versions are kept in `docs/RELEASE-HISTORY.md`.
+The v0.8.5.5 candidate implementation and verification report is in `docs/v0.8.5.5-test-report.md`.

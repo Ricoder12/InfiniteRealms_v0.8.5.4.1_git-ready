@@ -91,8 +91,11 @@ function ir0854CompanionSkillEntries(npcId) {
   if (!npc || !npc.skills || typeof npc.skills !== 'object' || Array.isArray(npc.skills)) return [];
   return Object.entries(IR_V04_WEAPON_SKILL || {}).flatMap(([itemId, skill]) => {
     const value = npc.skills[skill];
-    const level = Number(typeof value === 'object' ? value?.level : value);
-    return Number.isFinite(level) && level >= 1 && ITEMS[itemId] ? [{ itemId, skill, level: Math.floor(level) }] : [];
+    const rawLevel = typeof value === 'object' && value !== null ? value.level : value;
+    const level = Number(rawLevel);
+    return (typeof rawLevel === 'number' || typeof rawLevel === 'string') && Number.isInteger(level) && level >= 1 && level <= 100 && ITEMS[itemId]
+      ? [{ itemId, skill, level }]
+      : [];
   }).filter((entry, index, entries) => entries.findIndex(other => other.skill === entry.skill) === index);
 }
 
