@@ -4,7 +4,7 @@ A browser-based fantasy life simulation. Create a character, work, train, explor
 generated frontier, join the adventurer association, and form a party. No server,
 no dependencies: it is plain HTML, CSS and JavaScript, and saves live in your browser.
 
-Current source version: **0.8.5.5** (companion equipment and skill synergy stabilization).
+Current source version: **0.8.7** (social and political simulation candidate).
 
 ## Play
 
@@ -25,7 +25,7 @@ index.html     page shell; lists every script in load order
 build.js       bundles everything into one HTML file
 css/           stylesheets
 js/data/       game data tables (races, items, enemies, world, config)
-js/game/       game systems, numbered in load order (01 ... 78)
+js/game/       game systems, numbered in load order (01 ... 80)
 tests/         Node regression tests and Python/Chromium browser tests
 docs/          change logs, test reports, design notes
 ```
@@ -42,6 +42,8 @@ node tests/v0.8.5.4.1-companion-spellcasting.test.js
 node tests/v0.8.5.4-companion-equipment-skill-synergy.test.js
 node tests/v0.8.5.2-role-combat.test.js
 node tests/v0.8.5.3-healer-support.test.js
+node tests/v0.8.6-regional-simulation.test.js
+node tests/v0.8.7-social-political-simulation.test.js
 ```
 
 Browser tests under `tests/*.py` need Python with Playwright and Chromium.
@@ -51,7 +53,7 @@ Browser tests under `tests/*.py` need Python with Playwright and Chromium.
 Commit once per version and tag it, for example:
 
 ```
-git tag v0.8.5.5
+git tag v0.8.7
 ```
 
 Use tags to go back to an older build instead of keeping copies of the game folder.
@@ -59,4 +61,5 @@ Use tags to go back to an older build instead of keeping copies of the game fold
 ## History
 
 Detailed release notes from earlier versions are kept in `docs/RELEASE-HISTORY.md`.
-The v0.8.5.5 candidate implementation and verification report is in `docs/v0.8.5.5-test-report.md`.
+The v0.8.6 rules and implementation report is in `docs/v0.8.6-test-report.md`.
+The v0.8.7 rules and implementation report is in `docs/v0.8.7-test-report.md`.
